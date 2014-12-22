@@ -1,0 +1,271 @@
+/* CSS page 1 */
+* {
+	font-family: kristen ITC;
+}
+
+#background1 {
+	width: 1350px;
+	height: 689px;
+	background-color: khaki;
+}
+
+#frame1 {
+	width: 1200px;
+	height: 600px;
+	background-color: white;
+	margin-left: 75px;
+	margin-top: 44.5px;
+	position: absolute;
+}
+
+#frame1 p {
+	margin-left: 350px;
+}
+
+#img1 {
+	background-color: khaki;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#boy {
+	background-color: ivory;
+	width: 40px;
+	height: 30px;
+	margin-top: 260px;
+	border-radius: 25px;
+	padding-top: 10px;
+}
+
+#img2 {
+	background-color: khaki;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#girl {
+	background-color: ivory;
+	width: 40px;
+	height: 30px;
+	margin-top: 260px;
+	border-radius: 25px;
+	padding-top: 10px;
+}
+
+#inputname{
+	background-color: khaki;
+	width: 340px;
+	height: 60px;
+	display: inline-block;
+	margin-right: 80px;
+	margin-top: 35px;
+	padding-top: 7px;
+	border-radius: 10px;
+}
+
+#inputname label {
+	font-size: 25px;
+}
+
+#name{
+	background-color: ivory;
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+#ok {
+	display: inline-block;
+	width: 67px;
+	height: 67px;
+	position: absolute;
+	margin-left: -65px;
+	margin-top: 35px;
+	border-radius: 40px;
+	font-size: 20px;
+	background-color: lemonchiffon;
+}
+
+/* CSS page 2 */
+
+
+#background2 {
+	width: 1350px;
+	height: 689px;
+	background-color: khaki;
+}
+
+#frame2 {
+	width: 1200px;
+	height: 600px;
+	background-color: white;
+	margin-left: 75px;
+	margin-top: 44.5px;
+	position: absolute;
+}
+
+#top div {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: -30px;
+}
+
+#charname {
+	margin-right: 413px;
+	padding-left: 30px;
+}
+
+#waktu {
+	margin-right: 390px;
+}
+
+#time {
+	font-size: 40px;
+	font-family: lucida handwriting;
+}
+
+#date {
+	margin-top: -50px;
+	font-size: 25px;
+}
+
+#ip {
+	width: 240px;
+	height: 426px;
+	background-color: #fdfdfd;
+	border: 2px solid #F0D4B9;
+	display: inline-block;
+	margin-left: 80px;
+	border-radius: 30px;
+	margin-top: 3px;
+}
+
+#cam {
+	background-color: black;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 116px;
+}
+
+#sensor {
+	background-color: black;
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	position: absolute;
+	margin-top: 31px;
+	margin-left: 80px;
+}
+
+#speaker {
+	background-color: black;
+	width: 40px;
+	height: 6px;
+	border-radius: 10px;
+	position: absolute;
+	margin-top: 31px;
+	margin-left: 99px;
+}
+
+#screen {
+	border: 1px solid black;
+	width: 195px;
+	height: 310px;
+	position: absolute;
+	margin-top: 52px;
+	margin-left: 22.3px;
+}
+
+#prev {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 370px;
+	margin-left: 95px;
+	border-radius: 100px;
+	background-color: white;
+	font-size: 20px;
+	border: 2px solid #F0D4B9;
+}
+
+#prev:hover {
+	background-color: lemonchiffon;
+}
+
+#next{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 382px;
+	margin-left: 641px;
+	border-radius: 100px;
+	background-color: white;
+	border: 2px solid #F0D4B9;
+	font-size: 20px;
+}
+
+#next:hover {
+	background-color: lemonchiffon;
+}
+
+#character {
+	width: 300px;
+	height: 437px;
+	border: 1px solid black;
+	position: absolute;
+	display: inline-block;
+	margin-left: 117px;
+}
+
+#indicator {
+	position: absolute;
+	width: 350px;
+	height: 370px;
+	display: inline-block;
+	margin-left: 485px;
+	font-size: 25px;
+}
+
+#istamina {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 50px;
+	margin-top: 20px;
+	border-radius: 200px;
+}
+
+#ifun {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 50px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
+#imeal {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 50px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
+#iintelligent {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 50px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
