@@ -5,7 +5,7 @@ menit = 0;
 tanggal = 1;
 bulan = 1;
 tahun = 2014;
-
+detik = 0;
 function waktu() {
 	detik +=1;
 	
