@@ -35,10 +35,9 @@
 #boy {
 	background-color: ivory;
 	width: 40px;
-	height: 30px;
+	height: 40px;
 	margin-top: 260px;
 	border-radius: 25px;
-	padding-top: 10px;
 }
 
 #img2 {
@@ -52,10 +51,17 @@
 #girl {
 	background-color: ivory;
 	width: 40px;
-	height: 30px;
+	height: 40px;
 	margin-top: 260px;
 	border-radius: 25px;
-	padding-top: 10px;
+}
+
+#play_as {
+	width: 50px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	color: #E6B88A;
 }
 
 #inputname{
@@ -64,7 +70,7 @@
 	height: 60px;
 	display: inline-block;
 	margin-right: 80px;
-	margin-top: 35px;
+	margin-top: px;
 	padding-top: 7px;
 	border-radius: 10px;
 }
@@ -88,7 +94,6 @@
 	height: 67px;
 	position: absolute;
 	margin-left: -65px;
-	margin-top: 35px;
 	border-radius: 40px;
 	font-size: 20px;
 	background-color: lemonchiffon;
