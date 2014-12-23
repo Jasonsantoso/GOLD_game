@@ -126,10 +126,14 @@
 #charname {
 	margin-right: 413px;
 	padding-left: 30px;
+	position:absolute;
+	z-index:1;
 }
 
 #waktu {
-	margin-right: 390px;
+	margin-left: 530px;
+	position:absolute;
+	
 }
 
 #time {
@@ -273,4 +277,7 @@
 	margin-top: 40px;
 	border-radius: 200px;
 }
-
+#level{
+position:absolute;
+margin-top:50px;
+}
