@@ -1,19 +1,24 @@
 /* Javascript */
 
 jam = 0;
-detik = 0;
+menit = 0;
 tanggal = 1;
 bulan = 1;
 tahun = 2014;
 
 function waktu() {
-	detik += 1;
+	detik +=1;
 	
-	if (detik < 10) {
-		detikText =  ":0" + detik;
+	
+	if(detik %10==0){
+	menit+=1;
+	}
+	
+	if (menit < 10) {
+		menitText =  ":0" + menit;
 	}
 	else {
-		detikText = ":" + detik;
+		menitText = ":" + menit;
 	}
 	
 	if (jam < 10) {
@@ -23,8 +28,8 @@ function waktu() {
 		jamText = jam;
 	}
 	
-	if (detik == 60) {
-		detik = 0;
+	if (menit == 60) {
+		menit = 0;
 		jam += 1;
 	}
 	
@@ -80,7 +85,7 @@ function waktu() {
 		bln = "Dec";
 	}
 	
-	waktuText = jamText + detikText;
+	waktuText = jamText + menitText;
 	document.getElementById("time").innerHTML = waktuText;
 	tanggalText = tanggal + "/" + bln + "/" +tahun;
 	document.getElementById("date").innerHTML = tanggalText;
