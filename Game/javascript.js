@@ -102,3 +102,35 @@ function pilihgirl() {
 	cwe = document.getElementById("girl").value;
 	document.getElementById("play_as").innerHTML = cwe;
 }
+
+
+	a = 0;
+	pos = $("img:first");
+			
+	$("#prev").click(function(){
+		a--;
+		pos.fadeToggle(1000);
+		if(a == -1){
+			pos = $("img:last");
+			pos.fadeIn(1000);
+			a = 3;
+		}
+		else {
+			pos = pos.prev();
+			pos.fadeToggle(1000);
+		}
+	});
+				
+	$("#next").click(function(){
+		a++;
+		pos.fadeToggle(1000);
+		if(a != 4){
+			pos = pos.next();				
+			pos.fadeToggle(1000);
+		}
+		else {
+			pos = $("img:first");
+			pos.fadeIn(1000);
+			a = 0;
+		}
+	});

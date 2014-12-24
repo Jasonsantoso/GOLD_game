@@ -3,48 +3,20 @@
 <head>
 	<title>GOLD Page 2</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript">
-		$(document).ready(function(){
-			a = 0;
-			pos = $("img:first");
-			
-			$("#prev").click(function(){
-				a--;
-				pos.hide(1000);
-				if(a == -1){
-					pos = $("img:last");
-					pos.fadeIn(1000);
-					a = 6;
-				}
-				else {
-					pos = pos.prev();
-					pos.show(1000);
-				}
-			});
-				$("#next").click(function(){
-				a++;
-				pos.hide(1000);
-				if(a != 7){
-					pos = pos.next();				
-					pos.show(1000);
-				}
-				else {
-					pos = $("img:first");
-					pos.fadeIn(1000);
-					a = 0;
-				}
-			});
-		});	
+	<script type="text/javascript"
+			src="jquery-1.11.2.min.js">
 	</script>
-	</head>
+</head>
 <body>
 	<div id="background2">
 		
-		<div id="frame2">		
-		<img style="width: 1200px;height: 600px; position:absolute;z-index:0;" src="gambar\bedroom.jpg"/>
-		<img style="width: 1200px;height: 600px; display:none;position:absolute;z-index:0;" src="gambar\fun.jpg"/>
-		<img style="width: 1200px;height: 600px; display:none;position:absolute;z-index:0;" src="gambar\kitchen.jpg"/>
-		<img style="width: 1200px;height: 600px; display:none;position:absolute;z-index:0;" src="gambar\study.jpeg"/>		
+		<div id="frame2">	
+			<div id="bgpage2">
+				<img src="gambar\background\bedroom.jpg"/>
+				<img src="gambar\background\fun.jpg" style="display: none;"/>
+				<img src="gambar\background\kitchen.jpg" style="display: none;"/>
+				<img src="gambar\background\study.jpeg" style="display: none;"/>
+			</div>
 			<div id="top">		
 				<div  id="charname">Name</div>
 				<div id="waktu">
