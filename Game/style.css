@@ -3,23 +3,43 @@
 	font-family: kristen ITC;
 }
 
-#background1 {
+#frame1 {
 	width: 1350px;
 	height: 689px;
-	background-color: khaki;
 }
 
-#frame1 {
+#framepage1 {
+	width: 1350px;
+	height: 689px;
+	position: absolute;
+	z-index: -1;
+}
+
+#background1 {
 	width: 1200px;
 	height: 600px;
-	background-color: white;
 	margin-left: 75px;
 	margin-top: 44.5px;
 	position: absolute;
+	z-index: 1;
 }
 
-#frame1 p {
+#background1 h1 {
+	position: relative;
+	z-index: 1;
+}
+
+#background1 p {
 	margin-left: 350px;
+	position: relative;
+	z-index: 1;
+}
+
+#bgpage1 {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	z-index: 0;
 }
 
 #img1 {
@@ -30,6 +50,8 @@
 	margin-right: 20px;
 	margin-top: 10px;
 	border-radius: 10px;
+	position: relative;
+	z-index: 1;
 }
 
 #boy {
@@ -46,6 +68,8 @@
 	height: 320px;
 	display: inline-block;
 	border-radius: 10px;
+	position: relative;
+	z-index: 1;
 }
 
 #girl {
@@ -62,6 +86,8 @@
 	font-size: 20px;
 	border-radius: 20px;
 	color: #E6B88A;
+	position: relative;
+	z-index: 1;
 }
 
 #inputname{
@@ -73,6 +99,8 @@
 	margin-top: px;
 	padding-top: 7px;
 	border-radius: 10px;
+	position: relative;
+	z-index: 1;
 }
 
 #inputname label {
