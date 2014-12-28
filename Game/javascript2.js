@@ -1,5 +1,10 @@
 /* Javascript Page 2 */
 
+stamina_stat = 8;
+fun_stat = 8;
+meal_stat = 8;
+intelligent_stat = 0;
+
 /* Fungsi Waktu */
 jam = 0;
 menit = 0;
@@ -100,3 +105,25 @@ $("#next").click(function(){
 		a = 0;
 	}
 });
+
+function stat_dec() {
+	stamina_stat -= 1;
+	fun_stat -= 1;
+	meal_stat -= 1;
+	
+	dec = setTimeout(function(){stat_dec();},20000);
+}
+
+function cetak_stat() {
+	if(stamina_stat <= 0) stamina_stat = 0;
+	if(fun_stat <= 0) fun_stat = 0;
+	if(meal_stat <= 0) meal_stat = 0;
+	
+	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "0%";
+	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "0%";
+	document.getElementById("imeal").innerHTML = "Meal " + meal_stat + "0%";
+	cetak = setTimeout(function(){cetak_stat()},500);
+}
+
+stat_dec();
+cetak_stat();
