@@ -284,10 +284,16 @@
 	font-size: 25px;
 }
 
+#indicator div {
+	text-align: center;
+	padding-top: 6px;
+	background-color: white;
+}
+
 #istamina {
 	border: 2px solid #F0D4B9;
 	width: 346px;
-	height: 50px;
+	height: 44px;
 	margin-top: 20px;
 	border-radius: 200px;
 }
@@ -295,7 +301,7 @@
 #ifun {
 	border: 2px solid #F0D4B9;
 	width: 346px;
-	height: 50px;
+	height: 44px;
 	margin-top: 40px;
 	border-radius: 200px;
 }
@@ -303,7 +309,7 @@
 #imeal {
 	border: 2px solid #F0D4B9;
 	width: 346px;
-	height: 50px;
+	height: 44px;
 	margin-top: 40px;
 	border-radius: 200px;
 }
@@ -311,7 +317,7 @@
 #iintelligent {
 	border: 2px solid #F0D4B9;
 	width: 346px;
-	height: 50px;
+	height: 44px;
 	margin-top: 40px;
 	border-radius: 200px;
 }
