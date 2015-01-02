@@ -1,8 +1,8 @@
 /* Javascript Page 2 */
 
-stamina_stat = 8;
-fun_stat = 8;
-meal_stat = 8;
+stamina_stat = 70;
+fun_stat = 70;
+meal_stat = 70;
 intelligent_stat = 0;
 
 /* Fungsi Waktu */
@@ -111,7 +111,7 @@ function stat_dec() {
 	fun_stat -= 1;
 	meal_stat -= 1;
 	
-	dec = setTimeout(function(){stat_dec();},20000);
+	dec = setTimeout(function(){stat_dec();},3000);
 }
 
 function cetak_stat() {
@@ -119,11 +119,29 @@ function cetak_stat() {
 	if(fun_stat <= 0) fun_stat = 0;
 	if(meal_stat <= 0) meal_stat = 0;
 	
-	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "0%";
-	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "0%";
-	document.getElementById("imeal").innerHTML = "Meal " + meal_stat + "0%";
+	if(stamina_stat >= 100) stamina_stat = 100;
+	if(fun_stat >= 100) fun_stat = 100;
+	if(meal_stat >= 100) meal_stat = 100;
+	
+	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
+	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
+	document.getElementById("imeal").innerHTML = "Meal " + meal_stat + "%";
 	cetak = setTimeout(function(){cetak_stat()},500);
 }
 
+function klik_sleep_button() {
+	stamina_stat += 10;
+}
+
+function klik_play_button() {
+	fun_stat += 10;
+}
+
+function klik_eat_button() {
+	meal_stat += 10;
+}
+
+
+// Panggil Fungsi
 stat_dec();
 cetak_stat();
