@@ -82,7 +82,7 @@ $("#prev").click(function(){
 	a--;
 	pos.fadeToggle(1000);
 	if(a == -1){
-		pos = $("img:last");
+		pos = $("#bgpage2 img").last();
 		pos.fadeIn(1000);
 		a = 3;
 	}
