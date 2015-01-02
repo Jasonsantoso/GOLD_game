@@ -2,7 +2,7 @@
 
 stamina_stat = 70;
 fun_stat = 70;
-meal_stat = 70;
+hunger_stat = 70;
 intelligent_stat = 0;
 
 /* Fungsi Waktu */
@@ -107,40 +107,39 @@ $("#next").click(function(){
 });
 
 function stat_dec() {
-	stamina_stat -= 1;
-	fun_stat -= 1;
-	meal_stat -= 1;
+	stamina_stat -= 10;
+	fun_stat -= 10;
+	hunger_stat -= 10;
 	
-	dec = setTimeout(function(){stat_dec();},3000);
+	dec = setTimeout(function(){stat_dec();},4000);
 }
 
 function cetak_stat() {
 	if(stamina_stat <= 0) stamina_stat = 0;
 	if(fun_stat <= 0) fun_stat = 0;
-	if(meal_stat <= 0) meal_stat = 0;
+	if(hunger_stat <= 0) hunger_stat = 0;
 	
 	if(stamina_stat >= 100) stamina_stat = 100;
 	if(fun_stat >= 100) fun_stat = 100;
-	if(meal_stat >= 100) meal_stat = 100;
+	if(hunger_stat >= 100) hunger_stat = 100;
 	
 	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
-	document.getElementById("imeal").innerHTML = "Meal " + meal_stat + "%";
+	document.getElementById("ihunger").innerHTML = "hunger " + hunger_stat + "%";
 	cetak = setTimeout(function(){cetak_stat()},500);
 }
 
 function klik_sleep_button() {
-	stamina_stat += 10;
+	stamina_stat += 50;
 }
 
 function klik_play_button() {
-	fun_stat += 10;
+	fun_stat += 50;
 }
 
 function klik_eat_button() {
-	meal_stat += 10;
+	hunger_stat += 50;
 }
-
 
 // Panggil Fungsi
 stat_dec();
