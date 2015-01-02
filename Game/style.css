@@ -1,3 +1,8 @@
+/* CSS */
+#page2 {
+	display: none;
+}
+
 /* CSS page 1 */
 * {
 	font-family: kristen ITC;
@@ -129,11 +134,11 @@
 
 /* CSS page 2 */
 
-
 #background2 {
 	width: 1350px;
 	height: 689px;
 	background-color: khaki;
+	z-index: -1;
 }
 
 #frame2 {
@@ -143,6 +148,7 @@
 	margin-left: 75px;
 	margin-top: 44.5px;
 	position: absolute;
+	z-index: 0;
 }
 
 #top div {
