@@ -160,8 +160,11 @@
 }
 
 #charname {
-	margin-right: 413px;
-	padding-left: 30px;
+	width: 270px;
+	height: 42px;
+	margin-left: 67px;
+	margin-right: 187px;
+	text-align: center;
 }
 
 #waktu {

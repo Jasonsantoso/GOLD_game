@@ -1,5 +1,7 @@
 /* Javascript */
 $("#ok").click(function(){
+	inputan_nama = document.getElementById("name").value;
+	document.getElementById("charname").innerHTML = inputan_nama;
 	$("#page1").fadeToggle(1000, function(){
 		$("#page2").show(5000);
 	});
