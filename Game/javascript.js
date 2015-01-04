@@ -12,11 +12,13 @@ $("#ok").click(function(){
 /* Fungsi pilih gender */
 function pilihboy() {
 	cwo = document.getElementById("boy").value;
+	cwo = "&#9794;"
 	document.getElementById("play_as").innerHTML = cwo;
 }
 
 function pilihgirl() {
 	cwe = document.getElementById("girl").value;
+	cwe = "&#9792;"
 	document.getElementById("play_as").innerHTML = cwe;
 }
 
