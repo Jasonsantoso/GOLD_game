@@ -146,24 +146,31 @@ function cetak_stat() {
 	if(stamina_stat >= 100) stamina_stat = 100;
 	if(fun_stat >= 100) fun_stat = 100;
 	if(hunger_stat >= 100) hunger_stat = 100;
+	if(intelligent_stat >= 100) intelligent_stat = 100;
 	
 	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
-	document.getElementById("ihunger").innerHTML = "hunger " + hunger_stat + "%";
+	document.getElementById("ihunger").innerHTML = "Hunger " + hunger_stat + "%";
+	document.getElementById("iintelligent").innerHTML = "Intelligent " + intelligent_stat + "%";
 	cetak = setTimeout(function(){cetak_stat()}, 500);
 }
 
-function klik_sleep_button() {
+$("#sleep_button").click(function() {
 	stamina_stat += 50;
-}
+});
 
-function klik_play_button() {
+$("#play_button").click(function() {
 	fun_stat += 50;
-}
+});
 
-function klik_eat_button() {
+
+$("#eat_button").click(function() {
 	hunger_stat += 50;
-}
+});
+
+$("#study_button").click(function() {
+	intelligent_stat += 20;
+});
 
 // Panggil Fungsi
 stat_dec();
