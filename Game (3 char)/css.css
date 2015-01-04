@@ -1,0 +1,431 @@
+/* CSS */
+#page2 {
+	display: none;
+}
+
+/* CSS page 1 */
+* {
+	font-family: kristen ITC;
+	color: white;
+}
+
+#frame1 {
+	width: 1350px;
+	height: 689px;
+}
+
+#framepage1 {
+	width: 1350px;
+	height: 689px;
+	position: absolute;
+	z-index: -1;
+	background-color: #22313F;
+}
+
+#background1 {
+	width: 1200px;
+	height: 600px;
+	margin-left: 75px;
+	margin-top: 44.5px;
+	position: absolute;
+	z-index: 0;
+	background-color: #BDC3C7;
+}
+
+#background1 h1 {
+	position: relative;
+	z-index: 1;
+}
+
+#background1 p {
+	margin-left: 350px;
+	position: relative;
+	z-index: 1;
+}
+
+#bgpage1 {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	z-index: 0;
+}
+
+#img1 {
+	background-color: #2ECC71;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+#img2 {
+	background-color: #F22613;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	border-radius: 10px;
+	margin-right: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+#img3 {
+	background-color: #19B5FE;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+#img_worm {
+	border: 1px solid #00b16a;
+	width: 160px;
+	height: 220px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#worm {
+	background-color: #2ECC71;
+	width: 100px;
+	height: 40px;
+	margin-top: 260px;
+	border-radius: 25px;
+}
+
+#worm:hover {
+	background-color: #26C281;
+}
+
+#worm:active {
+	color: #2ECC71;
+	background-color: white;
+	text-shadow: 1px 1px #2ECC71;
+}
+
+#img_pig{
+	border: 1px solid #f1a9a0;
+	width: 160px;
+	height: 220px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#pig {
+	background-color: #F22613;
+	width: 100px;
+	height: 40px;
+	margin-top: 260px;
+	border-radius: 25px;
+}
+
+#pig:hover {
+	background-color: #CF000F;
+}
+
+#pig:active {
+	color: #F22613;
+	background-color: white;
+	text-shadow: 1px 1px #F22613;
+}
+
+#img_buffalo{
+	border: 1px solid #6C7A89;
+	width: 160px;
+	height: 220px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#buffalo {
+	background-color: #19B5FE;
+	width: 100px;
+	height: 40px;
+	margin-top: 260px;
+	border-radius: 25px;
+}
+
+#buffalo:hover {
+	background-color: #22A7F0;
+}
+
+#buffalo:active {
+	color: #19B5FE;
+	background-color: white;
+	text-shadow: 1px 1px #19B5FE;
+}
+
+#play_as {
+	width: 50px;
+	height: 30px;
+	font-size: 30px;
+	border-radius: 20px;
+	color: white;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 15px;
+}
+
+#inputname{
+	background-color: #9A12B3;
+	width: 340px;
+	height: 60px;
+	display: inline-block;
+	margin-right: 80px;
+	margin-top: px;
+	padding-top: 7px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+#inputname label {
+	font-size: 25px;
+}
+
+#name{
+	background-color: #9A12B3;
+	height: 40px;
+	width: 200px;
+	font-size: 20px;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+#ok {
+	display: inline-block;
+	width: 67px;
+	height: 67px;
+	position: absolute;
+	margin-left: -65px;
+	border-radius: 40px;
+	font-size: 20px;
+	background-color: #F7CA18;
+}
+
+#ok:hover {
+	background-color: #f1c40f;
+}
+
+#ok:active {
+	color: #F7CA18;
+	background-color: white;
+	text-shadow: 1px 1px #F7CA18;
+}
+
+/* CSS page 2 */
+
+#background2 {
+	width: 1350px;
+	height: 689px;
+	background-color: #22313F;
+	z-index: -1;
+}
+
+#frame2 {
+	width: 1200px;
+	height: 600px;
+	background-color: white;
+	margin-left: 75px;
+	margin-top: 44.5px;
+	position: absolute;
+	z-index: 0;
+}
+
+#top div {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: -30px;
+	position: relative;
+	z-index: 1;
+}
+
+#charname {
+	width: 270px;
+	height: 42px;
+	margin-left: 67px;
+	margin-right: 187px;
+	text-align: center;
+}
+
+#waktu {
+	margin-right: 390px;
+}
+
+#time {
+	font-size: 40px;
+	font-family: lucida handwriting;
+}
+
+#date {
+	margin-top: -50px;
+	font-size: 25px;
+}
+
+#ip {
+	width: 240px;
+	height: 426px;
+	background-color: #fdfdfd;
+	border: 2px solid #F0D4B9;
+	display: inline-block;
+	margin-left: 80px;
+	border-radius: 30px;
+	margin-top: 3px;
+	position: relative;
+	z-index: 1;
+}
+
+#cam {
+	background-color: black;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 116px;
+}
+
+#sensor {
+	background-color: black;
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	position: absolute;
+	margin-top: 31px;
+	margin-left: 80px;
+}
+
+#speaker {
+	background-color: black;
+	width: 40px;
+	height: 6px;
+	border-radius: 10px;
+	position: absolute;
+	margin-top: 31px;
+	margin-left: 99px;
+}
+
+#screen {
+	border: 1px solid black;
+	width: 195px;
+	height: 290px;
+	position: absolute;
+	margin-top: 52px;
+	margin-left: 22.3px;
+	padding-top: 20px;
+}
+
+#screen img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 12px;
+	margin-left: 29px;
+	margin-top: 10px;
+	color: black;
+}
+
+#prev {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 370px;
+	margin-left: 95px;
+	border-radius: 100px;
+	background-color: white;
+	font-size: 20px;
+	border: 2px solid #F0D4B9;
+	color: black;
+}
+
+#prev:hover {
+	background-color: lemonchiffon;
+}
+
+#next{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 382px;
+	margin-left: 641px;
+	border-radius: 100px;
+	background-color: white;
+	border: 2px solid #F0D4B9;
+	font-size: 20px;
+	color: black;
+}
+
+#next:hover {
+	background-color: lemonchiffon;
+}
+
+#character {
+	width: 300px;
+	height: 437px;
+	border: 1px solid black;
+	position: absolute;
+	display: inline-block;
+	margin-left: 117px;
+}
+
+#indicator {
+	position: absolute;
+	width: 350px;
+	height: 370px;
+	display: inline-block;
+	margin-left: 485px;
+	font-size: 25px;
+}
+
+#indicator div {
+	text-align: center;
+	padding-top: 6px;
+}
+
+#istamina {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 44px;
+	margin-top: 20px;
+	border-radius: 200px;
+}
+
+#ifun {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 44px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
+#ihunger {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 44px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
+#iintelligent {
+	border: 2px solid #F0D4B9;
+	width: 346px;
+	height: 44px;
+	margin-top: 40px;
+	border-radius: 200px;
+}
+
+#bgpage2 img {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	z-index: 0;
+}
