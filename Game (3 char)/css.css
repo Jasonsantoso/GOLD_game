@@ -94,6 +94,11 @@
 	margin-left: 20px;
 }
 
+#img_worm img {
+	width: 160px;
+	height: 220px;
+}
+
 #worm {
 	background-color: #9de084;
 	width: 100px;
@@ -123,6 +128,11 @@
 	margin-left: 20px;
 }
 
+#img_pig img {
+	width: 160px;
+	height: 220px;
+}
+
 #pig {
 	background-color: #f38f9f;
 	width: 100px;
@@ -150,6 +160,11 @@
 	position: absolute;
 	margin-top: 20px;
 	margin-left: 20px;
+}
+
+#img_buffalo img {
+	width: 160px;
+	height: 220px;
 }
 
 #buffalo {
@@ -276,12 +291,14 @@
 	font-size: 40px;
 	font-family: lucida handwriting;
 	text-shadow: 2px 2px 2px #927b21;
+	text-align: center;
 }
 
 #date {
 	margin-top: -50px;
 	font-size: 25px;
 	text-shadow: 2px 2px 2px #927b21;
+	text-align: center;
 }
 
 #level {
@@ -334,9 +351,10 @@
 #screen {
 	border: 2px solid #363231;
 	width: 195px;
-	height: 314px;
+	height: 299px;
 	margin-top: 52px;
 	margin-left: 15px;
+	padding-top: 15px;
 }
 
 #ip_wallpaper {
@@ -344,6 +362,13 @@
 	height: 314px;
 	position: absolute;
 	z-index: -1;
+	margin-top: -15px;
+}
+
+#ip_top {
+	width: 195px;
+	position: absolute;
+	margin-top: -15px;
 }
 
 #ip_icon {
@@ -376,7 +401,7 @@
 }
 
 #prev:hover {
-	background-color: lemonchiffon;
+	background-color: #ffea96;
 }
 
 #next{
@@ -393,16 +418,17 @@
 }
 
 #next:hover {
-	background-color: lemonchiffon;
+	background-color: #ffea96;
 }
 
 #character {
 	width: 300px;
-	height: 437px;
+	height: 287px;
 	border: 1px solid black;
 	position: absolute;
 	display: inline-block;
 	margin-left: 117px;
+	padding-top: 50px;
 }
 
 #indicator {

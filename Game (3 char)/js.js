@@ -14,20 +14,22 @@ $("#worm").click(function(){
 	w_value = document.getElementById("worm").value;
 	$("#play_as").css({"color":"#9de084"});
 	document.getElementById("play_as").innerHTML = w_value;
+	document.getElementById("play_as").value = "worm";
 });
 
 $("#pig").click(function(){
 	p_value = document.getElementById("pig").value;
 	$("#play_as").css({"color":"#f38f9f"});
 	document.getElementById("play_as").innerHTML = p_value;
+	document.getElementById("play_as").value = "pig";
 });
 
 $("#buffalo").click(function(){
 	b_value = document.getElementById("buffalo").value;
 	$("#play_as").css({"color":"#8479bd"});
 	document.getElementById("play_as").innerHTML = b_value;
+	document.getElementById("play_as").value = "buffalo";
 });
-
 
 /* Javascript Page 2 */
 
@@ -103,7 +105,31 @@ function waktu() {
 	document.getElementById("date").innerHTML = tanggalText;
 	time = setTimeout(function(){waktu()}, 500);
 }
-waktu();
+
+function stat_dec() {
+	stamina_stat -= 10;
+	fun_stat -= 10;
+	hunger_stat -= 10;
+	
+	dec = setTimeout(function(){stat_dec();},4000);
+}
+
+function cetak_stat() {
+	if(stamina_stat <= 0) stamina_stat = 0;
+	if(fun_stat <= 0) fun_stat = 0;
+	if(hunger_stat <= 0) hunger_stat = 0;
+	
+	if(stamina_stat >= 100) stamina_stat = 100;
+	if(fun_stat >= 100) fun_stat = 100;
+	if(hunger_stat >= 100) hunger_stat = 100;
+	if(intelligent_stat >= 100) intelligent_stat = 100;
+	
+	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
+	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
+	document.getElementById("ihunger").innerHTML = "Hunger " + hunger_stat + "%";
+	document.getElementById("iintelligent").innerHTML = "Intelligent " + intelligent_stat + "%";
+	cetak = setTimeout(function(){cetak_stat()}, 500);
+}
 
 /* Tombol ganti lokasi */
 a = 0;
@@ -137,31 +163,6 @@ $("#next").click(function(){
 	}
 });
 
-function stat_dec() {
-	stamina_stat -= 10;
-	fun_stat -= 10;
-	hunger_stat -= 10;
-	
-	dec = setTimeout(function(){stat_dec();},4000);
-}
-
-function cetak_stat() {
-	if(stamina_stat <= 0) stamina_stat = 0;
-	if(fun_stat <= 0) fun_stat = 0;
-	if(hunger_stat <= 0) hunger_stat = 0;
-	
-	if(stamina_stat >= 100) stamina_stat = 100;
-	if(fun_stat >= 100) fun_stat = 100;
-	if(hunger_stat >= 100) hunger_stat = 100;
-	if(intelligent_stat >= 100) intelligent_stat = 100;
-	
-	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
-	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
-	document.getElementById("ihunger").innerHTML = "Hunger " + hunger_stat + "%";
-	document.getElementById("iintelligent").innerHTML = "Intelligent " + intelligent_stat + "%";
-	cetak = setTimeout(function(){cetak_stat()}, 500);
-}
-
 $("#sleep_button").click(function() {
 	stamina_stat += 50;
 });
@@ -169,7 +170,6 @@ $("#sleep_button").click(function() {
 $("#play_button").click(function() {
 	fun_stat += 50;
 });
-
 
 $("#eat_button").click(function() {
 	hunger_stat += 50;
@@ -179,6 +179,28 @@ $("#study_button").click(function() {
 	intelligent_stat += 20;
 });
 
-// Panggil Fungsi
-stat_dec();
-cetak_stat();
+$("#start_button").click(function() {
+	stat_dec();
+	cetak_stat();
+	waktu();
+});
+
+$("#stop_button").click(function() {
+	clearTimeout(cetak);
+	clearTimeout(dec);
+	clearTimeout(time);
+});
+
+$("#reset_button").click(function() {
+	stamina_stat = 70;
+	fun_stat = 70;
+	hunger_stat = 70;
+	intelligent_stat = 0;
+	
+	jam = 0;
+	menit = 0;
+	tanggal = 1;
+	bulan = 1;
+	tahun = 2014;
+	detik = 0;
+});
