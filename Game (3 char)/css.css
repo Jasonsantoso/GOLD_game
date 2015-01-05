@@ -19,7 +19,7 @@
 	height: 689px;
 	position: absolute;
 	z-index: -1;
-	background-color: #22313F;
+	background-color: #ffea96;
 }
 
 #background1 {
@@ -29,18 +29,20 @@
 	margin-top: 44.5px;
 	position: absolute;
 	z-index: 0;
-	background-color: #BDC3C7;
+	background-color: #fff4ca;
 }
 
 #background1 h1 {
 	position: relative;
 	z-index: 1;
+	color: #927b21;
 }
 
 #background1 p {
 	margin-left: 350px;
 	position: relative;
 	z-index: 1;
+	color: #927b21;
 }
 
 #bgpage1 {
@@ -51,7 +53,7 @@
 }
 
 #img1 {
-	background-color: #2ECC71;
+	background-color: #9de084;
 	width: 200px;
 	height: 320px;
 	display: inline-block;
@@ -63,7 +65,7 @@
 }
 
 #img2 {
-	background-color: #F22613;
+	background-color: #f38f9f;
 	width: 200px;
 	height: 320px;
 	display: inline-block;
@@ -74,7 +76,7 @@
 }
 
 #img3 {
-	background-color: #19B5FE;
+	background-color: #8479bd;
 	width: 200px;
 	height: 320px;
 	display: inline-block;
@@ -84,7 +86,7 @@
 }
 
 #img_worm {
-	border: 1px solid #00b16a;
+	border: 1px solid white;
 	width: 160px;
 	height: 220px;
 	position: absolute;
@@ -93,25 +95,27 @@
 }
 
 #worm {
-	background-color: #2ECC71;
+	background-color: #9de084;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
 	border-radius: 25px;
+	border: 1px solid white;
 }
 
 #worm:hover {
-	background-color: #26C281;
+	background-color: #d8ffca;
+	color: #38801d;
 }
 
 #worm:active {
-	color: #2ECC71;
+	color: #38801d;
 	background-color: white;
-	text-shadow: 1px 1px #2ECC71;
+	text-shadow: 1px 1px #38801d;
 }
 
 #img_pig{
-	border: 1px solid #f1a9a0;
+	border: 1px solid white;
 	width: 160px;
 	height: 220px;
 	position: absolute;
@@ -120,25 +124,27 @@
 }
 
 #pig {
-	background-color: #F22613;
+	background-color: #f38f9f;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
 	border-radius: 25px;
+	border: 1px solid white;
 }
 
 #pig:hover {
-	background-color: #CF000F;
+	background-color: #ffcad2;
+	color: #8b2031;
 }
 
 #pig:active {
-	color: #F22613;
+	color: #8b2031;
 	background-color: white;
-	text-shadow: 1px 1px #F22613;
+	text-shadow: 1px 1px #8b2031;
 }
 
 #img_buffalo{
-	border: 1px solid #6C7A89;
+	border: 1px solid white;
 	width: 160px;
 	height: 220px;
 	position: absolute;
@@ -147,36 +153,39 @@
 }
 
 #buffalo {
-	background-color: #19B5FE;
+	background-color: #8479bd;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
 	border-radius: 25px;
+	border: 1px solid white;
 }
 
 #buffalo:hover {
-	background-color: #22A7F0;
+	background-color: #d7d0fe;
+	color: #271b6c;
 }
 
 #buffalo:active {
-	color: #19B5FE;
+	color: #271b6c;
 	background-color: white;
-	text-shadow: 1px 1px #19B5FE;
+	text-shadow: 1px 1px #271b6c;
 }
 
 #play_as {
-	width: 50px;
+	width: 100px;
 	height: 30px;
 	font-size: 30px;
 	border-radius: 20px;
 	color: white;
 	position: relative;
 	z-index: 1;
+	margin-top: 5px;
 	padding-bottom: 15px;
 }
 
 #inputname{
-	background-color: #9A12B3;
+	background-color: #927b21;
 	width: 340px;
 	height: 60px;
 	display: inline-block;
@@ -193,7 +202,7 @@
 }
 
 #name{
-	background-color: #9A12B3;
+	background-color: #927b21;
 	height: 40px;
 	width: 200px;
 	font-size: 20px;
@@ -209,29 +218,30 @@
 	margin-left: -65px;
 	border-radius: 40px;
 	font-size: 20px;
-	background-color: #F7CA18;
+	background-color: #927b21;
 }
 
 #ok:hover {
-	background-color: #f1c40f;
+	background-color: #ffea96;
+	color: #927b21;
 }
 
 #ok:active {
-	color: #F7CA18;
+	color: #927b21;
 	background-color: white;
-	text-shadow: 1px 1px #F7CA18;
+	text-shadow: 1px 1px #927b21;
 }
 
 /* CSS page 2 */
 
-#background2 {
+#frame2 {
 	width: 1350px;
 	height: 689px;
-	background-color: #22313F;
+	background-color: #ffea96;
 	z-index: -1;
 }
 
-#frame2 {
+#background2 {
 	width: 1200px;
 	height: 600px;
 	background-color: white;
@@ -255,6 +265,7 @@
 	margin-left: 67px;
 	margin-right: 187px;
 	text-align: center;
+	text-shadow: 2px 2px 2px #927b21;
 }
 
 #waktu {
@@ -264,18 +275,24 @@
 #time {
 	font-size: 40px;
 	font-family: lucida handwriting;
+	text-shadow: 2px 2px 2px #927b21;
 }
 
 #date {
 	margin-top: -50px;
 	font-size: 25px;
+	text-shadow: 2px 2px 2px #927b21;
+}
+
+#level {
+	text-shadow: 2px 2px 2px #927b21;
 }
 
 #ip {
 	width: 240px;
 	height: 426px;
-	background-color: #fdfdfd;
-	border: 2px solid #F0D4B9;
+	background-color: white;
+	border: 3px solid #eadbc8;
 	display: inline-block;
 	margin-left: 80px;
 	border-radius: 30px;
@@ -343,8 +360,8 @@
 	border-radius: 100px;
 	background-color: white;
 	font-size: 20px;
-	border: 2px solid #F0D4B9;
-	color: black;
+	border: 2px solid #fbeedd;
+	color: #927b21;
 }
 
 #prev:hover {
@@ -359,9 +376,9 @@
 	margin-left: 641px;
 	border-radius: 100px;
 	background-color: white;
-	border: 2px solid #F0D4B9;
+	border: 2px solid #fbeedd;
 	font-size: 20px;
-	color: black;
+	color: #927b21;
 }
 
 #next:hover {
@@ -392,7 +409,8 @@
 }
 
 #istamina {
-	border: 2px solid #F0D4B9;
+	border: 2px solid white;
+	text-shadow: 2px 2px 2px #927b21;
 	width: 346px;
 	height: 44px;
 	margin-top: 20px;
@@ -400,7 +418,8 @@
 }
 
 #ifun {
-	border: 2px solid #F0D4B9;
+	border: 2px solid white;
+	text-shadow: 2px 2px 2px #927b21;
 	width: 346px;
 	height: 44px;
 	margin-top: 40px;
@@ -408,7 +427,8 @@
 }
 
 #ihunger {
-	border: 2px solid #F0D4B9;
+	border: 2px solid white;
+	text-shadow: 2px 2px 2px #927b21;
 	width: 346px;
 	height: 44px;
 	margin-top: 40px;
@@ -416,7 +436,8 @@
 }
 
 #iintelligent {
-	border: 2px solid #F0D4B9;
+	border: 2px solid white;
+	text-shadow: 2px 2px 2px #927b21;
 	width: 346px;
 	height: 44px;
 	margin-top: 40px;

@@ -10,7 +10,23 @@ $("#ok").click(function(){
 /* Javascript Page 1 */
 
 /* Fungsi pilih char */
+$("#worm").click(function(){
+	w_value = document.getElementById("worm").value;
+	$("#play_as").css({"color":"#9de084"});
+	document.getElementById("play_as").innerHTML = w_value;
+});
 
+$("#pig").click(function(){
+	p_value = document.getElementById("pig").value;
+	$("#play_as").css({"color":"#f38f9f"});
+	document.getElementById("play_as").innerHTML = p_value;
+});
+
+$("#buffalo").click(function(){
+	b_value = document.getElementById("buffalo").value;
+	$("#play_as").css({"color":"#8479bd"});
+	document.getElementById("play_as").innerHTML = b_value;
+});
 
 
 /* Javascript Page 2 */
