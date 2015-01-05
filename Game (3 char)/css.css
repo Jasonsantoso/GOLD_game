@@ -1,8 +1,8 @@
-/* CSS */
+/* CSS 
 #page2 {
 	display: none;
 }
-
+*/
 /* CSS page 1 */
 * {
 	font-family: kristen ITC;
@@ -289,12 +289,12 @@
 }
 
 #ip {
-	width: 240px;
-	height: 426px;
-	background-color: white;
+	width: 230px;
+	height: 430px;
+	background-color: #f5f6f8;
 	border: 3px solid #eadbc8;
 	display: inline-block;
-	margin-left: 80px;
+	margin-left: 90px;
 	border-radius: 30px;
 	margin-top: 3px;
 	position: relative;
@@ -302,17 +302,17 @@
 }
 
 #cam {
-	background-color: black;
+	background-color: #4c4c4a;
 	width: 8px;
 	height: 8px;
 	border-radius: 8px;
 	position: absolute;
 	margin-top: 10px;
-	margin-left: 116px;
+	margin-left: 111px;
 }
 
 #sensor {
-	background-color: black;
+	background-color: #555557;
 	width: 6px;
 	height: 6px;
 	border-radius: 6px;
@@ -322,43 +322,54 @@
 }
 
 #speaker {
-	background-color: black;
+	background-color: #454545;
 	width: 40px;
 	height: 6px;
 	border-radius: 10px;
 	position: absolute;
 	margin-top: 31px;
-	margin-left: 99px;
+	margin-left: 95px;
 }
 
 #screen {
-	border: 1px solid black;
+	border: 2px solid #363231;
 	width: 195px;
-	height: 290px;
-	position: absolute;
+	height: 314px;
 	margin-top: 52px;
-	margin-left: 22.3px;
-	padding-top: 20px;
+	margin-left: 15px;
 }
 
-#screen img {
-	width: 50px;
-	height: 50px;
-	border: 1px solid black;
-	border-radius: 12px;
-	margin-left: 29px;
+#ip_wallpaper {
+	width: 195px;
+	height: 314px;
+	position: absolute;
+	z-index: -1;
+}
+
+#ip_icon {
+	padding-left: 6px;
+}
+
+#ip_icon img {
+	width: 35px;
+	height: 35px;
+	border: 1px solid white;
+	color: white;
+	text-align: center;
+	font-size: 10px; /* sementara */
 	margin-top: 10px;
-	color: black;
+	margin-left: 4px;
+	border-radius: 8px;
 }
 
 #prev {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	margin-top: 370px;
-	margin-left: 95px;
+	margin-top: 7px;
+	margin-left: 90px;
 	border-radius: 100px;
-	background-color: white;
+	background-color: #f5f6f8;
 	font-size: 20px;
 	border: 2px solid #fbeedd;
 	color: #927b21;
@@ -375,9 +386,9 @@
 	margin-top: 382px;
 	margin-left: 641px;
 	border-radius: 100px;
-	background-color: white;
-	border: 2px solid #fbeedd;
+	background-color: #f5f6f8;
 	font-size: 20px;
+	border: 2px solid #fbeedd;
 	color: #927b21;
 }
 
