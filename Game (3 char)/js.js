@@ -5,6 +5,32 @@ $("#ok").click(function(){
 	$("#page1").fadeToggle(300, function(){
 		$("#page2").show(2000);
 	});
+	
+	cek_play_as = document.getElementById("play_as").value;
+	if(cek_play_as == "worm") {
+		sisip_stand = "<center><img src='gambar/character/worm_stand.png'/></center>";
+		sisip_sleep = "<center><img src='gambar/character/worm_sleep.png'/></center>";
+		sisip_play = "<center><img src='gambar/character/worm_play.png'/></center>";
+		sisip_eat = "<center><img src='gambar/character/worm_eat.png'/></center>";
+		sisip_study = "<center><img src='gambar/character/worm_study.png'/></center>";
+		sisip_stop = "<center><img src='gambar/character/worm_grayscale.png'/></center>";
+	}
+	if(cek_play_as == "pig") {
+		sisip_stand = "<center><img src='gambar/character/pig_stand.png'/></center>";
+		sisip_sleep = "<center><img src='gambar/character/pig_sleep.png'/></center>";
+		sisip_play = "<center><img src='gambar/character/pig_play.png'/></center>";
+		sisip_eat = "<center><img src='gambar/character/pig_eat.png'/></center>";
+		sisip_study = "<center><img src='gambar/character/pig_study.png'/></center>";
+		sisip_stop = "<center><img src='gambar/character/pig_grayscale.png'/></center>";
+	}
+	if(cek_play_as == "buffalo") {
+		sisip_stand = "<center><img src='gambar/character/buffalo_stand.png'/></center>";
+		sisip_sleep = "<center><img src='gambar/character/buffalo_sleep.png'/></center>";
+		sisip_play = "<center><img src='gambar/character/buffalo_play.png'/></center>";
+		sisip_eat = "<center><img src='gambar/character/buffalo_eat.png'/></center>";
+		sisip_study = "<center><img src='gambar/character/buffalo_study.png'/></center>";
+		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
+	}
 });
 
 /* Javascript Page 1 */
@@ -30,6 +56,7 @@ $("#buffalo").click(function(){
 	document.getElementById("play_as").innerHTML = b_value;
 	document.getElementById("play_as").value = "buffalo";
 });
+
 
 /* Javascript Page 2 */
 
@@ -179,6 +206,10 @@ function cetak_stat() {
 	cetak = setTimeout(function(){cetak_stat()}, 100);
 }
 
+function normal_mode() {
+	document.getElementById("character").innerHTML = sisip_stand;
+}
+
 /* Tombol ganti lokasi */
 a = 0;
 pos = $("#bgpage2 img:first");
@@ -213,35 +244,46 @@ $("#next").click(function(){
 
 $("#sleep_button").click(function() {
 	stamina_stat += 50;
+	document.getElementById("character").innerHTML = sisip_sleep;
+	to_stand_png = setTimeout(function() {normal_mode()},5000);
 });
 
 $("#play_button").click(function() {
 	fun_stat += 50;
+	document.getElementById("character").innerHTML = sisip_play;
+	to_stand_png = setTimeout(function() {normal_mode()},5000);
 });
 
 $("#eat_button").click(function() {
 	hunger_stat += 50;
+	document.getElementById("character").innerHTML = sisip_eat;
+	to_stand_png = setTimeout(function() {normal_mode()},5000);
 });
 
 $("#study_button").click(function() {
 	intelligent_stat += 20;
-	
+	document.getElementById("character").innerHTML = sisip_study;
+	to_stand_png = setTimeout(function() {normal_mode()},5000);
 });
 
 $("#start_button").click(function() {
 	stat_dec();
 	cetak_stat();
 	waktu();
+	normal_mode();
 	
 	$("#cstamina").css({"width": "226px"});
 	$("#cfun").css({"width": "226px"});
 	$("#chunger").css({"width": "226px"});
+	document.getElementById("character").innerHTML = sisip_stand;
 });
 
 $("#stop_button").click(function() {
 	clearTimeout(cetak);
 	clearTimeout(dec);
 	clearTimeout(time);
+	clearTimeout(normal_mode);
+	document.getElementById("character").innerHTML = sisip_stop;
 });
 
 $("#reset_button").click(function() {
@@ -256,8 +298,4 @@ $("#reset_button").click(function() {
 	bulan = 1;
 	tahun = 2014;
 	detik = 0;
-});
-
-$(document).ready(function() {
-	
 });
