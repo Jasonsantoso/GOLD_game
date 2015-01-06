@@ -134,11 +134,11 @@ function waktu() {
 }
 
 function stat_dec() {
-	stamina_stat -= 10;
-	fun_stat -= 10;
-	hunger_stat -= 10;
+	stamina_stat -= 20;
+	fun_stat -= 20;
+	hunger_stat -= 20;
 	
-	dec = setTimeout(function(){stat_dec();},4000);
+	dec = setTimeout(function(){stat_dec();},5500);
 }
 
 function cetak_stat() {
