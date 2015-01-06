@@ -124,11 +124,59 @@ function cetak_stat() {
 	if(hunger_stat >= 100) hunger_stat = 100;
 	if(intelligent_stat >= 100) intelligent_stat = 100;
 	
-	document.getElementById("istamina").innerHTML = "Stamina " + stamina_stat + "%";
-	document.getElementById("ifun").innerHTML = "Fun " + fun_stat + "%";
-	document.getElementById("ihunger").innerHTML = "Hunger " + hunger_stat + "%";
-	document.getElementById("iintelligent").innerHTML = "Intelligent " + intelligent_stat + "%";
-	cetak = setTimeout(function(){cetak_stat()}, 500);
+	cek_stamina = $("#cstamina").css("width");
+	cek_fun = $("#cfun").css("width");
+	cek_hunger = $("#chunger").css("width");
+	cek_intelligent = $("#cintelligent").css("width");
+	
+	if (stamina_stat == 0) $("#cstamina").css({"width": "46px"});
+	if (stamina_stat == 10) $("#cstamina").css({"width": "76px"});
+	if (stamina_stat == 20) $("#cstamina").css({"width": "106px"});
+	if (stamina_stat == 30) $("#cstamina").css({"width": "136px"});
+	if (stamina_stat == 40) $("#cstamina").css({"width": "166px"});
+	if (stamina_stat == 50) $("#cstamina").css({"width": "196px"});
+	if (stamina_stat == 60) $("#cstamina").css({"width": "226px"});
+	if (stamina_stat == 70) $("#cstamina").css({"width": "256px"});
+	if (stamina_stat == 80) $("#cstamina").css({"width": "286px"});
+	if (stamina_stat == 90) $("#cstamina").css({"width": "316px"});
+	if (stamina_stat == 100) $("#cstamina").css({"width": "346px"});
+	
+	if (fun_stat == 0) $("#cfun").css({"width": "46px"});
+	if (fun_stat == 10) $("#cfun").css({"width": "76px"});
+	if (fun_stat == 20) $("#cfun").css({"width": "106px"});
+	if (fun_stat == 30) $("#cfun").css({"width": "136px"});
+	if (fun_stat == 40) $("#cfun").css({"width": "166px"});
+	if (fun_stat == 50) $("#cfun").css({"width": "196px"});
+	if (fun_stat == 60) $("#cfun").css({"width": "226px"});
+	if (fun_stat == 70) $("#cfun").css({"width": "256px"});
+	if (fun_stat == 80) $("#cfun").css({"width": "286px"});
+	if (fun_stat == 90) $("#cfun").css({"width": "316px"});
+	if (fun_stat == 100) $("#cfun").css({"width": "346px"});
+	
+	if (hunger_stat == 0) $("#chunger").css({"width": "46px"});
+	if (hunger_stat == 10) $("#chunger").css({"width": "76px"});
+	if (hunger_stat == 20) $("#chunger").css({"width": "106px"});
+	if (hunger_stat == 30) $("#chunger").css({"width": "136px"});
+	if (hunger_stat == 40) $("#chunger").css({"width": "166px"});
+	if (hunger_stat == 50) $("#chunger").css({"width": "196px"});
+	if (hunger_stat == 60) $("#chunger").css({"width": "226px"});
+	if (hunger_stat == 70) $("#chunger").css({"width": "256px"});
+	if (hunger_stat == 80) $("#chunger").css({"width": "286px"});
+	if (hunger_stat == 90) $("#chunger").css({"width": "316px"});
+	if (hunger_stat == 100) $("#chunger").css({"width": "346px"});
+	
+	if (intelligent_stat == 0) $("#cintelligent").css({"width": "46px"});
+	if (intelligent_stat == 20) $("#cintelligent").css({"width": "106px"});
+	if (intelligent_stat == 40) $("#cintelligent").css({"width": "166px"});
+	if (intelligent_stat == 60) $("#cintelligent").css({"width": "226px"});
+	if (intelligent_stat == 80) $("#cintelligent").css({"width": "286px"});
+	if (intelligent_stat == 100) $("#cintelligent").css({"width": "346px"});
+	
+	document.getElementById("tstamina").innerHTML = "Stamina " + stamina_stat + "%";
+	document.getElementById("tfun").innerHTML = "Fun " + fun_stat + "%";
+	document.getElementById("thunger").innerHTML = "Hunger " + hunger_stat + "%";
+	document.getElementById("tintelligent").innerHTML = "Intelligent " + intelligent_stat + "%";
+	cetak = setTimeout(function(){cetak_stat()}, 100);
 }
 
 /* Tombol ganti lokasi */
@@ -177,12 +225,17 @@ $("#eat_button").click(function() {
 
 $("#study_button").click(function() {
 	intelligent_stat += 20;
+	
 });
 
 $("#start_button").click(function() {
 	stat_dec();
 	cetak_stat();
 	waktu();
+	
+	$("#cstamina").css({"width": "226px"});
+	$("#cfun").css({"width": "226px"});
+	$("#chunger").css({"width": "226px"});
 });
 
 $("#stop_button").click(function() {
@@ -203,4 +256,8 @@ $("#reset_button").click(function() {
 	bulan = 1;
 	tahun = 2014;
 	detik = 0;
+});
+
+$(document).ready(function() {
+	
 });

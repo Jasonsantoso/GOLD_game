@@ -1,8 +1,8 @@
-/* CSS */
+/* CSS 
 #page2 {
 	display: none;
 }
-
+*/
 /* CSS page 1 */
 * {
 	font-family: kristen ITC;
@@ -454,6 +454,25 @@
 	border-radius: 200px;
 }
 
+#cstamina {
+	width: 46px;
+	height: 44px;
+	background-color: #ffea96;
+	position: absolute;
+	border-radius: 200px;
+	margin-top: -6px;
+	z-index: 0;
+}
+
+#tstamina {
+	width: 346px;
+	height: 44px;
+	border-radius: 200px;
+	position: absolute;
+	margin-top: -6px;
+	z-index: 1;
+}
+
 #ifun {
 	border: 2px solid white;
 	text-shadow: 2px 2px 2px #927b21;
@@ -462,6 +481,26 @@
 	margin-top: 40px;
 	border-radius: 200px;
 }
+
+#cfun {
+	width: 46px;
+	height: 44px;
+	background-color: #ffea96;
+	position: absolute;
+	border-radius: 200px;
+	margin-top: -6px;
+	z-index: 0;
+}
+
+#tfun {
+	width: 346px;
+	height: 44px;
+	border-radius: 200px;
+	position: absolute;
+	margin-top: -6px;
+	z-index: 1;
+}
+
 
 #ihunger {
 	border: 2px solid white;
@@ -472,6 +511,25 @@
 	border-radius: 200px;
 }
 
+#chunger {
+	width: 46px;
+	height: 44px;
+	background-color: #ffea96;
+	position: absolute;
+	border-radius: 200px;
+	margin-top: -6px;
+	z-index: 0;
+}
+
+#thunger {
+	width: 346px;
+	height: 44px;
+	border-radius: 200px;
+	position: absolute;
+	margin-top: -6px;
+	z-index: 1;
+}
+
 #iintelligent {
 	border: 2px solid white;
 	text-shadow: 2px 2px 2px #927b21;
@@ -479,6 +537,25 @@
 	height: 44px;
 	margin-top: 40px;
 	border-radius: 200px;
+}
+
+#cintelligent {
+	width: 46px;
+	height: 44px;
+	background-color: #ffea96;
+	position: absolute;
+	border-radius: 200px;
+	margin-top: -6px;
+	z-index: 0;
+}
+
+#tintelligent {
+	width: 346px;
+	height: 44px;
+	border-radius: 200px;
+	position: absolute;
+	margin-top: -6px;
+	z-index: 1;
 }
 
 #bgpage2 img {
