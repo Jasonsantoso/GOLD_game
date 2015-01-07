@@ -104,7 +104,7 @@
 										<p>Reset</p>
 									</div>
 									<div id="div_quiz">
-										<img src="" id="other_button" alt="Quiz"/>
+										<img src="" id="quiz_button" alt="Quiz"/>
 										<p>Quiz</p>	
 									</div>
 								</div>
@@ -121,6 +121,46 @@
 					</div>
 					<button id="next">></button>
 				</div>	
+			</div>
+		</div>
+	</div>
+										<!-- page 3 -->
+	<div id="page3">
+		<div id="frame2">
+			<div id="frame3" >
+	<div id="soal1">
+	<script>
+			
+	var q1_1 = Math.floor(Math.random()*10+1);
+	var q1_2 = Math.floor(Math.random()*10+1);
+	var q1_3 = Math.floor(Math.random()*10+1);
+	h1 = q1_1 + q1_2;
+	h2 = q1_1 + q1_2 + q1_3;
+	h3 = q1_1 * q1_2;
+	h4 = q1_1 *	q1_1;
+	h5 = q1_1 + q1_2 - q1_3;
+	h6 = q1_1 * q1_2 * q1_2;
+	h7 = q1_3 * q1_1 + q1_1 * q1_2;
+	h8 = q1_1 * q1_2 + q1_1 * q1_3;
+	document.write( + q1_1 + " + " + q1_2 + " =");
+	
+	function ok() {
+	jwbn1 = document.getElementById("a1").value;
+		if(jwbn1 == h1) {
+			window.alert("Jawaban anda benar!");
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+	}
+</script>
+
+<form action="" method="get">
+	<input id="a1"
+			type="text"/>
+	<button onclick="ok()">OK</button>
+</form>
+	</div>
 			</div>
 		</div>
 	</div>

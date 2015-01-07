@@ -14,6 +14,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/worm_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/worm_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/worm_grayscale.png'/></center>";
+		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#9de084"});
 	}
 	if(cek_play_as == "pig") {
@@ -23,6 +24,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/pig_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/pig_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/pig_grayscale.png'/></center>";
+		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#f38f9f"});
 	}
 	if(cek_play_as == "buffalo") {
@@ -32,6 +34,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/buffalo_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/buffalo_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
+		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#8479bd"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
@@ -617,24 +620,28 @@ $("#sleep_button").click(function() {
 	stamina_stat += 50;
 	document.getElementById("character").innerHTML = sisip_sleep;
 	to_stand_png = setTimeout(function() {normal_mode()},5000);
+	jam+=8;
 });
 
 $("#play_button").click(function() {
 	fun_stat += 50;
 	document.getElementById("character").innerHTML = sisip_play;
 	to_stand_png = setTimeout(function() {normal_mode()},5000);
+	jam+=3;
 });
 
 $("#eat_button").click(function() {
 	hunger_stat += 50;
 	document.getElementById("character").innerHTML = sisip_eat;
 	to_stand_png = setTimeout(function() {normal_mode()},5000);
+	jam+=1;
 });
 
 $("#study_button").click(function() {
 	intelligent_stat += 20;
 	document.getElementById("character").innerHTML = sisip_study;
 	to_stand_png = setTimeout(function() {normal_mode()},5000);
+	jam+=3;
 });
 
 $("#start_button").click(function() {
@@ -669,4 +676,11 @@ $("#reset_button").click(function() {
 	bulan = 1;
 	tahun = 2014;
 	detik = 0;
+});
+
+$("#quiz_button").click(function(){
+	$("#page2").fadeToggle(300, function(){
+		$("#page3").show(2000);
+	});
+	document.getElementById("character").innerHTML = sisip_quiz;
 });

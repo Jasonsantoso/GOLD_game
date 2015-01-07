@@ -645,3 +645,22 @@
 	position: absolute;
 	z-index: 0;
 }
+/* page 3 */
+#frame3{
+background-color:white;
+width: 1200px;
+height: 600px;
+position:absolute;
+margin-left: 75px;
+margin-top: 44.5px;
+}
+
+#soal1{
+color:black;
+margin-left:540px;
+font-size:50px;;
+
+}
+* soal1 {
+color:black;
+}	
