@@ -1,7 +1,7 @@
-/* CSS */
+/* CSS 
 #page2 {
 	display: none;
-}
+}*/
 
 /* CSS page 1 */
 * {
@@ -20,11 +20,6 @@
 	position: absolute;
 	z-index: -1;
 	background-color: #ffea96;
-}
-
-#sleep_button {
-	color: white;
-	background-color: dodger blue;
 }
 
 #background1 {
@@ -376,20 +371,97 @@
 	margin-top: -15px;
 }
 
-#ip_icon {
-	padding-left: 6px;
-}
-
 #ip_icon img {
 	width: 35px;
 	height: 35px;
 	border: 1px solid white;
 	color: white;
-	text-align: center;
 	font-size: 10px; /* sementara */
 	margin-top: 10px;
-	margin-left: 4px;
 	border-radius: 8px;
+}
+
+#column1 {
+	width: 188px;
+}
+
+#div_sleep {
+	margin-left: 9px;
+}
+
+#div_sleep p {
+	margin-left: 5px;
+}
+
+#div_play {
+	margin-left: 56px;
+	margin-top: -73px;
+}
+
+#div_play p {
+	margin-left: 9px;
+}
+
+#div_eat {
+	margin-left: 103px;
+	margin-top: -73px;
+}
+
+#div_eat p {
+	margin-left: 10px;
+}
+
+#div_study {
+	margin-left: 150px;
+	margin-top: -73px;
+}
+
+#div_study p {
+	margin-left: 5px;
+}
+
+#column2 {
+	margin-top: -5px;
+}
+
+#div_start{
+	margin-left: 9px;
+}
+
+#div_start p {
+	margin-left: 5px;
+}
+
+#div_stop {
+	margin-left: 56px;
+	margin-top: -73px;
+}
+
+#div_stop p {
+	margin-left: 7px;
+}
+
+#div_reset {
+	margin-left: 103px;
+	margin-top: -73px;
+}
+
+#div_reset p {
+	margin-left: 5px;
+}
+
+#div_quiz {
+	margin-left: 150px;
+	margin-top: -73px;
+}
+
+#div_quiz p {
+	margin-left: 7px;
+}
+
+#ip_icon div div p {
+	font-size:10px;
+	margin-top:-2px;
 }
 
 #prev {
@@ -467,6 +539,7 @@
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
+	transition: all 0.8s ease;
 }
 
 #tstamina {
@@ -495,6 +568,7 @@
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
+	transition: all 0.8s ease;
 }
 
 #tfun {
@@ -524,7 +598,7 @@
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
-	transition: all 0.4s ease;
+	transition: all 0.8s ease;
 }
 
 #thunger {
@@ -553,6 +627,7 @@
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
+	transition: all 0.8s ease;
 }
 
 #tintelligent {

@@ -23,6 +23,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/pig_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/pig_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/pig_grayscale.png'/></center>";
+		$("#frame2").css({"background-color": "#f38f9f"});
 	}
 	if(cek_play_as == "buffalo") {
 		sisip_stand = "<center><img src='gambar/character/buffalo_stand.png'/></center>";
@@ -31,6 +32,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/buffalo_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/buffalo_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
+		$("#frame2").css({"background-color": "#8479bd"});
 	}
 });
 
@@ -135,11 +137,11 @@ function waktu() {
 }
 
 function stat_dec() {
-	stamina_stat -= 20;
-	fun_stat -= 20;
-	hunger_stat -= 20;
+	stamina_stat -= 1;
+	fun_stat -= 1;
+	hunger_stat -= 1;
 	
-	dec = setTimeout(function(){stat_dec();},5500);
+	dec = setTimeout(function(){stat_dec();},500);
 }
 
 function cetak_stat() {
@@ -566,7 +568,6 @@ function cetak_stat() {
 	if (intelligent_stat == 98) $("#cintelligent").css({"width": "340px"});
 	if (intelligent_stat == 99) $("#cintelligent").css({"width": "343px"});
 	if (intelligent_stat == 100) $("#cintelligent").css({"width": "346px"});
-	
 	
 	document.getElementById("tstamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("tfun").innerHTML = "Fun " + fun_stat + "%";
