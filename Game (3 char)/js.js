@@ -14,6 +14,7 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/worm_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/worm_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/worm_grayscale.png'/></center>";
+		$("#frame2").css({"background-color": "#9de084"});
 	}
 	if(cek_play_as == "pig") {
 		sisip_stand = "<center><img src='gambar/character/pig_stand.png'/></center>";
@@ -167,6 +168,8 @@ function cetak_stat() {
 	if (stamina_stat == 80) $("#cstamina").css({"width": "286px"});
 	if (stamina_stat == 90) $("#cstamina").css({"width": "316px"});
 	if (stamina_stat == 100) $("#cstamina").css({"width": "346px"});
+	
+	
 	
 	if (fun_stat == 0) $("#cfun").css({"width": "46px"});
 	if (fun_stat == 10) $("#cfun").css({"width": "76px"});

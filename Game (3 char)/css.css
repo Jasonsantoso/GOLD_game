@@ -22,6 +22,11 @@
 	background-color: #ffea96;
 }
 
+#sleep_button {
+	color: white;
+	background-color: dodger blue;
+}
+
 #background1 {
 	width: 1200px;
 	height: 600px;
@@ -519,6 +524,7 @@
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
+	transition: all 0.4s ease;
 }
 
 #thunger {
