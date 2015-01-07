@@ -14,7 +14,6 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/worm_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/worm_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/worm_grayscale.png'/></center>";
-		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#9de084"});
 	}
 	if(cek_play_as == "pig") {
@@ -24,7 +23,6 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/pig_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/pig_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/pig_grayscale.png'/></center>";
-		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#f38f9f"});
 	}
 	if(cek_play_as == "buffalo") {
@@ -34,7 +32,6 @@ $("#ok").click(function(){
 		sisip_eat = "<center><img src='gambar/character/buffalo_eat.png'/></center>";
 		sisip_study = "<center><img src='gambar/character/buffalo_study.png'/></center>";
 		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
-		sisip_quiz = "<a href='soal.html'> </a>";
 		$("#frame2").css({"background-color": "#8479bd"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
@@ -63,7 +60,6 @@ $("#buffalo").click(function(){
 	document.getElementById("play_as").innerHTML = b_value;
 	document.getElementById("play_as").value = "buffalo";
 });
-
 
 /* Javascript Page 2 */
 
@@ -145,7 +141,7 @@ function stat_dec() {
 	fun_stat -= 1;
 	hunger_stat -= 1;
 	
-	dec = setTimeout(function(){stat_dec();},500);
+	dec = setTimeout(function(){stat_dec();},1000);
 }
 
 function cetak_stat() {
@@ -678,6 +674,7 @@ $("#reset_button").click(function() {
 	detik = 0;
 });
 
+sisip_quiz = "<a href='soal.html'> </a>";
 $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
