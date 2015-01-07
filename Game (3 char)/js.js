@@ -34,6 +34,7 @@ $("#ok").click(function(){
 		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
 		$("#frame2").css({"background-color": "#8479bd"});
 	}
+		document.getElementById("tipe").innerHTML = cek_play_as;
 });
 
 /* Javascript Page 1 */
