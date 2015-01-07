@@ -260,7 +260,7 @@ function cetak_stat() {
 	if (stamina_stat == 100) $("#cstamina").css({"width": "346px"});
 	
 	
-		if (fun_stat == 0) $("#cfun").css({"width": "46px"});
+	if (fun_stat == 0) $("#cfun").css({"width": "46px"});
 	if (fun_stat == 1) $("#cfun").css({"width": "49px"});
 	if (fun_stat == 2) $("#cfun").css({"width": "52px"});
 	if (fun_stat == 3) $("#cfun").css({"width": "55px"});
@@ -362,7 +362,7 @@ function cetak_stat() {
 	if (fun_stat == 99) $("#cfun").css({"width": "343px"});
 	if (fun_stat == 100) $("#cfun").css({"width": "346px"});
 	
-		if (hunger_stat == 0) $("#chunger").css({"width": "46px"});
+	if (hunger_stat == 0) $("#chunger").css({"width": "46px"});
 	if (hunger_stat == 1) $("#chunger").css({"width": "49px"});
 	if (hunger_stat == 2) $("#chunger").css({"width": "52px"});
 	if (hunger_stat == 3) $("#chunger").css({"width": "55px"});
