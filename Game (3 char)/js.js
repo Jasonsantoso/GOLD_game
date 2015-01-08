@@ -7,32 +7,35 @@ $("#ok").click(function(){
 	});
 	
 	cek_play_as = document.getElementById("play_as").value;
-	if(cek_play_as == "worm") {
-		sisip_stand = "<center><img src='gambar/character/worm_stand.png'/></center>";
-		sisip_sleep = "<center><img src='gambar/character/worm_sleep.png'/></center>";
-		sisip_play = "<center><img src='gambar/character/worm_play.png'/></center>";
-		sisip_eat = "<center><img src='gambar/character/worm_eat.png'/></center>";
-		sisip_study = "<center><img src='gambar/character/worm_study.png'/></center>";
-		sisip_stop = "<center><img src='gambar/character/worm_grayscale.png'/></center>";
+	if(cek_play_as == "Worm") {
+		sisip_stand = "<img src='gambar/character/worm_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/worm_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/worm_play.png'/>";
+		sisip_eat = "<img src='gambar/character/worm_eat.png'/>";
+		sisip_study = "<img src='gambar/character/worm_study.png'/>";
+		sisip_stop = "<img src='gambar/character/worm_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#9de084"});
+		$("#frame3").css({"background-color": "#9de084"});
 	}
-	if(cek_play_as == "pig") {
-		sisip_stand = "<center><img src='gambar/character/pig_stand.png'/></center>";
-		sisip_sleep = "<center><img src='gambar/character/pig_sleep.png'/></center>";
-		sisip_play = "<center><img src='gambar/character/pig_play.png'/></center>";
-		sisip_eat = "<center><img src='gambar/character/pig_eat.png'/></center>";
-		sisip_study = "<center><img src='gambar/character/pig_study.png'/></center>";
-		sisip_stop = "<center><img src='gambar/character/pig_grayscale.png'/></center>";
+	if(cek_play_as == "Pig") {
+		sisip_stand = "<img src='gambar/character/pig_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/pig_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/pig_play.png'/>";
+		sisip_eat = "<img src='gambar/character/pig_eat.png'/>";
+		sisip_study = "<img src='gambar/character/pig_study.png'/>";
+		sisip_stop = "<img src='gambar/character/pig_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#f38f9f"});
+		$("#frame3").css({"background-color": "#f38f9f"});
 	}
-	if(cek_play_as == "buffalo") {
-		sisip_stand = "<center><img src='gambar/character/buffalo_stand.png'/></center>";
-		sisip_sleep = "<center><img src='gambar/character/buffalo_sleep.png'/></center>";
-		sisip_play = "<center><img src='gambar/character/buffalo_play.png'/></center>";
-		sisip_eat = "<center><img src='gambar/character/buffalo_eat.png'/></center>";
-		sisip_study = "<center><img src='gambar/character/buffalo_study.png'/></center>";
-		sisip_stop = "<center><img src='gambar/character/buffalo_grayscale.png'/></center>";
+	if(cek_play_as == "Buffalo") {
+		sisip_stand = "<img src='gambar/character/buffalo_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/buffalo_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/buffalo_play.png'/>";
+		sisip_eat = "<img src='gambar/character/buffalo_eat.png'/>";
+		sisip_study = "<img src='gambar/character/buffalo_study.png'/>";
+		sisip_stop = "<img src='gambar/character/buffalo_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#8479bd"});
+		$("#frame3").css({"background-color": "#8479bd"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
@@ -44,21 +47,21 @@ $("#worm").click(function(){
 	w_value = document.getElementById("worm").value;
 	$("#play_as").css({"color":"#9de084"});
 	document.getElementById("play_as").innerHTML = w_value;
-	document.getElementById("play_as").value = "worm";
+	document.getElementById("play_as").value = "Worm";
 });
 
 $("#pig").click(function(){
 	p_value = document.getElementById("pig").value;
 	$("#play_as").css({"color":"#f38f9f"});
 	document.getElementById("play_as").innerHTML = p_value;
-	document.getElementById("play_as").value = "pig";
+	document.getElementById("play_as").value = "Pig";
 });
 
 $("#buffalo").click(function(){
 	b_value = document.getElementById("buffalo").value;
 	$("#play_as").css({"color":"#8479bd"});
 	document.getElementById("play_as").innerHTML = b_value;
-	document.getElementById("play_as").value = "buffalo";
+	document.getElementById("play_as").value = "Buffalo";
 });
 
 /* Javascript Page 2 */
@@ -96,22 +99,22 @@ function waktu() {
 		jamText = jam;
 	}
 	
-	if (menit == 60) {
+	if (menit >= 60) {
 		menit = 0;
 		jam += 1;
 	}
 	
-	if (jam == 24) {
+	if (jam >= 24) {
 		jam = 0;
 		tanggal += 1;
 	}
 	
-	if (tanggal == 2) {
+	if (tanggal >= 31) {
 		tanggal = 1;
 		bulan += 1;
 	}
 	
-	if (bulan == 13) {
+	if (bulan >= 13) {
 		bulan = 1;
 		tahun += 1;
 	}
@@ -133,7 +136,7 @@ function waktu() {
 	document.getElementById("time").innerHTML = waktuText;
 	tanggalText = tanggal + "/" + bln + "/" +tahun;
 	document.getElementById("date").innerHTML = tanggalText;
-	time = setTimeout(function(){waktu()}, 500);
+	time = setTimeout(function(){waktu()}, 100);
 }
 
 function stat_dec() {
@@ -567,7 +570,15 @@ function cetak_stat() {
 	if (intelligent_stat == 97) $("#cintelligent").css({"width": "337px"});
 	if (intelligent_stat == 98) $("#cintelligent").css({"width": "340px"});
 	if (intelligent_stat == 99) $("#cintelligent").css({"width": "343px"});
-	if (intelligent_stat == 100) $("#cintelligent").css({"width": "346px"});
+	if (intelligent_stat == 100) {
+		$("#cintelligent").css({"width": "346px"});
+		$("#ip_app_quiz").css({"display": "inline-block"});
+		$("#quiz_button").fadeToggle("slow");
+	}
+	else if (intelligent_stat != 100) {
+		$("#ip_app_quiz").css({"display": "none"});
+		$("#quiz_button").fadeOut();
+	}
 	
 	document.getElementById("tstamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("tfun").innerHTML = "Fun " + fun_stat + "%";
@@ -615,30 +626,45 @@ $("#next").click(function(){
 $("#sleep_button").click(function() {
 	stamina_stat += 50;
 	document.getElementById("character").innerHTML = sisip_sleep;
-	to_stand_png = setTimeout(function() {normal_mode()},5000);
 	jam+=8;
+	$("#sleep_button").fadeOut("fast", function() {
+		$("#sleep_button").fadeIn("fast");
+	});
 });
 
 $("#play_button").click(function() {
 	fun_stat += 50;
 	document.getElementById("character").innerHTML = sisip_play;
-	to_stand_png = setTimeout(function() {normal_mode()},5000);
 	jam+=3;
+	$("#play_button").fadeOut("fast", function() {
+		$("#play_button").fadeIn("fast");
+	});
 });
 
 $("#eat_button").click(function() {
 	hunger_stat += 50;
 	document.getElementById("character").innerHTML = sisip_eat;
-	to_stand_png = setTimeout(function() {normal_mode()},5000);
 	jam+=1;
+	$("#eat_button").fadeOut("fast", function() {
+		$("#eat_button").fadeIn("fast");
+	});
 });
 
 $("#study_button").click(function() {
 	intelligent_stat += 20;
 	document.getElementById("character").innerHTML = sisip_study;
-	to_stand_png = setTimeout(function() {normal_mode()},5000);
 	jam+=3;
+	$("#study_button").fadeOut("fast", function() {
+		$("#study_button").fadeIn("fast");
+	});
 });
+
+$("#sleep_button").fadeOut();
+$("#play_button").fadeOut();
+$("#eat_button").fadeOut();
+$("#study_button").fadeOut();
+$("#stop_button").fadeOut();
+$("#reset_button").fadeOut();
 
 $("#start_button").click(function() {
 	stat_dec();
@@ -650,6 +676,25 @@ $("#start_button").click(function() {
 	$("#cfun").css({"width": "226px"});
 	$("#chunger").css({"width": "226px"});
 	document.getElementById("character").innerHTML = sisip_stand;
+	
+	$("#ip_app_sleep").css({"display": "inline-block"});
+	$("#ip_app_play").css({"display": "inline-block"});
+	$("#ip_app_eat").css({"display": "inline-block"});
+	$("#ip_app_study").css({"display": "inline-block"});
+	$("#ip_app_stop").css({"display": "inline-block"});
+	$("#ip_app_reset").css({"display": "inline-block"});
+	$("#ip_app_start").css({"display": "none"});
+	$("#ip_app_quiz").css({"display": "none"});
+	
+	
+	$("#start_button").fadeOut();
+	$("#quiz_button").fadeOut();
+	$("#sleep_button").fadeIn();
+	$("#play_button").fadeIn();
+	$("#eat_button").fadeIn();
+	$("#study_button").fadeIn();
+	$("#stop_button").fadeIn();
+	$("#reset_button").fadeIn();
 });
 
 $("#stop_button").click(function() {
@@ -658,6 +703,23 @@ $("#stop_button").click(function() {
 	clearTimeout(time);
 	clearTimeout(normal_mode);
 	document.getElementById("character").innerHTML = sisip_stop;
+	
+	$("#ip_app_sleep").css({"display": "none"});
+	$("#ip_app_play").css({"display": "none"});
+	$("#ip_app_eat").css({"display": "none"});
+	$("#ip_app_study").css({"display": "none"});
+	$("#ip_app_stop").css({"display": "none"});
+	$("#ip_app_reset").css({"display": "none"});
+	$("#ip_app_quiz").css({"display": "none"});
+	$("#ip_app_start").css({"display": "inline-block"});
+	
+	$("#start_button").fadeIn();
+	$("#sleep_button").fadeOut();
+	$("#play_button").fadeOut();
+	$("#eat_button").fadeOut();
+	$("#study_button").fadeOut();
+	$("#stop_button").fadeOut();
+	$("#reset_button").fadeOut();
 });
 
 $("#reset_button").click(function() {
@@ -672,12 +734,28 @@ $("#reset_button").click(function() {
 	bulan = 1;
 	tahun = 2014;
 	detik = 0;
+	document.getElementById("character").innerHTML = sisip_stand;
+	
+	$("#reset_button").fadeOut("fast", function() {
+		$("#reset_button").fadeIn("fast");
+	});
 });
 
-sisip_quiz = "<a href='soal.html'> </a>";
 $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 	});
-	document.getElementById("character").innerHTML = sisip_quiz;
+
 });
+
+/* Javascript page 3 */
+
+$("#jawab").click(function() {
+	jwbn1 = document.getElementById("a1").value;
+		if(jwbn1 == h1) {
+			window.alert("Jawaban anda benar!");
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	

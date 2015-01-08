@@ -1,7 +1,7 @@
-/* CSS 
+/* CSS */
 #page2 {
 	display: none;
-}*/
+}
 
 /* CSS page 1 */
 * {
@@ -223,6 +223,7 @@
 	font-size: 20px;
 	margin-top: 3px;
 	margin-left: 10px;
+	border-radius: 20px;
 }
 
 #ok {
@@ -378,10 +379,59 @@
 	padding-right: 10px;
 }
 
-#ip_app {
+#ip_app_sleep {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_play {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_eat {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_study {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_start {
 	width: 40px;
 	height: 60px;
 	display: inline-block;
+	margin-top: 10px;
+}
+
+#ip_app_stop {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_reset {
+	width: 40px;
+	height: 60px;
+	display: none;
+	margin-top: 10px;
+}
+
+#ip_app_quiz {
+	width: 40px;
+	height: 60px;
+	display: none;
 	margin-top: 10px;
 }
 
@@ -433,7 +483,7 @@
 	border-radius: 10px;
 }
 
-#ip_app p {
+#ip_screen div p {
 	font-size: 11px;
 	font-family: Century Gothic;
 	text-align: center;
@@ -475,13 +525,18 @@
 }
 
 #character {
-	width: 300px;
-	height: 287px;
-	border: 1px solid black;
+	width: 250px;
+	height: 250px;
 	position: absolute;
 	display: inline-block;
-	margin-left: 117px;
-	padding-top: 50px;
+	margin-left: 143px;
+	margin-right: 1px;
+	margin-top: 50px;
+}
+
+#character img {
+	width: 250px;
+	height: 250px;
 }
 
 #indicator {
@@ -625,25 +680,39 @@
 /* CSS page 3 */
 
 #page3 {
-	color: black;
 	display: none;
 }
 
 #frame3 {
+	width: 1350px;
+	height: 689px;
+	background-color: #ffea96;
+	z-index: -1;
+}
+
+#background3 {
 	background-color: white;
 	width: 1200px;
 	height: 600px;
 	position: absolute;
 	margin-left: 75px;
 	margin-top: 44.5px;
+	border: 1px solid blue;
 }
 
 #soal1{
 	color: black;
-	margin-left: 540px;
-	font-size: 50px;;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 300px;
+	font-size: 50px;
 }
 
 #a1 {
 	color: black;
-}	
+}
+
+#jawab{
+	color: black;
+}

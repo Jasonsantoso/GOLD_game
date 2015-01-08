@@ -71,35 +71,35 @@
 							<img id="ip_wallpaper" src="gambar\background\screen_wallpaper.png" />
 							<img id="ip_top" src="gambar\background\top_screen.png" />
 							<div id="ip_screen">
-								<div id="ip_app">
+								<div id="ip_app_sleep">
 									<img src="gambar/star.png" id="sleep_button"/>
 									<p>Sleep</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_play">
 									<img src="gambar/star.png" id="play_button"/>
 									<p>Play</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_eat">
 									<img src="gambar/star.png" id="eat_button"/>
 									<p>Eat</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_study">
 									<img src="gambar/star.png" id="study_button"/>
 									<p>Study</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_start">
 									<img src="gambar/star.png" id="start_button"/>
 									<p>Start</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_stop">
 									<img src="gambar/star.png" id="stop_button"/>
 									<p>Stop</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_reset">
 									<img src="gambar/star.png" id="reset_button"/>
 									<p>Reset</p>
 								</div>
-								<div id="ip_app">
+								<div id="ip_app_quiz">
 									<img src="gambar/star.png" id="quiz_button"/>
 									<p>Quiz</p>
 								</div>
@@ -121,43 +121,34 @@
 	</div>
 										<!-- page 3 -->
 	<div id="page3">
-		<div id="frame2">
-			<div id="frame3" >
-	<div id="soal1">
-	<script>
-	/* Quiz */
-	var q1_1 = Math.floor(Math.random()*10+1);
-	var q1_2 = Math.floor(Math.random()*10+1);
-	var q1_3 = Math.floor(Math.random()*10+1);
-	h1 = q1_1 + q1_2;
-	h2 = q1_1 + q1_2 + q1_3;
-	h3 = q1_1 * q1_2;
-	h4 = q1_1 *	q1_1;
-	h5 = q1_1 + q1_2 - q1_3;
-	h6 = q1_1 * q1_2 * q1_2;
-	h7 = q1_3 * q1_1 + q1_1 * q1_2;
-	h8 = q1_1 * q1_2 + q1_1 * q1_3;
-	document.write( + q1_1 + " + " + q1_2 + " =");
-	
-	function ok() {
-		jwbn1 = document.getElementById("a1").value;
-		if(jwbn1 == h1) {
-			window.alert("Jawaban anda benar!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-				});
-		}
-		else {
-			window.alert("Jawaban anda salah!");
-		}
-	}
-</script>
+		<div id="frame3">
+			<div id="background3" >
+				<div id="soal1">
+					<script>
+						/* Quiz */
+						var q1_1 = Math.floor(Math.random()*10+1);
+						var q1_2 = Math.floor(Math.random()*10+1);
+						var q1_3 = Math.floor(Math.random()*10+1);
+						h1 = q1_1 + q1_2;
+						h2 = q1_1 + q1_2 + q1_3;
+						h3 = q1_1 * q1_2;
+						h4 = q1_1 *	q1_1;
+						h5 = q1_1 + q1_2 - q1_3;
+						h6 = q1_1 * q1_2 * q1_2;
+						h7 = q1_3 * q1_1 + q1_1 * q1_2;
+						h8 = q1_1 * q1_2 + q1_1 * q1_3;
+						document.write( + q1_1 + " + " + q1_2 + " =");
+					</script>
 
-<form action="" method="get">
-	<input id="a1"
-			type="text"/>
-	<button id="jawab" onclick="ok()">OK</button>
-</form>
+					<form action="" method="get">
+						<input id="a1"
+								type="text"/>
+					</form>			
+						<button id="jawab">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="js.js"></script>
 </html>
