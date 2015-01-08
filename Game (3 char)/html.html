@@ -148,6 +148,9 @@
 	jwbn1 = document.getElementById("a1").value;
 		if(jwbn1 == h1) {
 			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+		$("#page2").show(2000);
+	});
 		}
 		else {
 			window.alert("Jawaban anda salah!");
