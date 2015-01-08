@@ -44,7 +44,6 @@
 			</div>
 		</div>
 	</div>
-	
 									<!-- Page 2 -->
 	<div id="page2">
 		<div id="frame2">
@@ -71,42 +70,38 @@
 						<div id="screen">
 							<img id="ip_wallpaper" src="gambar\background\screen_wallpaper.png" />
 							<img id="ip_top" src="gambar\background\top_screen.png" />
-							<div id="ip_icon">
-								<div id="column1">
-									<div id="div_sleep">
-										<img src="" id="sleep_button" alt="sleep" />
-										<p>Sleep</p>
-									</div>
-									<div id="div_play">
-										<img src="" id="play_button" alt="play"/>
-										<p>Play</p>
-									</div>
-									<div id="div_eat">
-										<img src="" id="eat_button" alt="eat"/>
-										<p>Eat</p>
-									</div>
-									<div id="div_study">
-										<img src="" id="study_button" alt="study"/>
-										<p>Study</p>	
-									</div>
-								</div>	
-								<div id="column2">
-									<div id="div_start">
-										<img src="" id="start_button" alt="start"/>
-										<p>Start</p>
-									</div>
-									<div id="div_stop">
-										<img src="" id="stop_button" alt="stop"/>
-										<p>Stop</p>
-									</div>
-									<div id="div_reset">
-										<img src="" id="reset_button" alt="reset"/>
-										<p>Reset</p>
-									</div>
-									<div id="div_quiz">
-										<img src="" id="quiz_button" alt="Quiz"/>
-										<p>Quiz</p>	
-									</div>
+							<div id="ip_screen">
+								<div id="ip_app">
+									<img src="gambar/star.png" id="sleep_button"/>
+									<p>Sleep</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="play_button"/>
+									<p>Play</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="eat_button"/>
+									<p>Eat</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="study_button"/>
+									<p>Study</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="start_button"/>
+									<p>Start</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="stop_button"/>
+									<p>Stop</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="reset_button"/>
+									<p>Reset</p>
+								</div>
+								<div id="ip_app">
+									<img src="gambar/star.png" id="quiz_button"/>
+									<p>Quiz</p>
 								</div>
 							</div>
 						</div>
@@ -130,7 +125,7 @@
 			<div id="frame3" >
 	<div id="soal1">
 	<script>
-			
+	/* Quiz */
 	var q1_1 = Math.floor(Math.random()*10+1);
 	var q1_2 = Math.floor(Math.random()*10+1);
 	var q1_3 = Math.floor(Math.random()*10+1);
@@ -145,12 +140,12 @@
 	document.write( + q1_1 + " + " + q1_2 + " =");
 	
 	function ok() {
-	jwbn1 = document.getElementById("a1").value;
+		jwbn1 = document.getElementById("a1").value;
 		if(jwbn1 == h1) {
 			window.alert("Jawaban anda benar!");
 			$("#page3").fadeToggle(300, function(){
-		$("#page2").show(2000);
-	});
+				$("#page2").show(2000);
+				});
 		}
 		else {
 			window.alert("Jawaban anda salah!");
@@ -161,12 +156,8 @@
 <form action="" method="get">
 	<input id="a1"
 			type="text"/>
-	<button onclick="ok()">OK</button>
+	<button id="jawab" onclick="ok()">OK</button>
 </form>
-	</div>
-			</div>
-		</div>
-	</div>
 </body>
 <script type="text/javascript" src="js.js"></script>
 </html>
