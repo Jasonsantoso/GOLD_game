@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	#gold_border {
+		padding-top: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-top-right-radius: 40px;
+		border-bottom-right-radius: 40px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		text-align: center;
+		background: linear-gradient(to bottom left, #fffdc0, #c49220);
+		background: -webkit-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom left, #d2a12a, #fce36f, #d2a12a); /* Standard syntax (must be last) */
+		border: 8px solid #fce36f;
+		border: 8px double white;
+	}
+	
+	#gold_border p {
+		display: inline-block;
+		font-size: 40px;
+		margin-left: -2px;
+		margin-right: -2px;
+		font-family: colonna mt;
+		color: #c49220;
+		-webkit-animation: label_g 1.5s ease infinite alternate running; /* Chrome, Safari, Opera */
+		animation: label_g 1.5s ease infinite alternate running;
+	}
+	
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes label_g {
+		from {color: #c49220;}
+		to {color: white;}
+	}
+
+	/* Standard syntax */
+	@keyframes label_g {
+		from {color: #c49220;}
+		to {color: white;}
+	}
+	
+	#gold_bg {
+		width: 100px;
+		height: 20px;
+		background: linear-gradient(to bottom left, #fffdc0, #c49220);
+		background: -webkit-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom left, #d2a12a, #fce36f, #d2a12a); /* Standard syntax (must be last) */
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<span id="gold_border">
+		<p id="g">G</p>
+		<p id="o">O</p>
+		<p id="l">L</p>
+		<p id="d">D</p>	
+	</span>
+</body>
+</html>
