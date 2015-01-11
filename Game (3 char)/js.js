@@ -48,6 +48,9 @@ $("#worm").click(function(){
 	$("#play_as").css({"color":"#9de084"});
 	document.getElementById("play_as").innerHTML = w_value;
 	document.getElementById("play_as").value = "Worm";
+	$("#worm").css({"visibility": "hidden"});
+	$("#pig").css({"visibility": ""});
+	$("#buffalo").css({"visibility": ""});
 });
 
 $("#pig").click(function(){
@@ -55,6 +58,9 @@ $("#pig").click(function(){
 	$("#play_as").css({"color":"#f38f9f"});
 	document.getElementById("play_as").innerHTML = p_value;
 	document.getElementById("play_as").value = "Pig";
+	$("#pig").css({"visibility": "hidden"});
+	$("#worm").css({"visibility": ""});
+	$("#buffalo").css({"visibility": ""});
 });
 
 $("#buffalo").click(function(){
@@ -62,6 +68,9 @@ $("#buffalo").click(function(){
 	$("#play_as").css({"color":"#8479bd"});
 	document.getElementById("play_as").innerHTML = b_value;
 	document.getElementById("play_as").value = "Buffalo";
+	$("#buffalo").css({"visibility": "hidden"});
+	$("#worm").css({"visibility": ""});
+	$("#pig").css({"visibility": ""});
 });
 
 /* Javascript Page 2 */
