@@ -145,6 +145,16 @@ function waktu() {
 	document.getElementById("time").innerHTML = waktuText;
 	tanggalText = tanggal + "/" + bln + "/" +tahun;
 	document.getElementById("date").innerHTML = tanggalText;
+	
+	/* ganti lokasi */
+	if (jam >= 6 && jam < 18) {
+		$("#night_bg").fadeOut();
+		$("#day_bg").fadeIn();
+	}
+	else if (jam >= 18 || jam < 6) {
+		$("#day_bg").fadeOut();
+		$("#night_bg").fadeIn();
+	}
 	time = setTimeout(function(){waktu()}, 100);
 }
 
@@ -600,38 +610,6 @@ function cetak_stat() {
 function normal_mode() {
 	document.getElementById("character").innerHTML = sisip_stand;
 }
-
-/* Tombol ganti lokasi */
-a = 0;
-pos = $("#bgpage2 img:first");
-			
-$("#prev").click(function(){
-	a--;
-	pos.fadeToggle(1000);
-	if(a == -1){
-		pos = $("#bgpage2 img:last");
-		pos.fadeIn(1000);
-		a = 3;
-	}
-	else {
-		pos = pos.prev();
-		pos.fadeToggle(1000);
-	}
-});
-				
-$("#next").click(function(){
-	a++;
-	pos.fadeToggle(1000);
-	if(a != 4){
-		pos = pos.next();				
-		pos.fadeToggle(1000);
-	}
-	else {
-		pos = $("#bgpage2 img:first");
-		pos.fadeIn(1000);
-		a = 0;
-	}
-});
 
 $("#sleep_button").click(function() {
 	stamina_stat += 50;
