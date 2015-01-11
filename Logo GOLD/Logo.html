@@ -2,7 +2,13 @@
 <html>
 <head>
 <style>
+	#div_gold {
+		width: 121px;
+	}
+
 	#gold_border {
+		width: 95px;
+		height: 20px;
 		padding-top: 10px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -21,26 +27,83 @@
 	}
 	
 	#gold_border p {
+		margin-top: -13px;
 		display: inline-block;
 		font-size: 40px;
 		margin-left: -2px;
 		margin-right: -2px;
 		font-family: colonna mt;
 		color: #c49220;
-		-webkit-animation: label_g 1.5s ease infinite alternate running; /* Chrome, Safari, Opera */
-		animation: label_g 1.5s ease infinite alternate running;
+	}
+	
+	#g {
+		-webkit-animation: label_g 7s ease infinite running; /* Chrome, Safari, Opera */
+		animation: label_g 7s ease infinite running;
+	}
+	
+	#o {
+		-webkit-animation: label_o 7s ease infinite running; /* Chrome, Safari, Opera */
+		animation: label_o 7s ease infinite running;
+	}
+	
+	#l {
+		-webkit-animation: label_l 7s ease infinite running; /* Chrome, Safari, Opera */
+		animation: label_l 7s ease infinite running;
+	}
+	
+	#d {
+		-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+		animation: label_d 7s ease infinite running;
 	}
 	
 	/* Chrome, Safari, Opera */
 	@-webkit-keyframes label_g {
-		from {color: #c49220;}
-		to {color: white;}
+		0% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+		12.5% {color: white; -ms-transform: rotate(14deg); /* IE 9 */ -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */ transform: rotate(14deg);}
+		25% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+	}
+	
+	@-webkit-keyframes label_o {
+		25% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+		37.5% {color: white; -ms-transform: rotate(14deg); /* IE 9 */ -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */ transform: rotate(14deg);}
+		50% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+	}
+	
+	@-webkit-keyframes label_l {
+		50% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+		67.5% {color: white; -ms-transform: rotate(14deg); /* IE 9 */ -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */ transform: rotate(14deg);}
+		75% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+	}
+	
+	@-webkit-keyframes label_d {
+		75% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+		87.5% {color: white; -ms-transform: rotate(14deg); /* IE 9 */ -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */ transform: rotate(14deg);}
+		100% {color: #c49220; -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
 	}
 
 	/* Standard syntax */
 	@keyframes label_g {
-		from {color: #c49220;}
-		to {color: white;}
+		0% {color: #c49220;}
+		12.5% {color: white;}
+		25% {color: #c49220;}
+	}
+	
+	@keyframes label_o {
+		25% {color: #c49220;}
+		37.5% {color: white;}
+		50% {color: #c49220;}
+	}
+	
+	@keyframes label_l {
+		50% {color: #c49220;}
+		67.5% {color: white;}
+		75% {color: #c49220;}
+	}
+	
+	@keyframes label_d {
+		75% {color: #c49220;}
+		87.5% {color: white;}
+		100% {color: #c49220;}
 	}
 	
 	#gold_bg {
@@ -56,11 +119,13 @@
 </style>
 </head>
 <body>
-	<span id="gold_border">
-		<p id="g">G</p>
-		<p id="o">O</p>
-		<p id="l">L</p>
-		<p id="d">D</p>	
-	</span>
+	<div id="div_gold">
+		<div id="gold_border">
+			<p id="g">G</p>
+			<p id="o">O</p>
+			<p id="l">L</p>
+			<p id="d">D</p>	
+		</div>
+	</div>	
 </body>
 </html>
