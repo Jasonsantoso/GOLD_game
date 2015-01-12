@@ -666,6 +666,35 @@
 	z-index: 1;
 }
 
+#icheat {
+	border: 2px solid white;
+	text-shadow: 2px 2px 2px #927b21;
+	width: 346px;
+	height: 44px;
+	margin-top: 20px;
+	margin-left: -380px;
+	border-radius: 200px;
+}
+
+#ccheat {
+	width: 46px;
+	height: 44px;
+	position: absolute;
+	border-radius: 200px;
+	margin-top: -6px;
+	z-index: 0;
+	transition: all 0.8s ease;
+}
+
+#tcheat {
+	width: 346px;
+	height: 44px;
+	border-radius: 200px;
+	position: absolute;
+	margin-top: -6px;
+	z-index: 1;
+}
+
 #bgpage2 img {
 	width: 1200px;
 	height: 600px;
