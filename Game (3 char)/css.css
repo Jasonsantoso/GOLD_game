@@ -435,6 +435,13 @@
 	margin-top: 10px;
 }
 
+#ip_level img{
+	width: 30px;
+	height: 30px;
+	margin-top: 80px;
+
+}
+
 #sleep_button {
 	width: 40px;
 	height: 40px;

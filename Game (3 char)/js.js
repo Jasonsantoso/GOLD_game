@@ -81,6 +81,10 @@ hunger_stat = 70;
 intelligent_stat = 0;
 cheat_stat = 0;
 
+/*bintang */
+cek_level_1 = document.getElementById("ip_level_1");
+cek_level_1.setAttribute("src","gambar/star.png");
+
 /* Fungsi Waktu */
 jam = 8;
 menit = 0;
