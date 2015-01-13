@@ -624,7 +624,7 @@ function normal_mode() {
 }
 
 $("#sleep_button").click(function() {
-	stamina_stat += 20;
+	stamina_stat += 10;
 	document.getElementById("character").innerHTML = sisip_sleep;
 	jam += 8;
 	$("#sleep_button").fadeOut("fast", function() {
@@ -663,7 +663,7 @@ $("#sleep_button").click(function() {
 });
 
 $("#play_button").click(function() {
-	fun_stat += 20;
+	fun_stat += 10;
 	document.getElementById("character").innerHTML = sisip_play;
 	jam += 3;
 	$("#play_button").fadeOut("fast", function() {
@@ -701,7 +701,7 @@ $("#play_button").click(function() {
 });
 
 $("#eat_button").click(function() {
-	hunger_stat += 20;
+	hunger_stat += 10;
 	document.getElementById("character").innerHTML = sisip_eat;
 	jam += 1;
 	$("#eat_button").fadeOut("fast", function() {
