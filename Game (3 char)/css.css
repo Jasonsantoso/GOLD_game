@@ -1,7 +1,7 @@
-/* CSS */
+/* CSS 
 #page2 {
 	display: none;
-}
+}*/
 
 /* CSS page 1 */
 * {
@@ -673,33 +673,30 @@
 	z-index: 1;
 }
 
-#icheat {
+#icounter {
 	border: 2px solid white;
-	text-shadow: 2px 2px 2px #927b21;
-	width: 346px;
-	height: 44px;
-	margin-top: 20px;
-	margin-left: -380px;
+	width: 54px;
+	height: 50px;
+	margin-top: 40px;
 	border-radius: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#ccheat {
-	width: 46px;
-	height: 44px;
+#ccounter {
+	width: 54px;
+	height: 50px;
 	position: absolute;
 	border-radius: 200px;
 	margin-top: -6px;
 	z-index: 0;
 	transition: all 0.8s ease;
+	background-color: pink;
 }
 
-#tcheat {
-	width: 346px;
-	height: 44px;
-	border-radius: 200px;
-	position: absolute;
-	margin-top: -6px;
-	z-index: 1;
+#ccounter img {
+	width: 54px;
+	height: 50px;
 }
 
 #bgpage2 img {

@@ -79,9 +79,13 @@ stamina_stat = 70;
 fun_stat = 70;
 hunger_stat = 70;
 intelligent_stat = 0;
-cheat_stat = 0;
+/*
+counter_stat_sleep = 0;
+counter_stat_play = 0;
+counter_stat_eat = 0;
+counter_stat_study = 0;*/
 
-/*bintang */
+/* Bintang */
 cek_level_1 = document.getElementById("ip_level_1");
 cek_level_1.setAttribute("src","gambar/star.png");
 
@@ -180,15 +184,9 @@ function cetak_stat() {
 	if(fun_stat >= 100) fun_stat = 100;
 	if(hunger_stat >= 100) hunger_stat = 100;
 	if(intelligent_stat >= 100) intelligent_stat = 100;
-	if(cheat_stat >= 100) cheat_stat = 100;
+	if(counter_stat >= 3) counter_stat = 3;
 	
-	cek_stamina = $("#cstamina").css("width");
-	cek_fun = $("#cfun").css("width");
-	cek_hunger = $("#chunger").css("width");
-	cek_intelligent = $("#cintelligent").css("width");
-	cek_cheat = $("#ccheat").css("width");
-	
-	if (stamina_stat == 0) $("#cstamina").css({"width": "46px"}).css({"background-color":"#070505"}) ;
+	if (stamina_stat == 0) $("#cstamina").css({"width": "46px"}).css({"background-color":"#070505"});
 	if (stamina_stat == 1) $("#cstamina").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (stamina_stat == 2) $("#cstamina").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (stamina_stat == 3) $("#cstamina").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -290,8 +288,7 @@ function cetak_stat() {
 	if (stamina_stat == 99) $("#cstamina").css({"width": "343px"}).css({"background-color":"#198842"});
 	if (stamina_stat == 100) $("#cstamina").css({"width": "346px"}).css({"background-color":"#198842"});
 	
-	
-	if (fun_stat == 0) $("#cfun").css({"width": "46px"}).css({"background-color":"#070505"}) ;
+	if (fun_stat == 0) $("#cfun").css({"width": "46px"}).css({"background-color":"#070505"});
 	if (fun_stat == 1) $("#cfun").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (fun_stat == 2) $("#cfun").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (fun_stat == 3) $("#cfun").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -495,108 +492,6 @@ function cetak_stat() {
 	if (hunger_stat == 99) $("#chunger").css({"width": "343px"}).css({"background-color":"#198842"});
 	if (hunger_stat == 100) $("#chunger").css({"width": "346px"}).css({"background-color":"#198842"});
 	
-	if (cheat_stat == 0) $("#ccheat").css({"width": "46px"}).css({"background-color":"#070505"}) ;
-	if (cheat_stat == 1) $("#ccheat").css({"width": "49px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 2) $("#ccheat").css({"width": "52px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 3) $("#ccheat").css({"width": "55px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 4) $("#ccheat").css({"width": "58px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 5) $("#ccheat").css({"width": "61px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 6) $("#ccheat").css({"width": "64px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 7) $("#ccheat").css({"width": "67px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 8) $("#ccheat").css({"width": "70px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 9) $("#ccheat").css({"width": "73px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 10) $("#ccheat").css({"width": "76px"}).css({"background-color":"#ff1800"});
-	if (cheat_stat == 11) $("#ccheat").css({"width": "79px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 12) $("#ccheat").css({"width": "82px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 13) $("#ccheat").css({"width": "85px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 14) $("#ccheat").css({"width": "88px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 15) $("#ccheat").css({"width": "91px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 16) $("#ccheat").css({"width": "94px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 17) $("#ccheat").css({"width": "97px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 18) $("#ccheat").css({"width": "100px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 19) $("#ccheat").css({"width": "103px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 20) $("#ccheat").css({"width": "106px"}).css({"background-color":"#ff4c00"});
-	if (cheat_stat == 21) $("#ccheat").css({"width": "109px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 22) $("#ccheat").css({"width": "112px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 23) $("#ccheat").css({"width": "115px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 24) $("#ccheat").css({"width": "118px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 25) $("#ccheat").css({"width": "121px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 26) $("#ccheat").css({"width": "124px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 27) $("#ccheat").css({"width": "127px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 28) $("#ccheat").css({"width": "130px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 29) $("#ccheat").css({"width": "133px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 30) $("#ccheat").css({"width": "136px"}).css({"background-color":"#ff7e00"});
-	if (cheat_stat == 31) $("#ccheat").css({"width": "139px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 32) $("#ccheat").css({"width": "142px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 33) $("#ccheat").css({"width": "145px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 34) $("#ccheat").css({"width": "148px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 35) $("#ccheat").css({"width": "151px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 36) $("#ccheat").css({"width": "154px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 37) $("#ccheat").css({"width": "157px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 38) $("#ccheat").css({"width": "160px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 39) $("#ccheat").css({"width": "163px"}).css({"background-color":"#ffad00"});	
-	if (cheat_stat == 40) $("#ccheat").css({"width": "166px"}).css({"background-color":"#ffad00"});
-	if (cheat_stat == 41) $("#ccheat").css({"width": "169px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 42) $("#ccheat").css({"width": "172px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 43) $("#ccheat").css({"width": "175px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 44) $("#ccheat").css({"width": "178px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 45) $("#ccheat").css({"width": "181px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 46) $("#ccheat").css({"width": "184px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 47) $("#ccheat").css({"width": "187px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 48) $("#ccheat").css({"width": "190px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 49) $("#ccheat").css({"width": "193px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 50) $("#ccheat").css({"width": "196px"}).css({"background-color":"#ffe100"});
-	if (cheat_stat == 51) $("#ccheat").css({"width": "199px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 52) $("#ccheat").css({"width": "202px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 53) $("#ccheat").css({"width": "205px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 54) $("#ccheat").css({"width": "208px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 55) $("#ccheat").css({"width": "211px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 56) $("#ccheat").css({"width": "214px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 57) $("#ccheat").css({"width": "217px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 58) $("#ccheat").css({"width": "220px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 59) $("#ccheat").css({"width": "223px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 60) $("#ccheat").css({"width": "226px"}).css({"background-color":"#e5f200"});
-	if (cheat_stat == 61) $("#ccheat").css({"width": "229px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 62) $("#ccheat").css({"width": "232px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 63) $("#ccheat").css({"width": "235px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 64) $("#ccheat").css({"width": "238px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 65) $("#ccheat").css({"width": "241px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 66) $("#ccheat").css({"width": "244px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 67) $("#ccheat").css({"width": "247px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 68) $("#ccheat").css({"width": "250px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 69) $("#ccheat").css({"width": "253px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 70) $("#ccheat").css({"width": "256px"}).css({"background-color":"#b3d900"});
-	if (cheat_stat == 71) $("#ccheat").css({"width": "259px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 72) $("#ccheat").css({"width": "262px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 73) $("#ccheat").css({"width": "265px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 74) $("#ccheat").css({"width": "268px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 75) $("#ccheat").css({"width": "271px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 76) $("#ccheat").css({"width": "274px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 77) $("#ccheat").css({"width": "277px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 78) $("#ccheat").css({"width": "280px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 79) $("#ccheat").css({"width": "283px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 80) $("#ccheat").css({"width": "286px"}).css({"background-color":"#81c000"});
-	if (cheat_stat == 81) $("#ccheat").css({"width": "289px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 82) $("#ccheat").css({"width": "292px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 83) $("#ccheat").css({"width": "295px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 84) $("#ccheat").css({"width": "298px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 85) $("#ccheat").css({"width": "301px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 86) $("#ccheat").css({"width": "304px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 87) $("#ccheat").css({"width": "307px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 88) $("#ccheat").css({"width": "310px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 89) $("#ccheat").css({"width": "313px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 90) $("#ccheat").css({"width": "316px"}).css({"background-color":"#4ca600"});
-	if (cheat_stat == 91) $("#ccheat").css({"width": "319px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 92) $("#ccheat").css({"width": "322px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 93) $("#ccheat").css({"width": "325px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 94) $("#ccheat").css({"width": "328px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 95) $("#ccheat").css({"width": "331px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 96) $("#ccheat").css({"width": "334px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 97) $("#ccheat").css({"width": "337px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 98) $("#ccheat").css({"width": "340px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 99) $("#ccheat").css({"width": "343px"}).css({"background-color":"#198842"});
-	if (cheat_stat == 100) $("#ccheat").css({"width": "346px"}).css({"background-color":"#198842"});
-	
 	if (intelligent_stat == 0) $("#cintelligent").css({"width": "46px"}).css({"background-color":"#070505"}) ;
 	if (intelligent_stat == 1) $("#cintelligent").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (intelligent_stat == 2) $("#cintelligent").css({"width": "52px"}).css({"background-color":"#ff1800"});
@@ -709,6 +604,20 @@ function cetak_stat() {
 		$("#quiz_button").fadeOut();
 	}
 	
+	/* Sisip counter image */
+	/*if (counter_stat == 1) {
+		sisip_counter_image = "<img src='gambar/character/pig_study.png'/>";
+		document.getElementById("ccounter").innerHTML = sisip_counter_image;
+	}
+	else if (counter_stat == 2) {
+		sisip_counter_image = "<img src='gambar/character/pig_play.png'/>";
+		document.getElementById("ccounter").innerHTML = sisip_counter_image;
+	}
+	else if (counter_stat == 3) {
+		sisip_counter_image = "<img src='gambar/character/pig_sleep.png'/>";
+		document.getElementById("ccounter").innerHTML = sisip_counter_image;
+	} */
+	
 	document.getElementById("tstamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("tfun").innerHTML = "Fun " + fun_stat + "%";
 	document.getElementById("thunger").innerHTML = "Hunger " + hunger_stat + "%";
@@ -723,37 +632,53 @@ function normal_mode() {
 $("#sleep_button").click(function() {
 	stamina_stat += 50;
 	document.getElementById("character").innerHTML = sisip_sleep;
-	jam+=8;
+	jam += 8;
 	$("#sleep_button").fadeOut("fast", function() {
 		$("#sleep_button").fadeIn("fast");
 	});
+	/*counter_stat_sleep += 1;
+	counter_stat_play = 0;
+	counter_stat_eat = 0;
+	counter_stat_study = 0;*/
 });
 
 $("#play_button").click(function() {
 	fun_stat += 50;
 	document.getElementById("character").innerHTML = sisip_play;
-	jam+=3;
+	jam += 3;
 	$("#play_button").fadeOut("fast", function() {
 		$("#play_button").fadeIn("fast");
 	});
+	/*counter_stat_sleep = 0;
+	counter_stat_play += 1;
+	counter_stat_eat = 0;
+	counter_stat_study = 0;*/
 });
 
 $("#eat_button").click(function() {
 	hunger_stat += 50;
 	document.getElementById("character").innerHTML = sisip_eat;
-	jam+=1;
+	jam += 1;
 	$("#eat_button").fadeOut("fast", function() {
 		$("#eat_button").fadeIn("fast");
 	});
+	/*counter_stat_sleep = 0;
+	counter_stat_play = 0;
+	counter_stat_eat += 1;
+	counter_stat_study = 0;*/
 });
 
 $("#study_button").click(function() {
 	intelligent_stat += 20;
 	document.getElementById("character").innerHTML = sisip_study;
-	jam+=3;
+	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
 		$("#study_button").fadeIn("fast");
 	});
+	/*counter_stat_sleep = 0;
+	counter_stat_play = 0;
+	counter_stat_eat = 0;
+	counter_stat_study += 1;*/
 });
 
 $("#sleep_button").fadeOut();
@@ -824,9 +749,8 @@ $("#reset_button").click(function() {
 	fun_stat = 70;
 	hunger_stat = 70;
 	intelligent_stat = 0;
-	cheat_stat = 0;
 	
-	jam = 0;
+	jam = 8;
 	menit = 0;
 	tanggal = 1;
 	bulan = 1;
