@@ -79,12 +79,16 @@ stamina_stat = 70;
 fun_stat = 70;
 hunger_stat = 70;
 intelligent_stat = 0;
-/*
+
 counter_stat_sleep = 0;
 counter_stat_play = 0;
 counter_stat_eat = 0;
-counter_stat_study = 0;*/
+counter_stat_study = 0;
 
+$("#c1").css({"display": "none", "visibility": ""});
+$("#c2").css({"display": "none", "visibility": ""});
+$("#c3").css({"display": "none", "visibility": ""});
+	
 /* Bintang */
 cek_level_1 = document.getElementById("ip_level_1");
 cek_level_1.setAttribute("src","gambar/star.png");
@@ -176,17 +180,21 @@ function stat_dec() {
 }
 
 function cetak_stat() {
-	if(stamina_stat <= 0) stamina_stat = 0;
-	if(fun_stat <= 0) fun_stat = 0;
-	if(hunger_stat <= 0) hunger_stat = 0;
+	if (stamina_stat <= 0) stamina_stat = 0;
+	if (fun_stat <= 0) fun_stat = 0;
+	if (hunger_stat <= 0) hunger_stat = 0;
 	
-	if(stamina_stat >= 100) stamina_stat = 100;
-	if(fun_stat >= 100) fun_stat = 100;
-	if(hunger_stat >= 100) hunger_stat = 100;
-	if(intelligent_stat >= 100) intelligent_stat = 100;
-	if(counter_stat >= 3) counter_stat = 3;
+	if (stamina_stat >= 100) stamina_stat = 100;
+	if (fun_stat >= 100) fun_stat = 100;
+	if (hunger_stat >= 100) hunger_stat = 100;
+	if (intelligent_stat >= 100) intelligent_stat = 100;
 	
-	if (stamina_stat == 0) $("#cstamina").css({"width": "46px"}).css({"background-color":"#070505"});
+	if (counter_stat_sleep > 2) $("#sleep_button").css({"visibility": "hidden"});
+	if (counter_stat_play > 2) $("#play_button").css({"visibility": "hidden"});
+	if (counter_stat_eat > 2) $("#eat_button").css({"visibility": "hidden"});
+	if (counter_stat_study > 2) $("#study_button").css({"visibility": "hidden"});
+	
+	if (stamina_stat == 0) $("#cstamina").css({"width": "49px"}).css({"background-color":"#BDC3C7"});
 	if (stamina_stat == 1) $("#cstamina").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (stamina_stat == 2) $("#cstamina").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (stamina_stat == 3) $("#cstamina").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -288,7 +296,7 @@ function cetak_stat() {
 	if (stamina_stat == 99) $("#cstamina").css({"width": "343px"}).css({"background-color":"#198842"});
 	if (stamina_stat == 100) $("#cstamina").css({"width": "346px"}).css({"background-color":"#198842"});
 	
-	if (fun_stat == 0) $("#cfun").css({"width": "46px"}).css({"background-color":"#070505"});
+	if (fun_stat == 0) $("#cfun").css({"width": "49px"}).css({"background-color":"#BDC3C7"});
 	if (fun_stat == 1) $("#cfun").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (fun_stat == 2) $("#cfun").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (fun_stat == 3) $("#cfun").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -390,7 +398,7 @@ function cetak_stat() {
 	if (fun_stat == 99) $("#cfun").css({"width": "343px"}).css({"background-color":"#198842"});
 	if (fun_stat == 100) $("#cfun").css({"width": "346px"}).css({"background-color":"#198842"});
 	
-	if (hunger_stat == 0) $("#chunger").css({"width": "46px"}).css({"background-color":"#070505"}) ;
+	if (hunger_stat == 0) $("#chunger").css({"width": "49px"}).css({"background-color":"#BDC3C7"}) ;
 	if (hunger_stat == 1) $("#chunger").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (hunger_stat == 2) $("#chunger").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (hunger_stat == 3) $("#chunger").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -492,7 +500,7 @@ function cetak_stat() {
 	if (hunger_stat == 99) $("#chunger").css({"width": "343px"}).css({"background-color":"#198842"});
 	if (hunger_stat == 100) $("#chunger").css({"width": "346px"}).css({"background-color":"#198842"});
 	
-	if (intelligent_stat == 0) $("#cintelligent").css({"width": "46px"}).css({"background-color":"#070505"}) ;
+	if (intelligent_stat == 0) $("#cintelligent").css({"width": "49px"}).css({"background-color":"#BDC3C7"}) ;
 	if (intelligent_stat == 1) $("#cintelligent").css({"width": "49px"}).css({"background-color":"#ff1800"});
 	if (intelligent_stat == 2) $("#cintelligent").css({"width": "52px"}).css({"background-color":"#ff1800"});
 	if (intelligent_stat == 3) $("#cintelligent").css({"width": "55px"}).css({"background-color":"#ff1800"});
@@ -604,20 +612,6 @@ function cetak_stat() {
 		$("#quiz_button").fadeOut();
 	}
 	
-	/* Sisip counter image */
-	/*if (counter_stat == 1) {
-		sisip_counter_image = "<img src='gambar/character/pig_study.png'/>";
-		document.getElementById("ccounter").innerHTML = sisip_counter_image;
-	}
-	else if (counter_stat == 2) {
-		sisip_counter_image = "<img src='gambar/character/pig_play.png'/>";
-		document.getElementById("ccounter").innerHTML = sisip_counter_image;
-	}
-	else if (counter_stat == 3) {
-		sisip_counter_image = "<img src='gambar/character/pig_sleep.png'/>";
-		document.getElementById("ccounter").innerHTML = sisip_counter_image;
-	} */
-	
 	document.getElementById("tstamina").innerHTML = "Stamina " + stamina_stat + "%";
 	document.getElementById("tfun").innerHTML = "Fun " + fun_stat + "%";
 	document.getElementById("thunger").innerHTML = "Hunger " + hunger_stat + "%";
@@ -630,42 +624,118 @@ function normal_mode() {
 }
 
 $("#sleep_button").click(function() {
-	stamina_stat += 50;
+	stamina_stat += 20;
 	document.getElementById("character").innerHTML = sisip_sleep;
 	jam += 8;
 	$("#sleep_button").fadeOut("fast", function() {
 		$("#sleep_button").fadeIn("fast");
 	});
-	/*counter_stat_sleep += 1;
+	counter_stat_sleep += 1;
 	counter_stat_play = 0;
 	counter_stat_eat = 0;
-	counter_stat_study = 0;*/
+	counter_stat_study = 0;
+	
+	/* Sisip counter image */
+	if (counter_stat_sleep == 0) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+	}
+	else if (counter_stat_sleep == 1) {
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c1").css({"display":""});
+	}
+	else if (counter_stat_sleep == 2) {
+		$("#c1").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c2").css({"display":""});
+	}
+	else if (counter_stat_sleep == 3) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":""});
+	}
+	
+	$("#play_button").css({"visibility": ""});
+	$("#eat_button").css({"visibility": ""});
+	$("#study_button").css({"visibility": ""});
 });
 
 $("#play_button").click(function() {
-	fun_stat += 50;
+	fun_stat += 20;
 	document.getElementById("character").innerHTML = sisip_play;
 	jam += 3;
 	$("#play_button").fadeOut("fast", function() {
 		$("#play_button").fadeIn("fast");
 	});
-	/*counter_stat_sleep = 0;
+	counter_stat_sleep = 0;
 	counter_stat_play += 1;
 	counter_stat_eat = 0;
-	counter_stat_study = 0;*/
+	counter_stat_study = 0;
+	
+	/* Sisip counter image */
+	if (counter_stat_play == 0) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+	}
+	else if (counter_stat_play == 1) {
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c1").css({"display":""});
+	}
+	else if (counter_stat_play == 2) {
+		$("#c1").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c2").css({"display":""});
+	}
+	else if (counter_stat_play == 3) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":""});
+	}
+	$("#sleep_button").css({"visibility": ""});
+	$("#eat_button").css({"visibility": ""});
+	$("#study_button").css({"visibility": ""});
 });
 
 $("#eat_button").click(function() {
-	hunger_stat += 50;
+	hunger_stat += 20;
 	document.getElementById("character").innerHTML = sisip_eat;
 	jam += 1;
 	$("#eat_button").fadeOut("fast", function() {
 		$("#eat_button").fadeIn("fast");
 	});
-	/*counter_stat_sleep = 0;
+	counter_stat_sleep = 0;
 	counter_stat_play = 0;
 	counter_stat_eat += 1;
-	counter_stat_study = 0;*/
+	counter_stat_study = 0;
+	
+	/* Sisip counter image */
+	if (counter_stat_eat == 0) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+	}
+	else if (counter_stat_eat == 1) {
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c1").css({"display":""});
+	}
+	else if (counter_stat_eat == 2) {
+		$("#c1").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c2").css({"display":""});
+	}
+	else if (counter_stat_eat == 3) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":""});
+	}
+	$("#sleep_button").css({"visibility": ""});
+	$("#play_button").css({"visibility": ""});
+	$("#study_button").css({"visibility": ""});
 });
 
 $("#study_button").click(function() {
@@ -675,10 +745,35 @@ $("#study_button").click(function() {
 	$("#study_button").fadeOut("fast", function() {
 		$("#study_button").fadeIn("fast");
 	});
-	/*counter_stat_sleep = 0;
+	counter_stat_sleep = 0;
 	counter_stat_play = 0;
 	counter_stat_eat = 0;
-	counter_stat_study += 1;*/
+	counter_stat_study += 1;
+	
+	/* Sisip counter image */
+	if (counter_stat_study == 0) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+	}
+	else if (counter_stat_study == 1) {
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c1").css({"display":""});
+	}
+	else if (counter_stat_study == 2) {
+		$("#c1").css({"display":"none"});
+		$("#c3").css({"display":"none"});
+		$("#c2").css({"display":""});
+	}
+	else if (counter_stat_study == 3) {
+		$("#c1").css({"display":"none"});
+		$("#c2").css({"display":"none"});
+		$("#c3").css({"display":""});
+	}
+	$("#sleep_button").css({"visibility": ""});
+	$("#play_button").css({"visibility": ""});
+	$("#eat_button").css({"visibility": ""});
 });
 
 $("#sleep_button").fadeOut();
@@ -707,7 +802,6 @@ $("#start_button").click(function() {
 	$("#ip_app_reset").css({"display": "inline-block"});
 	$("#ip_app_start").css({"display": "none"});
 	$("#ip_app_quiz").css({"display": "none"});
-	
 	
 	$("#start_button").fadeOut();
 	$("#quiz_button").fadeOut();
@@ -761,6 +855,16 @@ $("#reset_button").click(function() {
 	$("#reset_button").fadeOut("fast", function() {
 		$("#reset_button").fadeIn("fast");
 	});
+	
+	counter_stat_sleep = 0;
+	counter_stat_play = 0;
+	counter_stat_eat = 0;
+	counter_stat_study = 0;
+	
+	$("#sleep_button").css({"visibility": ""});
+	$("#play_button").css({"visibility": ""});
+	$("#eat_button").css({"visibility": ""});
+	$("#study_button").css({"visibility": ""});
 });
 
 $("#quiz_button").click(function(){
