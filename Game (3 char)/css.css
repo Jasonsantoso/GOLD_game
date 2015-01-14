@@ -203,7 +203,15 @@
 	position: relative;
 	z-index: 1;
 }
-
+#img4 {
+	background-color: grey;
+	width: 200px;
+	height: 320px;
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
 #img_worm {
 	border: 1px solid white;
 	width: 160px;
@@ -305,6 +313,40 @@
 	background-color: white;
 	text-shadow: 1px 1px #271b6c;
 }
+#img_panda{
+	border: 1px solid white;
+	width: 160px;
+	height: 220px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#img_panda img {
+	width: 160px;
+	height: 220px;
+}
+
+#panda {
+	background-color: #8479bd;
+	width: 100px;
+	height: 40px;
+	margin-top: 260px;
+	border-radius: 25px;
+	border: 1px solid white;
+}
+
+#panda:hover {
+	background-color: #d7d0fe;
+	color: #271b6c;
+}
+
+#panda:active {
+	color: #271b6c;
+	background-color: white;
+	text-shadow: 1px 1px #271b6c;
+}
+
 
 #play_as {
 	width: 100px;

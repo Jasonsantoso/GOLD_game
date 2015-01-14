@@ -37,6 +37,16 @@ $("#ok").click(function(){
 		$("#frame2").css({"background-color": "#8479bd"});
 		$("#frame3").css({"background-color": "#8479bd"});
 	}
+		if(cek_play_as == "panda") {
+		sisip_stand = "<img src='gambar/character/panda_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/panda_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/panda_play.png'/>";
+		sisip_eat = "<img src='gambar/character/panda_eat.png'/>";
+		sisip_study = "<img src='gambar/character/panda_study.png'/>";
+		sisip_stop = "<img src='gambar/character/panda_grayscale.png'/>";
+		$("#frame2").css({"background-color": "grey"});
+		$("#frame3").css({"background-color": "grey"});
+	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
 
@@ -73,6 +83,15 @@ $("#buffalo").click(function(){
 	$("#pig").css({"visibility": ""});
 });
 
+$("#panda").click(function(){
+	b_value = document.getElementById("panda").value;
+	$("#play_as").css({"color":"#8479bd"});
+	document.getElementById("play_as").innerHTML = b_value;
+	document.getElementById("play_as").value = "panda";
+	$("#panda").css({"visibility": "hidden"});
+	$("#worm").css({"visibility": ""});
+	$("#pig").css({"visibility": ""});
+});
 /* Javascript Page 2 */
 
 stamina_stat = 70;
