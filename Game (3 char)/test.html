@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+		clicks += 1;
+		if(clicks >= 3) clicks = 3;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+	
+	function refresh() {
+		clicks = 0;
+		document.getElementById("clicks").innerHTML = clicks;
+	}
+    </script>
+    <button type="button" onClick="onClick()">Click me</button>
+	<button type="button" onClick="refresh()">Refresh</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+</body></html>

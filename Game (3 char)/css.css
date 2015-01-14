@@ -203,8 +203,9 @@
 	position: relative;
 	z-index: 1;
 }
+
 #img4 {
-	background-color: grey;
+	background-color: #3d1e1f;
 	width: 200px;
 	height: 320px;
 	display: inline-block;
@@ -313,6 +314,7 @@
 	background-color: white;
 	text-shadow: 1px 1px #271b6c;
 }
+
 #img_panda{
 	border: 1px solid white;
 	width: 160px;
@@ -328,7 +330,7 @@
 }
 
 #panda {
-	background-color: #8479bd;
+	background-color: #3d1e1f;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -337,14 +339,14 @@
 }
 
 #panda:hover {
-	background-color: #d7d0fe;
-	color: #271b6c;
+	background-color: #dbb1b1;
+	color: #3d1e1f;
 }
 
 #panda:active {
-	color: #271b6c;
+	color: #3d1e1f;
 	background-color: white;
-	text-shadow: 1px 1px #271b6c;
+	text-shadow: 1px 1px #3d1e1f;
 }
 
 
@@ -375,6 +377,9 @@
 
 #inputname label {
 	font-size: 25px;
+	margin-left: -1px;
+	margin-top: 8px;
+	color: white;
 }
 
 #name{
@@ -383,7 +388,7 @@
 	width: 200px;
 	font-size: 20px;
 	margin-top: 3px;
-	margin-left: 10px;
+	margin-left: 90px;
 	border-radius: 20px;
 }
 
