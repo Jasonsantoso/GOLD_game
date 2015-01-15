@@ -762,7 +762,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 20;
+	intelligent_stat += 5;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {

@@ -210,6 +210,7 @@
 	height: 320px;
 	display: inline-block;
 	border-radius: 10px;
+	margin-left:20px;
 	position: relative;
 	z-index: 1;
 }
