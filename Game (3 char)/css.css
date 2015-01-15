@@ -36,6 +36,9 @@
 	position: relative;
 	z-index: 1;
 	color: #927b21;
+	box-shadow: 0px 0px 15px 5px white;
+	width: 500px;
+	margin-top: 30px;
 }
 
 #background1 label {
@@ -47,7 +50,14 @@
 }
 
 #div_gold {
-		width: 125px;
+		width: 225px;
+		height: 50px;
+		margin-top: -50px;
+		margin-left: -165px;
+		position: absolute;
+		-ms-transform: rotate(-25deg); /* IE 9 */
+		-webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+		transform: rotate(-25deg);
 	}
 
 #gold_border {
@@ -71,7 +81,6 @@
 	margin-left: 150px;
 	margin-top: -15px;
 	margin-bottom: 7px;
-	
 }
 	
 #gold_border p {
@@ -170,51 +179,60 @@
 	height: 600px;
 	position: absolute;
 	z-index: 0;
+	opacity: 0.4;
+}
+
+#div_character {
+	width: 210px;
+	height: 320px;
+	margin-top: 55px;
 }
 
 #img1 {
 	background-color: #9de084;
 	width: 200px;
 	height: 320px;
-	display: inline-block;
-	margin-right: 20px;
-	margin-top: 10px;
 	border-radius: 10px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 0px 15px 5px white;
+	display: inline-block;
 }
 
 #img2 {
 	background-color: #f38f9f;
 	width: 200px;
 	height: 320px;
-	display: inline-block;
 	border-radius: 10px;
-	margin-right: 20px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 0px 15px 5px white;
+	display: none;
 }
 
 #img3 {
 	background-color: #8479bd;
 	width: 200px;
 	height: 320px;
-	display: inline-block;
 	border-radius: 10px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 0px 15px 5px white;
+	display: none;
 }
 
 #img4 {
 	background-color: #3d1e1f;
 	width: 200px;
 	height: 320px;
-	display: inline-block;
 	border-radius: 10px;
-	margin-left:20px;
+	display: inline-block;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 0px 15px 5px white;
+	display: none;
 }
+
 #img_worm {
 	border: 1px solid white;
 	width: 160px;
@@ -351,6 +369,47 @@
 	text-shadow: 1px 1px #3d1e1f;
 }
 
+#button {
+	width: 700px;
+	height: 100px;
+	position: absolute;
+	margin-top: -220px; 
+	margin-left: 250px;
+}
+
+#prev {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	position: absolute;
+	margin-left: -300px;
+	z-index: 2;
+	font-size: 50px;
+	background-image: url("gambar/background/bgpage1.jpg");
+	border: 2px double white;
+}
+
+#prev:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -5px;
+}
+
+#next {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	position: absolute;
+	margin-left: 200px;
+	z-index: 2;
+	font-size: 50px;
+	background-image: url("gambar/background/bgpage1.jpg");
+	border: 2px double white;
+}
+
+#next:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -5px;
+}
 
 #play_as {
 	width: 100px;
@@ -362,10 +421,13 @@
 	z-index: 1;
 	margin-top: 5px;
 	padding-bottom: 15px;
+	text-shadow: 0px 0px 15px white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #inputname{
-	background-color: #927b21;
 	width: 340px;
 	height: 60px;
 	display: inline-block;
@@ -374,24 +436,31 @@
 	padding-top: 7px;
 	border-radius: 10px;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
+	box-shadow: 0px 0px 15px 5px white;
 }
 
 #inputname label {
 	font-size: 25px;
 	margin-left: -1px;
 	margin-top: 8px;
-	color: white;
+	color: #927b21;
+	
 }
 
 #name{
-	background-color: #927b21;
+	background-image: url("gambar/background/bgpage1.jpg");
 	height: 40px;
 	width: 200px;
 	font-size: 20px;
-	margin-top: 3px;
+	margin-top: 6px;
 	margin-left: 90px;
 	border-radius: 20px;
+	border: none;
+}
+
+#name:hover {
+	box-shadow: 0px 0px 15px 5px white;
 }
 
 #ok {
@@ -399,22 +468,18 @@
 	width: 67px;
 	height: 67px;
 	position: absolute;
-	margin-left: -65px;
+	margin-left: -45px;
 	border-radius: 40px;
 	font-size: 20px;
-	background-color: #927b21;
+	background-image: url("gambar/background/bgpage1.jpg");
+	border: 2px double white;
 }
 
 #ok:hover {
-	background-color: #ffea96;
-	color: #927b21;
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -5px;
 }
 
-#ok:active {
-	color: #927b21;
-	background-color: white;
-	text-shadow: 1px 1px #927b21;
-}
 
 /* CSS page 2 */
 
@@ -665,7 +730,7 @@
 	margin-top: -2px;
 }
 
-#prev {
+#menu {
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -678,24 +743,7 @@
 	color: #927b21;
 }
 
-#prev:hover {
-	background-color: #ffea96;
-}
-
-#next{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	margin-top: 382px;
-	margin-left: 641px;
-	border-radius: 100px;
-	background-color: #f5f6f8;
-	font-size: 20px;
-	border: 2px solid #fbeedd;
-	color: #927b21;
-}
-
-#next:hover {
+#menu:hover {
 	background-color: #ffea96;
 }
 

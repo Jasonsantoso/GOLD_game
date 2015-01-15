@@ -50,7 +50,7 @@ $("#ok").click(function(){
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
 
-/* Javascript Page 1 */
+								/* Javascript Page 1 */
 
 /* Fungsi pilih char */
 $("#worm").click(function(){
@@ -96,7 +96,43 @@ $("#panda").click(function(){
 	$("#pig").css({"visibility": ""});
 	$("#buffalo").css({"visibility": ""});
 });
-/* Javascript Page 2 */
+
+/* Fungsi button */
+counter_button = 1;
+div_char = $("#img1")
+	
+$("#prev").click(function() {
+	counter_button--;
+	div_char.slideToggle();
+	
+	if (counter_button == 0) {
+		div_char = $("#img4");
+		div_char.slideToggle(2000);
+		counter_button = 4;
+	}
+	else {
+		div_char = div_char.prev();
+		div_char.slideToggle(2000);
+	}
+});
+
+$("#next").click(function() {
+	counter_button++;
+	div_char.slideToggle();
+	
+	if (counter_button == 5) {
+		div_char = $("#img1");
+		div_char.slideToggle(2000);
+		counter_button = 1;
+	}
+	else {
+		div_char = div_char.next();
+		div_char.slideToggle(2000);
+	}
+});
+
+
+								/* Javascript Page 2 */
 
 stamina_stat = 70;
 fun_stat = 70;
