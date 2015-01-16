@@ -181,7 +181,7 @@ $("#next").click(function() {
 });
 
 								/* Javascript Page 2 */
-
+level=1;
 stamina_stat = 70;
 fun_stat = 70;
 hunger_stat = 70;
@@ -192,6 +192,15 @@ counter_stat_play = 0;
 counter_stat_eat = 0;
 counter_stat_study = 0;
 
+$("#ip_level_1").css({"display": "none","visibility": ""});
+$("#ip_level_2").css({"display": "none","visibility": ""});
+$("#ip_level_3").css({"display": "none","visibility": ""});
+$("#ip_level_4").css({"display": "none","visibility": ""});
+$("#ip_level_5").css({"display": "none","visibility": ""});
+$("#ip_level_6").css({"display": "none","visibility": ""});
+$("#ip_level_7").css({"display": "none","visibility": ""});
+$("#ip_level_8").css({"display": "none","visibility": ""});
+
 $("#c1").css({"display": "none", "visibility": ""});
 $("#c2").css({"display": "none", "visibility": ""});
 $("#c3").css({"display": "none", "visibility": ""});
@@ -199,6 +208,20 @@ $("#c3").css({"display": "none", "visibility": ""});
 /* Bintang */
 cek_level_1 = document.getElementById("ip_level_1");
 cek_level_1.setAttribute("src","gambar/star.png");
+cek_level_2 = document.getElementById("ip_level_2");
+cek_level_2.setAttribute("src","gambar/star.png");
+cek_level_3 = document.getElementById("ip_level_3");
+cek_level_3.setAttribute("src","gambar/star.png");
+cek_level_4 = document.getElementById("ip_level_4");
+cek_level_4.setAttribute("src","gambar/star.png");
+cek_level_5 = document.getElementById("ip_level_5");
+cek_level_5.setAttribute("src","gambar/star.png");
+cek_level_6 = document.getElementById("ip_level_6");
+cek_level_6.setAttribute("src","gambar/star.png");
+cek_level_7 = document.getElementById("ip_level_7");
+cek_level_7.setAttribute("src","gambar/star.png");
+cek_level_8 = document.getElementById("ip_level_8");
+cek_level_8.setAttribute("src","gambar/star.png");
 
 /* Fungsi Waktu */
 jam = 8;
@@ -300,6 +323,16 @@ function cetak_stat() {
 	if (counter_stat_play > 2) $("#play_button").css({"visibility": "hidden"});
 	if (counter_stat_eat > 2) $("#eat_button").css({"visibility": "hidden"});
 	if (counter_stat_study > 2) $("#study_button").css({"visibility": "hidden"});
+	
+	if (level ==1)$("#ip_level_1").css({"display": "","visibility": ""});
+	if (level ==2)$("#ip_level_2").css({"display": "","visibility": ""});
+	if (level ==3)$("#ip_level_3").css({"display": "","visibility": ""});
+	if (level ==4)$("#ip_level_4").css({"display": "","visibility": ""});
+	if (level ==5)$("#ip_level_5").css({"display": "","visibility": ""});
+	if (level ==6)$("#ip_level_6").css({"display": "","visibility": ""});
+	if (level ==7)$("#ip_level_7").css({"display": "","visibility": ""});
+	if (level ==8)$("#ip_level_8").css({"display": "","visibility": ""});
+	
 	
 	if (stamina_stat == 0) $("#cstamina").css({"width": "49px"}).css({"background-color":"#BDC3C7"});
 	if (stamina_stat == 1) $("#cstamina").css({"width": "49px"}).css({"background-color":"#ff1800"});

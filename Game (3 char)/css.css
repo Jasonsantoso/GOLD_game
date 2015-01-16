@@ -761,12 +761,54 @@
 	display: none;
 	margin-top: 10px;
 }
-
-#ip_level img{
+/*level*/
+#ip_level_1{
 	width: 30px;
 	height: 30px;
 	margin-top: 80px;
 
+}
+#ip_level_2{
+	width: 30px;
+	height: 30px;
+	margin-top: 80px;
+	
+}
+#ip_level_3{
+	width: 30px;
+	height: 30px;
+	margin-top: 80px;
+	
+}
+#ip_level_4{
+	width: 30px;
+	height: 30px;
+	margin-top: 80px;
+	
+}
+#ip_level_5{
+	width: 30px;
+	height: 30px;
+	margin-top: 80px;
+	
+}
+#ip_level_6{
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	
+}
+#ip_level_7{
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	
+}
+#ip_level_8{
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	
 }
 
 #sleep_button {
