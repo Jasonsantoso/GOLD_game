@@ -157,7 +157,7 @@ $("#prev").click(function() {
 	if (counter_button == 0) {
 		div_char = $("#img6");
 		div_char.slideToggle(500);
-		counter_button = 7;
+		counter_button = 6;
 	}
 	else {
 		div_char = div_char.prev();
@@ -179,7 +179,6 @@ $("#next").click(function() {
 		div_char.slideToggle(500);
 	}
 });
-
 
 								/* Javascript Page 2 */
 
