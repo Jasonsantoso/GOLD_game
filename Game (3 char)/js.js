@@ -15,7 +15,6 @@ $("#ok").click(function(){
 		sisip_study = "<img src='gambar/character/worm_study.png'/>";
 		sisip_stop = "<img src='gambar/character/worm_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#9de084"});
-		$("#frame3").css({"background-color": "#9de084"});
 	}
 	if(cek_play_as == "Pig") {
 		sisip_stand = "<img src='gambar/character/pig_stand.png'/>";
@@ -25,7 +24,6 @@ $("#ok").click(function(){
 		sisip_study = "<img src='gambar/character/pig_study.png'/>";
 		sisip_stop = "<img src='gambar/character/pig_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#f38f9f"});
-		$("#frame3").css({"background-color": "#f38f9f"});
 	}
 	if(cek_play_as == "Buffalo") {
 		sisip_stand = "<img src='gambar/character/buffalo_stand.png'/>";
@@ -35,7 +33,6 @@ $("#ok").click(function(){
 		sisip_study = "<img src='gambar/character/buffalo_study.png'/>";
 		sisip_stop = "<img src='gambar/character/buffalo_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#8479bd"});
-		$("#frame3").css({"background-color": "#8479bd"});
 	}
 		if(cek_play_as == "Panda") {
 		sisip_stand = "<img src='gambar/character/panda_stand.png'/>";
@@ -45,7 +42,6 @@ $("#ok").click(function(){
 		sisip_study = "<img src='gambar/character/panda_study.png'/>";
 		sisip_stop = "<img src='gambar/character/panda_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#3d1e1f"});
-		$("#frame3").css({"background-color": "#3d1e1f"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
@@ -107,12 +103,12 @@ $("#prev").click(function() {
 	
 	if (counter_button == 0) {
 		div_char = $("#img4");
-		div_char.slideToggle(2000);
+		div_char.slideToggle(500);
 		counter_button = 4;
 	}
 	else {
 		div_char = div_char.prev();
-		div_char.slideToggle(2000);
+		div_char.slideToggle(500);
 	}
 });
 
@@ -122,12 +118,12 @@ $("#next").click(function() {
 	
 	if (counter_button == 5) {
 		div_char = $("#img1");
-		div_char.slideToggle(2000);
+		div_char.slideToggle(500);
 		counter_button = 1;
 	}
 	else {
 		div_char = div_char.next();
-		div_char.slideToggle(2000);
+		div_char.slideToggle(500);
 	}
 });
 
@@ -934,11 +930,19 @@ $("#quiz_button").click(function(){
 });
 
 /* Javascript page 3 */
+level = 1;
+if (level == 1) {
+	$("#soal1").show(2000);
+}
 
-$("#jawab").click(function() {
+$("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
 		if(jwbn1 == h1) {
 			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
 		}
 		else {
 			window.alert("Jawaban anda salah!");

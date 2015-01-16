@@ -14,14 +14,6 @@
 			<p id="d">D</p>	
 		</div>
 	</div>
-	<div id="div_gold2">
-		<div id="gold_border">
-			<p id="g">G</p>
-			<p id="o">O</p>
-			<p id="l">L</p>
-			<p id="d">D</p>	
-		</div>
-	</div>
 									<!-- Page 1 -->
 	<div id="page1">
 		<div id="frame1">
@@ -169,8 +161,7 @@
 	<div id="page3">
 		<div id="frame3">
 			<div id="background3" >
-				<div id="soal1">
-					<script>
+				<script>
 						/* Quiz */
 						var q1_1 = Math.floor(Math.random()*10+1);
 						var q1_2 = Math.floor(Math.random()*10+1);
@@ -183,14 +174,18 @@
 						h6 = q1_1 * q1_2 * q1_2;
 						h7 = q1_3 * q1_1 + q1_1 * q1_2;
 						h8 = q1_1 * q1_2 + q1_1 * q1_3;
-						document.write( + q1_1 + " + " + q1_2 + " =");
+				</script>
+				<div id="soal1">
+					<h1>Quiz</h1>
+					<script>
+						document.write(q1_1 + " + " + q1_2 + " = ");
 					</script>
-
 					<form action="" method="get">
 						<input id="a1"
-								type="text"/>
-					</form>			
-						<button id="jawab">OK</button>
+								type="text"
+								placeholder="answer"/>
+					</form>
+					<button id="jawab1">OK</button>
 				</div>
 			</div>
 		</div>
