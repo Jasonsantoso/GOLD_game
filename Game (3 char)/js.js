@@ -43,6 +43,26 @@ $("#ok").click(function(){
 		sisip_stop = "<img src='gambar/character/panda_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#3d1e1f"});
 	}
+	
+		if(cek_play_as == "Duck") {
+		sisip_stand = "<img src='gambar/character/duck_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/duck_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/duck_play.png'/>";
+		sisip_eat = "<img src='gambar/character/duck_eat.png'/>";
+		sisip_study = "<img src='gambar/character/duck_study.png'/>";
+		sisip_stop = "<img src='gambar/character/duck_grayscale.png'/>";
+		$("#frame2").css({"background-color": "#3d1e1f"});
+	}
+	
+		if(cek_play_as == "Frog") {
+		sisip_stand = "<img src='gambar/character/frog_stand.png'/>";
+		sisip_sleep = "<img src='gambar/character/frog_sleep.png'/>";
+		sisip_play = "<img src='gambar/character/frog_play.png'/>";
+		sisip_eat = "<img src='gambar/character/frog_eat.png'/>";
+		sisip_study = "<img src='gambar/character/frog_study.png'/>";
+		sisip_stop = "<img src='gambar/character/frog_grayscale.png'/>";
+		$("#frame2").css({"background-color": "#3d1e1f"});
+	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
 
@@ -58,6 +78,8 @@ $("#worm").click(function(){
 	$("#pig").css({"visibility": ""});
 	$("#buffalo").css({"visibility": ""});
 	$("#panda").css({"visibility": ""});
+	$("#duck").css({"visibility": ""});
+	$("#frog").css({"visibility": ""});
 });
 
 $("#pig").click(function(){
@@ -69,6 +91,8 @@ $("#pig").click(function(){
 	$("#worm").css({"visibility": ""});
 	$("#buffalo").css({"visibility": ""});
 	$("#panda").css({"visibility": ""});
+	$("#duck").css({"visibility": ""});
+	$("#frog").css({"visibility": ""});
 });
 
 $("#buffalo").click(function(){
@@ -80,6 +104,8 @@ $("#buffalo").click(function(){
 	$("#worm").css({"visibility": ""});
 	$("#pig").css({"visibility": ""});
 	$("#panda").css({"visibility": ""});
+	$("#duck").css({"visibility": ""});
+	$("#frog").css({"visibility": ""});
 });
 
 $("#panda").click(function(){
@@ -91,8 +117,35 @@ $("#panda").click(function(){
 	$("#worm").css({"visibility": ""});
 	$("#pig").css({"visibility": ""});
 	$("#buffalo").css({"visibility": ""});
+	$("#duck").css({"visibility": ""});
+	$("#frog").css({"visibility": ""});
 });
 
+$("#duck").click(function(){
+	a_value = document.getElementById("duck").value;
+	$("#play_as").css({"color":"#3d1e1f"});
+	document.getElementById("play_as").innerHTML = a_value;
+	document.getElementById("play_as").value = "Duck";
+	$("#duck").css({"visibility": "hidden"});
+	$("#worm").css({"visibility": ""});
+	$("#pig").css({"visibility": ""});
+	$("#buffalo").css({"visibility": ""});
+	$("#panda").css({"visibility": ""});
+	$("#frog").css({"visibility": ""});
+});
+
+$("#frog").click(function(){
+	a_value = document.getElementById("frog").value;
+	$("#play_as").css({"color":"#3d1e1f"});
+	document.getElementById("play_as").innerHTML = a_value;
+	document.getElementById("play_as").value = "Frog";
+	$("#frog").css({"visibility": "hidden"});
+	$("#worm").css({"visibility": ""});
+	$("#pig").css({"visibility": ""});
+	$("#buffalo").css({"visibility": ""});
+	$("#panda").css({"visibility": ""});
+	$("#duck").css({"visibility": ""});
+});
 /* Fungsi button */
 counter_button = 1;
 div_char = $("#img1")
@@ -102,9 +155,9 @@ $("#prev").click(function() {
 	div_char.slideToggle();
 	
 	if (counter_button == 0) {
-		div_char = $("#img4");
+		div_char = $("#img6");
 		div_char.slideToggle(500);
-		counter_button = 4;
+		counter_button = 7;
 	}
 	else {
 		div_char = div_char.prev();
@@ -116,7 +169,7 @@ $("#next").click(function() {
 	counter_button++;
 	div_char.slideToggle();
 	
-	if (counter_button == 5) {
+	if (counter_button == 7) {
 		div_char = $("#img1");
 		div_char.slideToggle(500);
 		counter_button = 1;
