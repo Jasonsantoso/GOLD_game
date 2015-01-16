@@ -1011,7 +1011,7 @@ $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 	});
-
+intelligent_stat = 0;
 });
 
 /* Javascript page 3 */
