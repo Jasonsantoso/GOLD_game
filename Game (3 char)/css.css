@@ -235,7 +235,7 @@
 }
 
 #img5 {
-	background-color: #3d1e1f;
+	background-color: #FFFF45;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -247,7 +247,7 @@
 }
 
 #img6 {
-	background-color: #3d1e1f;
+	background-color: #1A661A;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -409,7 +409,7 @@
 }
 
 #duck {
-	background-color: #3d1e1f;
+	background-color: #FFFF45;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -418,14 +418,14 @@
 }
 
 #duck:hover {
-	background-color: #dbb1b1;
-	color: #3d1e1f;
+	background-color: #FFFF99;
+	color: #FFFF45;
 }
 
 #duck:active {
-	color: #3d1e1f;
+	color: #FFFF45;
 	background-color: white;
-	text-shadow: 1px 1px #3d1e1f;
+	text-shadow: 1px 1px #FFFF45;
 }
 
 #img_frog{
@@ -443,7 +443,7 @@
 }
 
 #frog {
-	background-color: #3d1e1f;
+	background-color: #1A661A;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -452,14 +452,14 @@
 }
 
 #frog:hover {
-	background-color: #dbb1b1;
-	color: #3d1e1f;
+	background-color: #6CDA6C;
+	color: #1A661A;
 }
 
 #frog:active {
-	color: #3d1e1f;
+	color: #1A661A;
 	background-color: white;
-	text-shadow: 1px 1px #3d1e1f;
+	text-shadow: 1px 1px #1A661A;
 }
 
 #button {

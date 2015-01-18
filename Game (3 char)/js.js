@@ -51,7 +51,7 @@ $("#ok").click(function(){
 		sisip_eat = "<img src='gambar/character/duck_eat.png'/>";
 		sisip_study = "<img src='gambar/character/duck_study.png'/>";
 		sisip_stop = "<img src='gambar/character/duck_grayscale.png'/>";
-		$("#frame2").css({"background-color": "#3d1e1f"});
+		$("#frame2").css({"background-color": "#FFFF45"});
 	}
 	
 		if(cek_play_as == "Frog") {
@@ -61,7 +61,7 @@ $("#ok").click(function(){
 		sisip_eat = "<img src='gambar/character/frog_eat.png'/>";
 		sisip_study = "<img src='gambar/character/frog_study.png'/>";
 		sisip_stop = "<img src='gambar/character/frog_grayscale.png'/>";
-		$("#frame2").css({"background-color": "#3d1e1f"});
+		$("#frame2").css({"background-color": "#1A661A"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
@@ -123,7 +123,7 @@ $("#panda").click(function(){
 
 $("#duck").click(function(){
 	a_value = document.getElementById("duck").value;
-	$("#play_as").css({"color":"#3d1e1f"});
+	$("#play_as").css({"color":"#FFFF45"});
 	document.getElementById("play_as").innerHTML = a_value;
 	document.getElementById("play_as").value = "Duck";
 	$("#duck").css({"visibility": "hidden"});
@@ -136,7 +136,7 @@ $("#duck").click(function(){
 
 $("#frog").click(function(){
 	a_value = document.getElementById("frog").value;
-	$("#play_as").css({"color":"#3d1e1f"});
+	$("#play_as").css({"color":"#1A661A"});
 	document.getElementById("play_as").innerHTML = a_value;
 	document.getElementById("play_as").value = "Frog";
 	$("#frog").css({"visibility": "hidden"});
