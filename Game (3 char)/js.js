@@ -51,7 +51,7 @@ $("#ok").click(function(){
 		sisip_eat = "<img src='gambar/character/duck_eat.png'/>";
 		sisip_study = "<img src='gambar/character/duck_study.png'/>";
 		sisip_stop = "<img src='gambar/character/duck_grayscale.png'/>";
-		$("#frame2").css({"background-color": "#3d1e1f"});
+		$("#frame2").css({"background-color": "#FFFF45"});
 	}
 	
 		if(cek_play_as == "Frog") {
@@ -61,7 +61,7 @@ $("#ok").click(function(){
 		sisip_eat = "<img src='gambar/character/frog_eat.png'/>";
 		sisip_study = "<img src='gambar/character/frog_study.png'/>";
 		sisip_stop = "<img src='gambar/character/frog_grayscale.png'/>";
-		$("#frame2").css({"background-color": "#3d1e1f"});
+		$("#frame2").css({"background-color": "#1A661A"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
@@ -123,7 +123,7 @@ $("#panda").click(function(){
 
 $("#duck").click(function(){
 	a_value = document.getElementById("duck").value;
-	$("#play_as").css({"color":"#3d1e1f"});
+	$("#play_as").css({"color":"#FFFF45"});
 	document.getElementById("play_as").innerHTML = a_value;
 	document.getElementById("play_as").value = "Duck";
 	$("#duck").css({"visibility": "hidden"});
@@ -136,7 +136,7 @@ $("#duck").click(function(){
 
 $("#frog").click(function(){
 	a_value = document.getElementById("frog").value;
-	$("#play_as").css({"color":"#3d1e1f"});
+	$("#play_as").css({"color":"#1A661A"});
 	document.getElementById("play_as").innerHTML = a_value;
 	document.getElementById("play_as").value = "Frog";
 	$("#frog").css({"visibility": "hidden"});
@@ -157,7 +157,7 @@ $("#prev").click(function() {
 	if (counter_button == 0) {
 		div_char = $("#img6");
 		div_char.slideToggle(500);
-		counter_button = 7;
+		counter_button = 6;
 	}
 	else {
 		div_char = div_char.prev();
@@ -180,9 +180,8 @@ $("#next").click(function() {
 	}
 });
 
-
 								/* Javascript Page 2 */
-
+level=1;
 stamina_stat = 70;
 fun_stat = 70;
 hunger_stat = 70;
@@ -193,6 +192,15 @@ counter_stat_play = 0;
 counter_stat_eat = 0;
 counter_stat_study = 0;
 
+$("#ip_level_1").css({"display": "none","visibility": ""});
+$("#ip_level_2").css({"display": "none","visibility": ""});
+$("#ip_level_3").css({"display": "none","visibility": ""});
+$("#ip_level_4").css({"display": "none","visibility": ""});
+$("#ip_level_5").css({"display": "none","visibility": ""});
+$("#ip_level_6").css({"display": "none","visibility": ""});
+$("#ip_level_7").css({"display": "none","visibility": ""});
+$("#ip_level_8").css({"display": "none","visibility": ""});
+
 $("#c1").css({"display": "none", "visibility": ""});
 $("#c2").css({"display": "none", "visibility": ""});
 $("#c3").css({"display": "none", "visibility": ""});
@@ -200,6 +208,20 @@ $("#c3").css({"display": "none", "visibility": ""});
 /* Bintang */
 cek_level_1 = document.getElementById("ip_level_1");
 cek_level_1.setAttribute("src","gambar/star.png");
+cek_level_2 = document.getElementById("ip_level_2");
+cek_level_2.setAttribute("src","gambar/star.png");
+cek_level_3 = document.getElementById("ip_level_3");
+cek_level_3.setAttribute("src","gambar/star.png");
+cek_level_4 = document.getElementById("ip_level_4");
+cek_level_4.setAttribute("src","gambar/star.png");
+cek_level_5 = document.getElementById("ip_level_5");
+cek_level_5.setAttribute("src","gambar/star.png");
+cek_level_6 = document.getElementById("ip_level_6");
+cek_level_6.setAttribute("src","gambar/star.png");
+cek_level_7 = document.getElementById("ip_level_7");
+cek_level_7.setAttribute("src","gambar/star.png");
+cek_level_8 = document.getElementById("ip_level_8");
+cek_level_8.setAttribute("src","gambar/star.png");
 
 /* Fungsi Waktu */
 jam = 8;
@@ -301,6 +323,16 @@ function cetak_stat() {
 	if (counter_stat_play > 2) $("#play_button").css({"visibility": "hidden"});
 	if (counter_stat_eat > 2) $("#eat_button").css({"visibility": "hidden"});
 	if (counter_stat_study > 2) $("#study_button").css({"visibility": "hidden"});
+	
+	if (level ==1)$("#ip_level_1").css({"display": "","visibility": ""});
+	if (level ==2)$("#ip_level_2").css({"display": "","visibility": ""});
+	if (level ==3)$("#ip_level_3").css({"display": "","visibility": ""});
+	if (level ==4)$("#ip_level_4").css({"display": "","visibility": ""});
+	if (level ==5)$("#ip_level_5").css({"display": "","visibility": ""});
+	if (level ==6)$("#ip_level_6").css({"display": "","visibility": ""});
+	if (level ==7)$("#ip_level_7").css({"display": "","visibility": ""});
+	if (level ==8)$("#ip_level_8").css({"display": "","visibility": ""});
+	
 	
 	if (stamina_stat == 0) $("#cstamina").css({"width": "49px"}).css({"background-color":"#BDC3C7"});
 	if (stamina_stat == 1) $("#cstamina").css({"width": "49px"}).css({"background-color":"#ff1800"});
@@ -979,7 +1011,7 @@ $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 	});
-
+intelligent_stat = 0;
 });
 
 /* Javascript page 3 */
