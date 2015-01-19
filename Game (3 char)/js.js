@@ -1003,17 +1003,106 @@ level = 1;
 var q1_1 = Math.floor(Math.random()*10+1);
 var q1_2 = Math.floor(Math.random()*10+1);
 var q1_3 = Math.floor(Math.random()*10+1);
+var q1_4 = Math.floor(Math.random()*10+1);
+var q1_5 = Math.floor(Math.random()*10+1);
 h1 = q1_1 + q1_2;
-h2 = q1_1 + q1_2 + q1_3;
-h3 = q1_1 * q1_2;
-h4 = q1_1 *	q1_1;
-h5 = q1_1 + q1_2 - q1_3;
-h6 = q1_1 * q1_2 * q1_2;
-h7 = q1_3 * q1_1 + q1_1 * q1_2;
-h8 = q1_1 * q1_2 + q1_1 * q1_3;
+h2 = q1_3 + q1_4 + q1_5;
+h3 = q1_2 * q1_4;
+h4 = q1_1 *	q1_3;
+h5 = q1_5 + q1_2 - q1_4;
+h6 = q1_2 * q1_4 * q1_3;
+h7 = q1_1 * q1_5 + q1_5 * q1_3;
+h8 = q1_4 * q1_2 + q1_3 * q1_1;
 						
 sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
-sisip_2 = document.getElementById("l2").innerHTML = q1_1 + "+" + q1_2 + "+" + q1_3 + "=";
+sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
+sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
+sisip_4 = document.getElementById("l4").innerHTML = q1_1 + "*" + q1_3 + "=";
+sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1_4 + "=";
+sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "+" + q1_3 + "=";
+sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
+sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
+
+if (level == 1) {
+	$("#soal1").show(2000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 2) {
+	$("#soal2").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 3) {
+	$("#soal3").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 4) {
+	$("#soal4").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 5) {
+	$("#soal5").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 6) {
+	$("#soal6").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal7").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 7) {
+	$("#soal7").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal8").hide(1000);
+}
+if (level == 8) {
+	$("#soal8").show(2000);
+	$("#soal1").hide(1000);
+	$("#soal2").hide(1000);
+	$("#soal3").hide(1000);
+	$("#soal4").hide(1000);
+	$("#soal5").hide(1000);
+	$("#soal6").hide(1000);
+	$("#soal7").hide(1000);
+}
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
@@ -1044,3 +1133,88 @@ $("#jawab2").click(function() {
 			window.alert("Jawaban anda salah!");
 		}
 });	
+
+$("#jawab3").click(function() {
+	jwbn3 = document.getElementById("a3").value;
+		if(jwbn3 == h3) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab4").click(function() {
+	jwbn4 = document.getElementById("a4").value;
+		if(jwbn4 == h4) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab5").click(function() {
+	jwbn5 = document.getElementById("a5").value;
+		if(jwbn5 == h5) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab6").click(function() {
+	jwbn6 = document.getElementById("a6").value;
+		if(jwbn6 == h6) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab7").click(function() {
+	jwbn7 = document.getElementById("a7").value;
+		if(jwbn7 == h7) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab8").click(function() {
+	jwbn8 = document.getElementById("a8").value;
+		if(jwbn8 == h8) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+/* http://www.incengine.com/?art=pastel_colors */
