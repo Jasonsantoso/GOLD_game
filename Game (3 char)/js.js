@@ -51,7 +51,7 @@ $("#ok").click(function(){
 		sisip_eat = "<img src='gambar/character/duck_eat.png'/>";
 		sisip_study = "<img src='gambar/character/duck_study.png'/>";
 		sisip_stop = "<img src='gambar/character/duck_grayscale.png'/>";
-		$("#frame2").css({"background-color": "#FFFF45"});
+		$("#frame2").css({"background-color": "#ffd93b"});
 	}
 	
 		if(cek_play_as == "Frog") {
@@ -123,7 +123,7 @@ $("#panda").click(function(){
 
 $("#duck").click(function(){
 	a_value = document.getElementById("duck").value;
-	$("#play_as").css({"color":"#FFFF45"});
+	$("#play_as").css({"color":"#ffd93b"});
 	document.getElementById("play_as").innerHTML = a_value;
 	document.getElementById("play_as").value = "Duck";
 	$("#duck").css({"visibility": "hidden"});
@@ -192,36 +192,18 @@ counter_stat_play = 0;
 counter_stat_eat = 0;
 counter_stat_study = 0;
 
-$("#ip_level_1").css({"display": "none","visibility": ""});
-$("#ip_level_2").css({"display": "none","visibility": ""});
-$("#ip_level_3").css({"display": "none","visibility": ""});
-$("#ip_level_4").css({"display": "none","visibility": ""});
-$("#ip_level_5").css({"display": "none","visibility": ""});
-$("#ip_level_6").css({"display": "none","visibility": ""});
-$("#ip_level_7").css({"display": "none","visibility": ""});
-$("#ip_level_8").css({"display": "none","visibility": ""});
+$("#ip_level_1").css({"visibility": "hidden"});
+$("#ip_level_2").css({"visibility": "hidden"});
+$("#ip_level_3").css({"visibility": "hidden"});
+$("#ip_level_4").css({"visibility": "hidden"});
+$("#ip_level_5").css({"visibility": "hidden"});
+$("#ip_level_6").css({"visibility": "hidden"});
+$("#ip_level_7").css({"visibility": "hidden"});
+$("#ip_level_8").css({"visibility": "hidden"});
 
 $("#c1").css({"display": "none", "visibility": ""});
 $("#c2").css({"display": "none", "visibility": ""});
 $("#c3").css({"display": "none", "visibility": ""});
-	
-/* Bintang */
-cek_level_1 = document.getElementById("ip_level_1");
-cek_level_1.setAttribute("src","gambar/star.png");
-cek_level_2 = document.getElementById("ip_level_2");
-cek_level_2.setAttribute("src","gambar/star.png");
-cek_level_3 = document.getElementById("ip_level_3");
-cek_level_3.setAttribute("src","gambar/star.png");
-cek_level_4 = document.getElementById("ip_level_4");
-cek_level_4.setAttribute("src","gambar/star.png");
-cek_level_5 = document.getElementById("ip_level_5");
-cek_level_5.setAttribute("src","gambar/star.png");
-cek_level_6 = document.getElementById("ip_level_6");
-cek_level_6.setAttribute("src","gambar/star.png");
-cek_level_7 = document.getElementById("ip_level_7");
-cek_level_7.setAttribute("src","gambar/star.png");
-cek_level_8 = document.getElementById("ip_level_8");
-cek_level_8.setAttribute("src","gambar/star.png");
 
 /* Fungsi Waktu */
 jam = 8;
@@ -324,15 +306,14 @@ function cetak_stat() {
 	if (counter_stat_eat > 2) $("#eat_button").css({"visibility": "hidden"});
 	if (counter_stat_study > 2) $("#study_button").css({"visibility": "hidden"});
 	
-	if (level ==1)$("#ip_level_1").css({"display": "","visibility": ""});
-	if (level ==2)$("#ip_level_2").css({"display": "","visibility": ""});
-	if (level ==3)$("#ip_level_3").css({"display": "","visibility": ""});
-	if (level ==4)$("#ip_level_4").css({"display": "","visibility": ""});
-	if (level ==5)$("#ip_level_5").css({"display": "","visibility": ""});
-	if (level ==6)$("#ip_level_6").css({"display": "","visibility": ""});
-	if (level ==7)$("#ip_level_7").css({"display": "","visibility": ""});
-	if (level ==8)$("#ip_level_8").css({"display": "","visibility": ""});
-	
+	if (level == 1)$("#ip_level_1").css({"visibility": ""});
+	if (level == 2)$("#ip_level_2").css({"visibility": ""});
+	if (level == 3)$("#ip_level_3").css({"visibility": ""});
+	if (level == 4)$("#ip_level_4").css({"visibility": ""});
+	if (level == 5)$("#ip_level_5").css({"visibility": ""});
+	if (level == 6)$("#ip_level_6").css({"visibility": ""});
+	if (level == 7)$("#ip_level_7").css({"visibility": ""});
+	if (level == 8)$("#ip_level_8").css({"visibility": ""});
 	
 	if (stamina_stat == 0) $("#cstamina").css({"width": "49px"}).css({"background-color":"#BDC3C7"});
 	if (stamina_stat == 1) $("#cstamina").css({"width": "49px"}).css({"background-color":"#ff1800"});
@@ -879,7 +860,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 5;
+	intelligent_stat += 100;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1005,24 +986,54 @@ $("#reset_button").click(function() {
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
 	$("#study_button").css({"visibility": ""});
+	
+	level = 1;
 });
 
 $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 	});
-intelligent_stat = 0;
+	intelligent_stat = 0;
 });
 
 /* Javascript page 3 */
 level = 1;
-if (level == 1) {
-	$("#soal1").show(2000);
-}
+
+var q1_1 = Math.floor(Math.random()*10+1);
+var q1_2 = Math.floor(Math.random()*10+1);
+var q1_3 = Math.floor(Math.random()*10+1);
+h1 = q1_1 + q1_2;
+h2 = q1_1 + q1_2 + q1_3;
+h3 = q1_1 * q1_2;
+h4 = q1_1 *	q1_1;
+h5 = q1_1 + q1_2 - q1_3;
+h6 = q1_1 * q1_2 * q1_2;
+h7 = q1_3 * q1_1 + q1_1 * q1_2;
+h8 = q1_1 * q1_2 + q1_1 * q1_3;
+						
+sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
+sisip_2 = document.getElementById("l2").innerHTML = q1_1 + "+" + q1_2 + "+" + q1_3 + "=";
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
 		if(jwbn1 == h1) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			$("#soal1").hide(2000);
+			$("#soal2").show(2000);
+			level++;
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+		}
+});	
+
+$("#jawab2").click(function() {
+	jwbn2 = document.getElementById("a2").value;
+		if(jwbn2 == h2) {
 			window.alert("Jawaban anda benar!");
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);

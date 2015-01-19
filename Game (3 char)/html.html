@@ -129,14 +129,14 @@
 								
 								</div>
 								<div id="ip_level">
-									<img id="ip_level_1" src="#" />
-									<img id="ip_level_2" src="#" />
-									<img id="ip_level_3" src="#" />
-									<img id="ip_level_4" src="#" />
-									<img id="ip_level_5" src="#" />
-									<img id="ip_level_6" src="#" />
-									<img id="ip_level_7" src="#" />
-									<img id="ip_level_8" src="#" />
+									<img id="ip_level_1" src="gambar/star.png" />
+									<img id="ip_level_2" src="gambar/star.png" />
+									<img id="ip_level_3" src="gambar/star.png" />
+									<img id="ip_level_4" src="gambar/star.png" />
+									<img id="ip_level_5" src="gambar/star.png" />
+									<img id="ip_level_6" src="gambar/star.png" />
+									<img id="ip_level_7" src="gambar/star.png" />
+									<img id="ip_level_8" src="gambar/star.png" />
 								</div>
 							</div>
 						</div>
@@ -176,31 +176,25 @@
 	<div id="page3">
 		<div id="frame3">
 			<div id="background3" >
-				<script>
-						/* Quiz */
-						var q1_1 = Math.floor(Math.random()*10+1);
-						var q1_2 = Math.floor(Math.random()*10+1);
-						var q1_3 = Math.floor(Math.random()*10+1);
-						h1 = q1_1 + q1_2;
-						h2 = q1_1 + q1_2 + q1_3;
-						h3 = q1_1 * q1_2;
-						h4 = q1_1 *	q1_1;
-						h5 = q1_1 + q1_2 - q1_3;
-						h6 = q1_1 * q1_2 * q1_2;
-						h7 = q1_3 * q1_1 + q1_1 * q1_2;
-						h8 = q1_1 * q1_2 + q1_1 * q1_3;
-				</script>
 				<div id="soal1">
 					<h1>Quiz</h1>
-					<script>
-						document.write(q1_1 + " + " + q1_2 + " = ");
-					</script>
+					<label id="l1"></label>
 					<form action="" method="get">
 						<input id="a1"
 								type="text"
 								placeholder="answer"/>
 					</form>
 					<button id="jawab1">OK</button>
+				</div>
+				<div id="soal2">
+					<h1>Quiz</h1>
+					<label id="l2"></label>
+					<form action="" method="get">
+						<input id="a2"
+								type="text"
+								placeholder="answer"/>
+					</form>
+					<button id="jawab2">OK</button>
 				</div>
 			</div>
 		</div>

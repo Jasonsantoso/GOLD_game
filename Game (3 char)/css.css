@@ -235,7 +235,7 @@
 }
 
 #img5 {
-	background-color: #FFFF45;
+	background-color: #ffd93b;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -409,7 +409,7 @@
 }
 
 #duck {
-	background-color: #FFFF45;
+	background-color: #ffd93b;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -418,14 +418,14 @@
 }
 
 #duck:hover {
-	background-color: #FFFF99;
-	color: #FFFF45;
+	background-color: #fff1b9;
+	color: #ffce04;
 }
 
 #duck:active {
-	color: #FFFF45;
+	color: #ffd93b;
 	background-color: white;
-	text-shadow: 1px 1px #FFFF45;
+	text-shadow: 1px 1px #ffd93b;
 }
 
 #img_frog{
@@ -1102,12 +1102,16 @@
 	height: 360px;
 	font-size: 150px;
 	padding-left: 100px;
-	display: none;
+
 }
 
 #soal1 h1 {
 	font-size: 70px;
 	text-align: center;
+}
+
+#l1 {
+	color: black;
 }
 
 #a1 {
@@ -1140,6 +1144,61 @@
 }
 
 #jawab1:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal2{
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal2 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l2 {
+	color: black;
+}
+
+#a2 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a2:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab2{
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab2:hover {
 	box-shadow: 0px 0px 15px 5px white;
 	margin-top: -185px;
 	font-size: 60px;
