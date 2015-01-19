@@ -1,4 +1,76 @@
 /* CSS */
+								/* Cover */
+#background_cover {
+	width: 1350px;
+	height: 689px;
+	background-image: url(gambar/background/cover.jpg);
+	background-size: 130%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+}
+
+#cover {
+	width: 1350px;
+	height: 689px;
+	position: absolute;
+	z-index: 3;
+	color: #FFFFE3;
+}
+
+#cover h1 {
+	text-shadow: 3px 3px 1px #f9d9de;
+	font-size: 70px;
+	margin-left: 500px;
+	margin-bottom: 80px;
+}
+
+#cover ul li {
+	margin-top: 50px;
+	margin-left: 50px;
+	font-size: 55px;
+	list-style: none;
+	font-weight: bold;
+	text-shadow: 3px 3px 1px #fdd9cd;
+}
+
+#cover ul li:first-child {
+	text-shadow: 3px 3px 1px #e5f4f1;
+}
+
+#cover ul li:last-child {
+	text-shadow: 3px 3px 1px #edf5ce;
+}
+
+#button_start_play {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	position: absolute;
+	margin-left: 900px;
+	margin-top: -280px;
+	background-image: url(gambar/background/cover_button.jpg);
+	background-position: center;
+	opacity: 0.7;
+	border: none;
+	color: white;
+	font-size: 50px;
+}
+
+#button_start_play:hover {
+	box-shadow: 0px 0px 100px 100px white;
+	font-size: 60px;
+	margin-top: -290px;
+}
+
+#button_start_play:active {
+	box-shadow: 0px 0px 200px 300px white;
+	font-size: 50px;
+	margin-top: -280px;
+}
+
+									/* Logo */
 #div_gold {
 	width: 225px;
 	height: 50px;
@@ -123,6 +195,10 @@
 	background: -moz-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom left, #d2a12a, #fce36f, #d2a12a); /* Standard syntax (must be last) */
 	text-align: center;
+}
+
+#page1 {
+	display: none;
 }
 
 #page2 {
@@ -1149,7 +1225,7 @@
 	font-size: 60px;
 }
 
-#soal2{
+#soal2 {
 	color: black;
 	position: absolute;
 	z-index: 1;
@@ -1187,7 +1263,7 @@
 	box-shadow: 0px 0px 15px 5px white;
 }
 
-#jawab2{
+#jawab2 {
 	color: black;
 	width: 150px;
 	height: 150px;
@@ -1199,6 +1275,336 @@
 }
 
 #jawab2:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal3 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal3 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l3 {
+	color: black;
+}
+
+#a3 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a3:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab3 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab3:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal4 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal4 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l4 {
+	color: black;
+}
+
+#a4 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a4:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab4 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab4:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal5 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal5 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l5 {
+	color: black;
+}
+
+#a5 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a5:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab5 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab5:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal6 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal6 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l6 {
+	color: black;
+}
+
+#a6 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a6:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab6 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab6:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal7 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal7 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l7 {
+	color: black;
+}
+
+#a7 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a7:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab7 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab7:hover {
+	box-shadow: 0px 0px 15px 5px white;
+	margin-top: -185px;
+	font-size: 60px;
+}
+
+#soal8 {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	width: 1000px;
+	height: 360px;
+	font-size: 150px;
+	padding-left: 100px;
+	display: none;
+}
+
+#soal8 h1 {
+	font-size: 70px;
+	text-align: center;
+}
+
+#l8 {
+	color: black;
+}
+
+#a8 {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: -150px;
+	border-radius: 50px;
+	width: 250px;
+	height: 100px;
+	background-color: white;
+	border-style: none;
+	opacity: 0.8;
+	font-size: 70px;
+}
+
+#a8:hover {
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+#jawab8 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left: 880px;
+	margin-top: -175px;
+	border-radius: 100px;
+	font-size: 50px;
+}
+
+#jawab8:hover {
 	box-shadow: 0px 0px 15px 5px white;
 	margin-top: -185px;
 	font-size: 60px;

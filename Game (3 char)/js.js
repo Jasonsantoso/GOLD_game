@@ -1,4 +1,14 @@
 /* Javascript */
+										/* Cover */
+$("#button_start_play").click(function() {
+	$("#cover").slideUp(800, function() {
+		$("#background_cover").slideToggle(800, function() {
+			$("#page1").fadeIn(1200);
+		});
+	});
+});
+
+								/* Javascript Page 1 */
 $("#ok").click(function(){
 	inputan_nama = document.getElementById("name").value;
 	document.getElementById("charname").innerHTML = inputan_nama;
@@ -65,8 +75,6 @@ $("#ok").click(function(){
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
 });
-
-								/* Javascript Page 1 */
 
 /* Fungsi pilih char */
 $("#worm").click(function(){
@@ -1022,7 +1030,7 @@ sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1
 sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "+" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
-
+/*
 if (level == 1) {
 	$("#soal1").show(2000);
 	$("#soal2").hide(1000);
@@ -1102,7 +1110,7 @@ if (level == 8) {
 	$("#soal5").hide(1000);
 	$("#soal6").hide(1000);
 	$("#soal7").hide(1000);
-}
+}*/
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
@@ -1127,6 +1135,8 @@ $("#jawab2").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal2").hide(2000);
+			$("#soal3").show(2000);
 			level++;
 		}
 		else {
@@ -1141,6 +1151,8 @@ $("#jawab3").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal3").hide(2000);
+			$("#soal4").show(2000);
 			level++;
 		}
 		else {
@@ -1155,6 +1167,8 @@ $("#jawab4").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal4").hide(2000);
+			$("#soal5").show(2000);
 			level++;
 		}
 		else {
@@ -1169,6 +1183,8 @@ $("#jawab5").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal5").hide(2000);
+			$("#soal6").show(2000);
 			level++;
 		}
 		else {
@@ -1183,6 +1199,8 @@ $("#jawab6").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal6").hide(2000);
+			$("#soal7").show(2000);
 			level++;
 		}
 		else {
@@ -1197,6 +1215,8 @@ $("#jawab7").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			$("#soal7").hide(2000);
+			$("#soal8").show(2000);
 			level++;
 		}
 		else {
@@ -1207,7 +1227,7 @@ $("#jawab7").click(function() {
 $("#jawab8").click(function() {
 	jwbn8 = document.getElementById("a8").value;
 		if(jwbn8 == h8) {
-			window.alert("Jawaban anda benar!");
+			window.alert("Jawaban anda benar!" + " Udah mentok");
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
