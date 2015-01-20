@@ -231,13 +231,13 @@
 	margin-top: 44.5px;
 	position: absolute;
 	z-index: 0;
-	background-color: #fff4ca;
+	background-color: #E1FFFE;
 }
 
 #background1 h1 {
 	position: relative;
 	z-index: 1;
-	color: #927b21;
+	color: white;
 	box-shadow: 0px 0px 15px 5px white;
 	width: 500px;
 	margin-top: 30px;
@@ -266,7 +266,7 @@
 }
 
 #img1 {
-	background-color: #9de084;
+	background-color: #CAFFD8;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -277,7 +277,7 @@
 }
 
 #img2 {
-	background-color: #f38f9f;
+	background-color: #FFDFF8;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -288,7 +288,7 @@
 }
 
 #img3 {
-	background-color: #8479bd;
+	background-color: #B5FFFC;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -299,7 +299,7 @@
 }
 
 #img4 {
-	background-color: #3d1e1f;
+	background-color: #C9DECB;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -311,7 +311,7 @@
 }
 
 #img5 {
-	background-color: #ffd93b;
+	background-color: #FFFFC8;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -323,7 +323,7 @@
 }
 
 #img6 {
-	background-color: #1A661A;
+	background-color: #ECD5CA;
 	width: 200px;
 	height: 320px;
 	border-radius: 10px;
@@ -349,7 +349,7 @@
 }
 
 #worm {
-	background-color: #9de084;
+	background-color: #CAFFD8;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -358,14 +358,14 @@
 }
 
 #worm:hover {
-	background-color: #d8ffca;
-	color: #38801d;
+	background-color: #CAFFD8;
+	color: #72FE95;
 }
 
 #worm:active {
-	color: #38801d;
+	color: #72FE95;
 	background-color: white;
-	text-shadow: 1px 1px #38801d;
+	text-shadow: 1px 1px #72FE95;
 }
 
 #img_pig{
@@ -383,7 +383,7 @@
 }
 
 #pig {
-	background-color: #f38f9f;
+	background-color: #FFDFF8;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -392,14 +392,14 @@
 }
 
 #pig:hover {
-	background-color: #ffcad2;
-	color: #8b2031;
+	background-color: #FFDFEF;
+	color: #FFBBDD;
 }
 
 #pig:active {
-	color: #8b2031;
+	color: #FFBBDD;
 	background-color: white;
-	text-shadow: 1px 1px #8b2031;
+	text-shadow: 1px 1px #FFBBDD;
 }
 
 #img_buffalo{
@@ -417,7 +417,7 @@
 }
 
 #buffalo {
-	background-color: #8479bd;
+	background-color: #B5FFFC;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -426,14 +426,14 @@
 }
 
 #buffalo:hover {
-	background-color: #d7d0fe;
-	color: #271b6c;
+	background-color: #CEFFFD;
+	color: #99C7FF;
 }
 
 #buffalo:active {
-	color: #271b6c;
+	color: #99C7FF;
 	background-color: white;
-	text-shadow: 1px 1px #271b6c;
+	text-shadow: 1px 1px #99C7FF;
 }
 
 #img_panda{
@@ -451,7 +451,7 @@
 }
 
 #panda {
-	background-color: #3d1e1f;
+	background-color: #C9DECB;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -460,14 +460,14 @@
 }
 
 #panda:hover {
-	background-color: #dbb1b1;
-	color: #3d1e1f;
+	background-color: #E9F1EA;
+	color: #93BF96;
 }
 
 #panda:active {
-	color: #3d1e1f;
+	color: #93BF96;
 	background-color: white;
-	text-shadow: 1px 1px #3d1e1f;
+	text-shadow: 1px 1px #93BF96;
 }
 
 #img_duck{
@@ -485,7 +485,7 @@
 }
 
 #duck {
-	background-color: #ffd93b;
+	background-color: #FFFFC8;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -494,14 +494,14 @@
 }
 
 #duck:hover {
-	background-color: #fff1b9;
-	color: #ffce04;
+	background-color: #FFFFD7;
+	color: #FFF284;
 }
 
 #duck:active {
-	color: #ffd93b;
+	color: #FFF284;
 	background-color: white;
-	text-shadow: 1px 1px #ffd93b;
+	text-shadow: 1px 1px #FFF284;
 }
 
 #img_frog{
@@ -519,7 +519,7 @@
 }
 
 #frog {
-	background-color: #1A661A;
+	background-color: #ECD5CA;
 	width: 100px;
 	height: 40px;
 	margin-top: 260px;
@@ -528,14 +528,14 @@
 }
 
 #frog:hover {
-	background-color: #6CDA6C;
-	color: #1A661A;
+	background-color: #F5E8E2;
+	color: #DAAC96;
 }
 
 #frog:active {
-	color: #1A661A;
+	color: #DAAC96;
 	background-color: white;
-	text-shadow: 1px 1px #1A661A;
+	text-shadow: 1px 1px #DAAC96;
 }
 
 #button {
