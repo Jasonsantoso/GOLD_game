@@ -1030,87 +1030,6 @@ sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1
 sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "+" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
-/*
-if (level == 1) {
-	$("#soal1").show(2000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 2) {
-	$("#soal2").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 3) {
-	$("#soal3").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 4) {
-	$("#soal4").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 5) {
-	$("#soal5").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 6) {
-	$("#soal6").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal7").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 7) {
-	$("#soal7").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal8").hide(1000);
-}
-if (level == 8) {
-	$("#soal8").show(2000);
-	$("#soal1").hide(1000);
-	$("#soal2").hide(1000);
-	$("#soal3").hide(1000);
-	$("#soal4").hide(1000);
-	$("#soal5").hide(1000);
-	$("#soal6").hide(1000);
-	$("#soal7").hide(1000);
-}*/
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
@@ -1125,6 +1044,9 @@ $("#jawab1").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1141,6 +1063,9 @@ $("#jawab2").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1157,6 +1082,9 @@ $("#jawab3").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1173,6 +1101,9 @@ $("#jawab4").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1189,6 +1120,9 @@ $("#jawab5").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1205,6 +1139,9 @@ $("#jawab6").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1221,6 +1158,9 @@ $("#jawab7").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 
@@ -1235,6 +1175,9 @@ $("#jawab8").click(function() {
 		}
 		else {
 			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
 		}
 });	
 /* http://www.incengine.com/?art=pastel_colors */
