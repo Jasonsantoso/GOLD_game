@@ -9,6 +9,7 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: 2;
+	display:;
 }
 
 #cover {
@@ -17,6 +18,7 @@
 	position: absolute;
 	z-index: 3;
 	color: #FFFFE3;
+	display:;
 }
 
 #cover h1 {
@@ -202,7 +204,7 @@
 }
 
 #page2 {
-	display: none;
+	display:none ;
 }
 
 /* CSS page 1 */
@@ -213,12 +215,12 @@
 
 #frame1 {
 	width: 1350px;
-	height: 689px;
+	height: 669px;
 }
 
 #framepage1 {
 	width: 1350px;
-	height: 689px;
+	height: 669px;
 	position: absolute;
 	z-index: -1;
 	background-color: #ffea96;
@@ -494,8 +496,14 @@
 }
 
 #duck:hover {
+<<<<<<< HEAD
+	background-color: #fff1b9;
+	color: #ffce04;
+	
+=======
 	background-color: #FFFFD7;
 	color: #FFF284;
+>>>>>>> origin/master
 }
 
 #duck:active {
@@ -1608,4 +1616,138 @@
 	box-shadow: 0px 0px 15px 5px white;
 	margin-top: -185px;
 	font-size: 60px;
+}
+/*   page 4 */
+#page4{
+width: 1350px;
+height: 629px;
+display:none;
+position:absolute;
+background-color:grey;
+background-image:url(gambar/ending1.png);
+
+}
+
+									
+#div_win {
+	width: 800px;
+	height: 50px;
+	margin-top: 90px;
+	margin-left: -90px;
+	position: absolute;
+	z-index: 1;
+	margin-left:430px;
+}
+
+#win_border p{
+
+font-family: colonna mt;
+display: inline-block;
+	font-size: 100px;
+	color: #c49220;
+}
+	
+
+#c {
+	-webkit-animation: label_g 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_g 7s ease infinite running;
+	
+}
+
+#o1 {
+	-webkit-animation: label_o 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_o 7s ease infinite running;
+	
+}
+
+#n {
+	-webkit-animation: label_l 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_l 7s ease infinite running;
+}
+
+#g1 {
+	-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_d 7s ease infinite running;
+}
+
+#r {
+	-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_d 7s ease infinite running;
+}
+#a {
+	-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_d 7s ease infinite running;
+}
+
+#t {
+	-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_d 7s ease infinite running;
+}
+
+#s {
+	-webkit-animation: label_d 7s ease infinite running; /* Chrome, Safari, Opera */
+	animation: label_d 7s ease infinite running;
+}
+	
+
+	/* Standard syntax */
+@keyframes label_c {
+	0% {color: #c49220;}
+	0.5% {color: white;}
+	25% {color: #c49220;}
+}
+
+@keyframes label_o1 {
+	5% {color: #c49220;}
+	15.5% {color: white;}
+	26% {color: #c49220;}
+}
+	
+@keyframes label_n {
+	10% {color: #c49220;}
+	20.5% {color: white;}
+	34% {color: #c49220;}
+}
+	
+@keyframes label_g1 {
+	25% {color: #c49220;}
+	25.5% {color: white;}
+	38% {color: #c49220;}
+}
+@keyframes label_r {
+	34% {color: #c49220;}
+	37.5% {color: white;}
+	50% {color: #c49220;}
+}
+@keyframes label_a {
+	38% {color: #c49220;}
+	40.5% {color: white;}
+	68% {color: #c49220;}
+}
+@keyframes label_t {
+	48% {color: #c49220;}
+	60.5% {color: white;}
+	78% {color: #c49220;}
+}
+@keyframes label_s {
+	55% {color: #c49220;}
+	79.5% {color: white;}
+	100% {color: #c49220;}
+}	
+
+#win1{
+margin-top:250px;
+margin-left:540px;
+width:300px;
+height:300px;
+}
+
+/*   page 5 */
+#page5{
+width: 1350px;
+height: 689px;
+display:none ;
+position:absolute;
+background-color:grey;
+
 }

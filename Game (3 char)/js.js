@@ -1169,9 +1169,9 @@ $("#jawab8").click(function() {
 		if(jwbn8 == h8) {
 			window.alert("Jawaban anda benar!" + " Udah mentok");
 			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
+				$("#page4").show(2000);
 			});
-			level++;
+			
 		}
 		else {
 			window.alert("Jawaban anda salah!");
