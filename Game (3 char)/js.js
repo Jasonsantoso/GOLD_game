@@ -2,9 +2,8 @@
 										/* Cover */
 $("#button_start_play").click(function() {
 	$("#cover").fadeOut(1000, function() {
-		$("#background_cover").slideUp(800)/*, function() {
-			$("#page1").fadeIn(1200);
-		});*/
+		$("#background_cover").slideUp(800);
+		$("#background1").fadeIn(1200);
 	});
 });
 
@@ -23,7 +22,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/worm_play.png'/>";
 		sisip_eat = "<img src='gambar/character/worm_eat.png'/>";
 		sisip_study = "<img src='gambar/character/worm_study.png'/>";
-		sisip_stop = "<img src='gambar/character/worm_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/worm_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#76b750"});
 	}
 	if(cek_play_as == "Pig") {
@@ -32,7 +31,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/pig_play.png'/>";
 		sisip_eat = "<img src='gambar/character/pig_eat.png'/>";
 		sisip_study = "<img src='gambar/character/pig_study.png'/>";
-		sisip_stop = "<img src='gambar/character/pig_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/pig_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#ee8586"});
 	}
 	if(cek_play_as == "Buffalo") {
@@ -41,7 +40,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/buffalo_play.png'/>";
 		sisip_eat = "<img src='gambar/character/buffalo_eat.png'/>";
 		sisip_study = "<img src='gambar/character/buffalo_study.png'/>";
-		sisip_stop = "<img src='gambar/character/buffalo_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/buffalo_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#515151"});
 	}
 		if(cek_play_as == "Panda") {
@@ -50,7 +49,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/panda_play.png'/>";
 		sisip_eat = "<img src='gambar/character/panda_eat.png'/>";
 		sisip_study = "<img src='gambar/character/panda_study.png'/>";
-		sisip_stop = "<img src='gambar/character/panda_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/panda_grayscale.png'/>";
 		$("#frame2").css({"background-color": "gray"});
 	}
 	
@@ -60,7 +59,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/duck_play.png'/>";
 		sisip_eat = "<img src='gambar/character/duck_eat.png'/>";
 		sisip_study = "<img src='gambar/character/duck_study.png'/>";
-		sisip_stop = "<img src='gambar/character/duck_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/duck_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#ffd93b"});
 	}
 	
@@ -70,7 +69,7 @@ $("#ok").click(function(){
 		sisip_play = "<img src='gambar/character/frog_play.png'/>";
 		sisip_eat = "<img src='gambar/character/frog_eat.png'/>";
 		sisip_study = "<img src='gambar/character/frog_study.png'/>";
-		sisip_stop = "<img src='gambar/character/frog_grayscale.png'/>";
+		sisip_pause = "<img src='gambar/character/frog_grayscale.png'/>";
 		$("#frame2").css({"background-color": "#009933"});
 	}
 		document.getElementById("tipe").innerHTML = cek_play_as;
@@ -189,7 +188,7 @@ $("#next").click(function() {
 });
 
 								/* Javascript Page 2 */
-level=1;
+level = 1;
 stamina_stat = 70;
 fun_stat = 70;
 hunger_stat = 70;
@@ -237,7 +236,7 @@ function waktu2(){
 		menitText2 = ":" + menit2;
 	}
 	
-	if (jam < 10) {
+	if (jam2 < 10) {
 		jamText2 = "0" + jam2;
 	}
 	else {
@@ -248,13 +247,14 @@ function waktu2(){
 		menit2 = 0;
 		jam2 += 1;
 	}
-	
+	/*
 	if (jam2 >= 24) {
 		jam2 = 0;
 		tanggal2 += 1;
-	}
+	}*/
 	waktuText2 = jamText2 + menitText2;
 	document.getElementById("time2").innerHTML = waktuText2;
+	document.getElementById("play_time").innerHTML = "Play Time -> " + waktuText2;
 	time2 = setTimeout(function(){waktu2()}, 100);
 }
 
@@ -949,7 +949,7 @@ $("#sleep_button").fadeOut();
 $("#play_button").fadeOut();
 $("#eat_button").fadeOut();
 $("#study_button").fadeOut();
-$("#stop_button").fadeOut();
+$("#pause_button").fadeOut();
 $("#reset_button").fadeOut();
 
 $("#start_button").click(function() {
@@ -968,7 +968,7 @@ $("#start_button").click(function() {
 	$("#ip_app_play").css({"display": "inline-block"});
 	$("#ip_app_eat").css({"display": "inline-block"});
 	$("#ip_app_study").css({"display": "inline-block"});
-	$("#ip_app_stop").css({"display": "inline-block"});
+	$("#ip_app_pause").css({"display": "inline-block"});
 	$("#ip_app_reset").css({"display": "inline-block"});
 	$("#ip_app_start").css({"display": "none"});
 	$("#ip_app_quiz").css({"display": "none"});
@@ -979,23 +979,24 @@ $("#start_button").click(function() {
 	$("#play_button").fadeIn();
 	$("#eat_button").fadeIn();
 	$("#study_button").fadeIn();
-	$("#stop_button").fadeIn();
+	$("#pause_button").fadeIn();
 	$("#reset_button").fadeIn();
 
 });
 
-$("#stop_button").click(function() {
+$("#pause_button").click(function() {
 	clearTimeout(cetak);
 	clearTimeout(dec);
 	clearTimeout(time);
 	clearTimeout(normal_mode);
-	document.getElementById("character").innerHTML = sisip_stop;
+	clearTimeout(waktu2);
+	document.getElementById("character").innerHTML = sisip_pause;
 	
 	$("#ip_app_sleep").css({"display": "none"});
 	$("#ip_app_play").css({"display": "none"});
 	$("#ip_app_eat").css({"display": "none"});
 	$("#ip_app_study").css({"display": "none"});
-	$("#ip_app_stop").css({"display": "none"});
+	$("#ip_app_pause").css({"display": "none"});
 	$("#ip_app_reset").css({"display": "none"});
 	$("#ip_app_quiz").css({"display": "none"});
 	$("#ip_app_start").css({"display": "inline-block"});
@@ -1005,7 +1006,7 @@ $("#stop_button").click(function() {
 	$("#play_button").fadeOut();
 	$("#eat_button").fadeOut();
 	$("#study_button").fadeOut();
-	$("#stop_button").fadeOut();
+	$("#pause_button").fadeOut();
 	$("#reset_button").fadeOut();
 });
 
@@ -1038,6 +1039,13 @@ $("#reset_button").click(function() {
 	$("#study_button").css({"visibility": ""});
 	
 	level = 1;
+	$("#ip_level_2").css({"visibility": "hidden"});
+	$("#ip_level_3").css({"visibility": "hidden"});
+	$("#ip_level_4").css({"visibility": "hidden"});
+	$("#ip_level_5").css({"visibility": "hidden"});
+	$("#ip_level_6").css({"visibility": "hidden"});
+	$("#ip_level_7").css({"visibility": "hidden"});
+	$("#ip_level_8").css({"visibility": "hidden"});
 });
 
 $("#quiz_button").click(function(){
@@ -1212,6 +1220,7 @@ $("#jawab8").click(function() {
 			window.alert("Jawaban anda benar!" + " Udah mentok");
 			$("#page3").fadeToggle(300, function(){
 				$("#page4").show(2000);
+				clearTimeout(waktu2);
 			});
 			
 		}
@@ -1222,4 +1231,3 @@ $("#jawab8").click(function() {
 			});
 		}
 });	
-/* http://www.incengine.com/?art=pastel_colors */

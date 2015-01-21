@@ -16,7 +16,7 @@
 
 #cover {
 	width: 1300px;
-	height: 689px;
+	height: 669px;
 	position: absolute;
 	z-index: 3;
 	color: #FFFFE3;
@@ -51,7 +51,7 @@
 	background-image: url("gambar/background/cover.png");
 	background-position: center;
 	background-size: 170%;
-	border: 10px double;
+	border: 15px double;
 	color: white;
 	font-size: 50px;
 	text-shadow: 3px 3px 1px #927b21;
@@ -226,6 +226,7 @@
 	position: absolute;
 	z-index: 0;
 	background-color: #fff4ca;
+	display: none;
 }
 
 #background1 h1 {
@@ -548,8 +549,12 @@
 }
 
 #prev:hover {
-	box-shadow: 0px 0px 15px 5px white;
-	margin-top: -5px;
+	box-shadow: 0px 0px 20px 15px white;
+	margin-top: -10px;
+}
+
+#prev:active {
+	margin-top: 0px;
 }
 
 #next {
@@ -565,8 +570,12 @@
 }
 
 #next:hover {
-	box-shadow: 0px 0px 15px 5px white;
-	margin-top: -5px;
+	box-shadow: 0px 0px 20px 15px white;
+	margin-top: -10px;
+}
+
+#next:active {
+	margin-top: 0px;
 }
 
 #play_as {
@@ -634,10 +643,13 @@
 }
 
 #ok:hover {
-	box-shadow: 0px 0px 15px 5px white;
-	margin-top: -5px;
+	box-shadow: 0px 0px 20px 15px white;
+	margin-top: -10px;
 }
 
+#ok:active {
+	margin-top: 0px;
+}
 
 /* CSS page 2 */
 
@@ -806,7 +818,7 @@
 	margin-top: 10px;
 }
 
-#ip_app_stop {
+#ip_app_pause {
 	width: 40px;
 	height: 60px;
 	display: none;
@@ -882,10 +894,18 @@
 	border-radius: 10px;
 }
 
+#sleep_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
+}
+
 #play_button {
 	width: 40px;
 	height: 40px;
 	border-radius: 10px;
+}
+
+#play_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
 }
 
 #eat_button {
@@ -894,10 +914,18 @@
 	border-radius: 10px;
 }
 
+#eat_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
+}
+
 #study_button {
 	width: 40px;
 	height: 40px;
 	border-radius: 10px;
+}
+
+#study_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
 }
 
 #start_button {
@@ -906,10 +934,18 @@
 	border-radius: 10px;
 }
 
-#stop_button {
+#start_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
+}
+
+#pause_button {
 	width: 40px;
 	height: 40px;
 	border-radius: 10px;
+}
+
+#pause_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
 }
 
 #reset_button {
@@ -918,10 +954,18 @@
 	border-radius: 10px;
 }
 
+#reset_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
+}
+
 #quiz_button {
 	width: 40px;
 	height: 40px;
 	border-radius: 10px;
+}
+
+#quiz_button:hover {
+	box-shadow: 0px 0px 10px 3px white;
 }
 
 #ip_screen div p {
@@ -1132,6 +1176,16 @@
 	z-index: 0;
 }
 
+#play_time {
+	color: white;
+	text-shadow: 2px 2px 2px #927b21;
+	width: 700px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 300px;
+	margin-top: -28px;
+}
+
 /* CSS page 3 */
 
 #page3 {
@@ -1140,7 +1194,7 @@
 
 #frame3 {
 	width: 1300px;
-	height: 689px;
+	height: 669px;
 	background-image: url("gambar/background/quiz_bg.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -1206,6 +1260,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab1:hover {
@@ -1261,6 +1316,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab2:hover {
@@ -1316,6 +1372,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab3:hover {
@@ -1371,6 +1428,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab4:hover {
@@ -1426,6 +1484,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab5:hover {
@@ -1481,6 +1540,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab6:hover {
@@ -1536,6 +1596,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab7:hover {
@@ -1591,6 +1652,7 @@
 	margin-top: -175px;
 	border-radius: 100px;
 	font-size: 50px;
+	border: 15px double white;
 }
 
 #jawab8:hover {
@@ -1803,7 +1865,7 @@ font-size:40px;
 /*   page 5 */
 #page5{
 width: 1350px;
-height: 689px;
+height: 669px;
 display:none ;
 position:absolute;
 background-color:grey;
