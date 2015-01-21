@@ -942,6 +942,7 @@ $("#study_button").click(function() {
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
+	
 });
 
 $("#sleep_button").fadeOut();
@@ -955,6 +956,7 @@ $("#start_button").click(function() {
 	stat_dec();
 	cetak_stat();
 	waktu();
+	waktu2;
 	normal_mode();
 	
 	$("#cstamina").css({"width": "226px"});
@@ -979,6 +981,7 @@ $("#start_button").click(function() {
 	$("#study_button").fadeIn();
 	$("#stop_button").fadeIn();
 	$("#reset_button").fadeIn();
+	
 });
 
 $("#stop_button").click(function() {
