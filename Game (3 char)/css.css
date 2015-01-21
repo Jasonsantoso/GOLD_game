@@ -11,6 +11,7 @@
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: 2;
+	display:none;
 }
 
 #cover {
@@ -19,6 +20,7 @@
 	position: absolute;
 	z-index: 3;
 	color: #FFFFE3;
+	display:none;
 }
 
 #cover h1 {
@@ -191,6 +193,9 @@
 	background: -moz-linear-gradient(to bottom left, #fffdc0, #c49220); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom left, #d2a12a, #fce36f, #d2a12a); /* Standard syntax (must be last) */
 	text-align: center;
+}
+#page1{
+display:none;
 }
 
 #page2 {
@@ -1599,7 +1604,7 @@
 #page4{
 width: 1350px;
 height: 629px;
-display:none;
+display:;
 position:absolute;
 background-color:grey;
 background-image:url(gambar/ending1.png);
@@ -1776,7 +1781,17 @@ width:300px;
 height:300px;
 position:absolute;
 }
-
+#waktu2 {
+width:5000px;
+position:absolute;
+margin-left:500px;
+}
+#time2 {
+position:absolute;
+color:gold;
+font-family: colonna mt;
+font-size:40px;
+}
 /*   page 5 */
 #page5{
 width: 1350px;

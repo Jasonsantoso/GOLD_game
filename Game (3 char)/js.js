@@ -220,8 +220,47 @@ tanggal = 1;
 bulan = 1;
 tahun = 2014;
 detik = 0;
+jam2 = 0;
+menit2 = 0;
+detik2= 0;
+
+function waktu2(){
+	detik2 += 1;
+	
+	if(detik2%10 == 0) {
+		menit2+=1;
+	}
+	if (menit2 < 10) {
+		menitText2 = ":0" + menit2;
+	}
+	else {
+		menitText2 = ":" + menit2;
+	}
+	
+	if (jam < 10) {
+		jamText2 = "0" + jam2;
+	}
+	else {
+		jamText2 = jam2;
+	}
+	
+	if (menit2 >= 60) {
+		menit2 = 0;
+		jam2 += 1;
+	}
+	
+	if (jam2 >= 24) {
+		jam2 = 0;
+		tanggal2 += 1;
+	}
+	waktuText2 = jamText2 + menitText2;
+	document.getElementById("time2").innerHTML = waktuText2;
+	time2 = setTimeout(function(){waktu2()}, 100);
+}
+
 function waktu() {
 	detik += 1;
+	
 	
 	if(detik%10 == 0) {
 		menit+=1;
