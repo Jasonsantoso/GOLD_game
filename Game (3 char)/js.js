@@ -956,7 +956,7 @@ $("#start_button").click(function() {
 	stat_dec();
 	cetak_stat();
 	waktu();
-	waktu2;
+	waktu2();
 	normal_mode();
 	
 	$("#cstamina").css({"width": "226px"});
@@ -981,7 +981,7 @@ $("#start_button").click(function() {
 	$("#study_button").fadeIn();
 	$("#stop_button").fadeIn();
 	$("#reset_button").fadeIn();
-	
+
 });
 
 $("#stop_button").click(function() {
