@@ -868,7 +868,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 100;
+	intelligent_stat += 5;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1027,7 +1027,7 @@ sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1
 sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
 sisip_4 = document.getElementById("l4").innerHTML = q1_1 + "*" + q1_3 + "=";
 sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1_4 + "=";
-sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "+" + q1_3 + "=";
+sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
 
