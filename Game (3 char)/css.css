@@ -19,8 +19,6 @@
 	height: 669px;
 	position: absolute;
 	z-index: 3;
-	color: #FFFFE3;
-	
 }
 
 #cover h1 {
@@ -1201,16 +1199,9 @@
 	z-index: -1;
 }
 
-#background3 {
-	width: 1200px;
-	height: 600px;
-	position: absolute;
-	z-index: 0;
-	margin-left: 50px;
-	margin-top: 35px;
-	background-color: gray;
-	opacity: 0.8;
-	box-shadow: 0px 0px 25px 25px white;
+#frame3 div h1 {
+	color: black;
+	margin-top: 100px;
 }
 
 #soal1{
@@ -1220,8 +1211,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
-
+	padding-left: 120px;
 }
 
 #soal1 h1 {
@@ -1242,13 +1232,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a1:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab1{
@@ -1264,7 +1253,7 @@
 }
 
 #jawab1:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1276,7 +1265,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1298,13 +1287,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a2:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab2 {
@@ -1320,7 +1308,7 @@
 }
 
 #jawab2:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1332,7 +1320,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1354,13 +1342,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a3:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab3 {
@@ -1376,7 +1363,7 @@
 }
 
 #jawab3:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1388,7 +1375,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1410,13 +1397,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a4:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab4 {
@@ -1432,7 +1418,7 @@
 }
 
 #jawab4:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1444,7 +1430,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1466,13 +1452,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a5:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab5 {
@@ -1488,7 +1473,7 @@
 }
 
 #jawab5:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1500,7 +1485,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1522,13 +1507,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a6:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab6 {
@@ -1544,7 +1528,7 @@
 }
 
 #jawab6:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1556,7 +1540,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1567,6 +1551,7 @@
 
 #l7 {
 	color: black;
+	font-size: 110px;
 }
 
 #a7 {
@@ -1578,13 +1563,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a7:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab7 {
@@ -1600,7 +1584,7 @@
 }
 
 #jawab7:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1612,7 +1596,7 @@
 	width: 1000px;
 	height: 360px;
 	font-size: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	display: none;
 }
 
@@ -1623,6 +1607,7 @@
 
 #l8 {
 	color: black;
+	font-size: 110px;
 }
 
 #a8 {
@@ -1634,13 +1619,12 @@
 	width: 250px;
 	height: 100px;
 	background-color: white;
-	border-style: none;
-	opacity: 0.8;
+	border: 1px solid black;
 	font-size: 70px;
 }
 
 #a8:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 }
 
 #jawab8 {
@@ -1656,7 +1640,7 @@
 }
 
 #jawab8:hover {
-	box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px gray;
 	margin-top: -185px;
 	font-size: 60px;
 }
@@ -1870,4 +1854,20 @@ display:none ;
 position:absolute;
 background-color:grey;
 
+}
+
+#GAMEOVER {
+	background-image: url("gambar/background/gameover.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 125%;
+	position: absolute;
+	z-index: 5;
+	width: 800px;
+	height: 320px;
+	border-radius: 200px;
+	box-shadow: 0px 0px 100px 100px /*#9bac4c*/ gray;
+	margin-top: -500px;
+	margin-left: 280px;
+	display: none;
 }

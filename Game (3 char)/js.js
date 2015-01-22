@@ -226,15 +226,18 @@ a=1;
 b=1;
 function waktu2(){
 	detik2 += a;
-	if(detik2 <10){
+	
+	if(detik2 <10) {
 		detik2Text = ":0" +detik2;
 	}
-	else{
+	else {
 		detik2Text = ":" +detik2;
 	}		
+	
 	if(detik2%60 == 0) {
 		menit2+=1;
 	}
+	
 	if (menit2 < 10) {
 		menitText2 = ":0" + menit2;
 	}
@@ -253,18 +256,15 @@ function waktu2(){
 		menit2 = 0;
 		jam2 += 1;
 	}
-	if(detik2 >=60) {
+	
+	if(detik2 >= 60) {
 		detik2 = 0;
 	}
-	/*
-	if (jam2 >= 24) {
-		jam2 = 0;
-		tanggal2 += 1;
-	}*/
+	
 	waktuText2 = jamText2 + menitText2 +detik2Text;
 	document.getElementById("time2").innerHTML = waktuText2;
 	document.getElementById("play_time").innerHTML = "Play Time -> " + waktuText2;
-	time2 = setTimeout(function(){waktu2()}, 100);
+	time2 = setTimeout(function(){waktu2()}, 1000);
 }
 
 function waktu() {
@@ -348,9 +348,18 @@ function stat_dec() {
 }
 
 function cetak_stat() {
-	if (stamina_stat <= 0) stamina_stat = 0;
-	if (fun_stat <= 0) fun_stat = 0;
-	if (hunger_stat <= 0) hunger_stat = 0;
+	if (stamina_stat <= 0) {
+		stamina_stat = 0;
+		$("#GAMEOVER").show(800);
+	}
+	if (fun_stat <= 0) {
+		fun_stat = 0;
+		$("#GAMEOVER").show(800);
+	}
+	if (hunger_stat <= 0) {
+		hunger_stat = 0;
+		$("#GAMEOVER").show(800);
+	}
 	
 	if (stamina_stat >= 100) stamina_stat = 100;
 	if (fun_stat >= 100) fun_stat = 100;
