@@ -225,8 +225,13 @@ detik2= 0;
 
 function waktu2(){
 	detik2 += 1;
-	
-	if(detik2%10 == 0) {
+	if(detik2 <10){
+		detik2Text = ":0" +detik2;
+	}
+	else{
+		detik2Text = ":" +detik2;
+	}		
+	if(detik2%60 == 0) {
 		menit2+=1;
 	}
 	if (menit2 < 10) {
@@ -252,7 +257,7 @@ function waktu2(){
 		jam2 = 0;
 		tanggal2 += 1;
 	}*/
-	waktuText2 = jamText2 + menitText2;
+	waktuText2 = jamText2 + menitText2 +detik2Text;
 	document.getElementById("time2").innerHTML = waktuText2;
 	document.getElementById("play_time").innerHTML = "Play Time -> " + waktuText2;
 	time2 = setTimeout(function(){waktu2()}, 100);
@@ -942,7 +947,8 @@ $("#study_button").click(function() {
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
-	
+	$("#page2").fadeOut();
+	$("#page4").fadeIn();
 });
 
 $("#sleep_button").fadeOut();
