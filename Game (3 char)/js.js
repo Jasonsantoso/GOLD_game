@@ -340,9 +340,9 @@ function waktu() {
 }
 
 function stat_dec() {
-	stamina_stat -= 1;
-	fun_stat -= 1;
-	hunger_stat -= 1;
+	stamina_stat -= b;
+	fun_stat -= b;
+	hunger_stat -= b;
 	
 	dec = setTimeout(function(){stat_dec();},1000);
 }
