@@ -223,6 +223,7 @@ jam2 = 0;
 menit2 = 0;
 detik2= 0;
 a=1;
+b=1;
 function waktu2(){
 	detik2 += a;
 	if(detik2 <10){
@@ -267,7 +268,7 @@ function waktu2(){
 }
 
 function waktu() {
-	detik += 1;
+	detik += b;
 	
 	
 	if(detik%10 == 0) {
@@ -1058,6 +1059,7 @@ $("#reset_button").click(function() {
 $("#quiz_button").click(function(){
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
+		b=0;
 	});
 	intelligent_stat = 0;
 });
@@ -1097,6 +1099,7 @@ $("#jawab1").click(function() {
 			});
 			$("#soal1").hide(2000);
 			$("#soal2").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1104,6 +1107,7 @@ $("#jawab1").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1116,6 +1120,7 @@ $("#jawab2").click(function() {
 			});
 			$("#soal2").hide(2000);
 			$("#soal3").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1123,6 +1128,7 @@ $("#jawab2").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+		b=1;
 		}
 });	
 
@@ -1135,6 +1141,7 @@ $("#jawab3").click(function() {
 			});
 			$("#soal3").hide(2000);
 			$("#soal4").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1142,6 +1149,7 @@ $("#jawab3").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1154,6 +1162,7 @@ $("#jawab4").click(function() {
 			});
 			$("#soal4").hide(2000);
 			$("#soal5").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1161,6 +1170,7 @@ $("#jawab4").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1173,6 +1183,7 @@ $("#jawab5").click(function() {
 			});
 			$("#soal5").hide(2000);
 			$("#soal6").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1180,6 +1191,7 @@ $("#jawab5").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1192,6 +1204,7 @@ $("#jawab6").click(function() {
 			});
 			$("#soal6").hide(2000);
 			$("#soal7").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1199,6 +1212,7 @@ $("#jawab6").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1211,6 +1225,7 @@ $("#jawab7").click(function() {
 			});
 			$("#soal7").hide(2000);
 			$("#soal8").show(2000);
+			b=1;
 			level++;
 		}
 		else {
@@ -1218,6 +1233,7 @@ $("#jawab7").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
 
@@ -1236,5 +1252,6 @@ $("#jawab8").click(function() {
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
+			b=1;
 		}
 });	
