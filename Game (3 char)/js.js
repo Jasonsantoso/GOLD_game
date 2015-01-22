@@ -222,9 +222,9 @@ detik = 0;
 jam2 = 0;
 menit2 = 0;
 detik2= 0;
-
+a=1;
 function waktu2(){
-	detik2 += 1;
+	detik2 += a;
 	if(detik2 <10){
 		detik2Text = ":0" +detik2;
 	}
@@ -950,7 +950,6 @@ $("#study_button").click(function() {
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
-	
 });
 
 $("#sleep_button").fadeOut();
@@ -1228,7 +1227,7 @@ $("#jawab8").click(function() {
 			window.alert("Jawaban anda benar!" + " Udah mentok");
 			$("#page3").fadeToggle(300, function(){
 				$("#page4").show(2000);
-				clearTimeout(waktu2);
+				a=0;
 			});
 			
 		}
