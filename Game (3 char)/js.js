@@ -252,6 +252,9 @@ function waktu2(){
 		menit2 = 0;
 		jam2 += 1;
 	}
+	if(detik2 >=60) {
+		detik2 = 0;
+	}
 	/*
 	if (jam2 >= 24) {
 		jam2 = 0;
@@ -947,8 +950,7 @@ $("#study_button").click(function() {
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
-	$("#page2").fadeOut();
-	$("#page4").fadeIn();
+	
 });
 
 $("#sleep_button").fadeOut();
