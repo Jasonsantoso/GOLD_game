@@ -925,7 +925,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 5;
+	intelligent_stat += 100;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1049,7 +1049,7 @@ $("#reset_button").click(function() {
 	counter_stat_play = 0;
 	counter_stat_eat = 0;
 	counter_stat_study = 0;
-	
+
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
@@ -1063,6 +1063,17 @@ $("#reset_button").click(function() {
 	$("#ip_level_6").css({"visibility": "hidden"});
 	$("#ip_level_7").css({"visibility": "hidden"});
 	$("#ip_level_8").css({"visibility": "hidden"});
+
+	$("#soal1").css({"visibility": "hidden"});
+	$("#soal2").css({"visibility": "hidden"});
+	$("#soal3").css({"visibility": "hidden"});
+	$("#soal4").css({"visibility": "hidden"});
+	$("#soal5").css({"visibility": "hidden"});
+	$("#soal6").css({"visibility": "hidden"});
+	$("#soal7").css({"visibility": "hidden"});
+	$("#soal8").css({"visibility": "hidden"});
+	$("#soal9").css({"visibility": ""});
+	
 });
 
 $("#quiz_button").click(function(){
@@ -1089,7 +1100,8 @@ h5 = q1_5 + q1_2 - q1_4;
 h6 = q1_2 * q1_4 * q1_3;
 h7 = q1_1 * q1_5 + q1_5 * q1_3;
 h8 = q1_4 * q1_2 + q1_3 * q1_1;
-						
+h9 = q1_2 + q1_3;			
+			
 sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
 sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
 sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
@@ -1098,6 +1110,7 @@ sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1
 sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
+sisip_9 = document.getElementById("l1").innerHTML = q1_2 + "+" + q1_3 + "=";
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
@@ -1255,6 +1268,27 @@ $("#jawab8").click(function() {
 				a=0;
 			});
 			
+		}
+		else {
+			window.alert("Jawaban anda salah!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			b=1;
+		}
+});	
+
+$("#jawab9").click(function() {
+	jwbn9 = document.getElementById("a9").value;
+		if(jwbn9 == h9) {
+			window.alert("Jawaban anda benar!");
+			$("#page3").fadeToggle(300, function(){
+				$("#page2").show(2000);
+			});
+			$("#soal9").hide(2000);
+			$("#soal2").show(2000);
+			b=1;
+			level++;
 		}
 		else {
 			window.alert("Jawaban anda salah!");
