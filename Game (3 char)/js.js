@@ -925,7 +925,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 100;
+	intelligent_stat += 10;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1064,14 +1064,14 @@ $("#reset_button").click(function() {
 	$("#ip_level_7").css({"visibility": "hidden"});
 	$("#ip_level_8").css({"visibility": "hidden"});
 
-	$("#soal1").css({"display: none"});
-	$("#soal2").css({"display: none"});
-	$("#soal3").css({"display: none"});
-	$("#soal4").css({"display: none"});
-	$("#soal5").css({"display: none"});
-	$("#soal6").css({"display: none"});
-	$("#soal7").css({"display: none"});
-	$("#soal8").css({"display: none"});
+	$("#soal1").css({"display": "none"});
+	$("#soal2").css({"display": "none"});
+	$("#soal3").css({"display": "none"});
+	$("#soal4").css({"display": "none"});
+	$("#soal5").css({"display": "none"});
+	$("#soal6").css({"display": "none"});
+	$("#soal7").css({"display": "none"});
+	$("#soal8").css({"display": "none"});
 	$("#soal9").show();
 	
 });
