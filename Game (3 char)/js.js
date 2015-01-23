@@ -1064,15 +1064,15 @@ $("#reset_button").click(function() {
 	$("#ip_level_7").css({"visibility": "hidden"});
 	$("#ip_level_8").css({"visibility": "hidden"});
 
-	$("#soal1").css({"visibility": "hidden"});
-	$("#soal2").css({"visibility": "hidden"});
-	$("#soal3").css({"visibility": "hidden"});
-	$("#soal4").css({"visibility": "hidden"});
-	$("#soal5").css({"visibility": "hidden"});
-	$("#soal6").css({"visibility": "hidden"});
-	$("#soal7").css({"visibility": "hidden"});
-	$("#soal8").css({"visibility": "hidden"});
-	$("#soal9").css({"visibility": ""});
+	$("#soal1").css({"display: none"});
+	$("#soal2").css({"display: none"});
+	$("#soal3").css({"display: none"});
+	$("#soal4").css({"display: none"});
+	$("#soal5").css({"display: none"});
+	$("#soal6").css({"display: none"});
+	$("#soal7").css({"display: none"});
+	$("#soal8").css({"display: none"});
+	$("#soal9").show();
 	
 });
 
@@ -1110,7 +1110,7 @@ sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1
 sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
-sisip_9 = document.getElementById("l1").innerHTML = q1_2 + "+" + q1_3 + "=";
+sisip_9 = document.getElementById("l9").innerHTML = q1_2 + "+" + q1_3 + "=";
 
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;
