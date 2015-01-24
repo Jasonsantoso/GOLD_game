@@ -352,14 +352,20 @@ function stat_dec() {
 function cetak_stat() {
 	if (stamina_stat <= 0) {
 		stamina_stat = 0;
+		$("#page2").hide(400);
+		$("#page3").show(400);
 		$("#GAMEOVER").show(800);
 	}
 	if (fun_stat <= 0) {
 		fun_stat = 0;
+		$("#page2").hide(400);
+		$("#page3").show(400);
 		$("#GAMEOVER").show(800);
 	}
 	if (hunger_stat <= 0) {
 		hunger_stat = 0;
+		$("#page2").hide(400);
+		$("#page3").show(400);
 		$("#GAMEOVER").show(800);
 	}
 	
