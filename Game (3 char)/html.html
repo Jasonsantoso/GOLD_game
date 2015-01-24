@@ -1,14 +1,14 @@
 <!doctype html>
-<html>
+<html onContextMenu="return false" >
 <head>
 	<title>GOLD_game</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<script type="text/javascript" src="library jQuery\jquery-1.11.2.min.js"></script>
 </head>
-<body onContextMenu="return false">
+<body>
 									<!-- Cover -->
-	<div id="background_cover"></div>
-	<div id="cover">
+	<div onMouseDown="return false" id="background_cover"></div>
+	<div onMouseDown="return false" id="cover">
 		<h1>Web Programming</h1>
 		<ul>
 			<li>2014100907 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jason</li>
@@ -18,7 +18,7 @@
 		<button id="button_start_play">Play</button>
 	</div>
 									<!-- Logo -->
-	<div id="div_gold">
+	<div onMouseDown="return false" id="div_gold">
 		<div id="gold_border">
 			<p id="g">G</p>
 			<p id="o">O</p>
@@ -65,7 +65,7 @@
 					<button id="prev"><</button>
 					<button id="next">></button>
 				</div>
-				<div id="play_as"></div>
+				<div onMouseDown="return true" id="play_as"></div>
 				<form action="" method="get">
 					<div id="inputname">
 						<label id="name2">Name:</label>
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 									<!-- Page 2 -->
-	<div id="page2">
+	<div id="page2"onMouseDown="return false">
 		<div id="frame2">
 			<div id="background2">	
 				<div id="bgpage2">
@@ -281,7 +281,7 @@
 		</div>
 	</div>
 	<!-- page 4-->
-<div id="page4">
+<div id="page4"onMouseDown="return false">
 	<div id="filter1">
 	<div id="div_win">
 		<div id="win_border">
@@ -303,7 +303,7 @@
 	<img id="win1" src="gambar/character/winning.gif"/>
 </div>
 								<!--page 5 -->
-	<div id="page5"></div> <!-- cuma filter -->
+	<div id="page5"onMouseDown="return false"></div> <!-- cuma filter -->
 
 	<div id="GAMEOVER"></div>
 	<audio autoplay loop>
