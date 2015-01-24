@@ -1,12 +1,21 @@
 /* Javascript */
 										/* Cover */
 $("#button_start_play").click(function() {
+	document.getElementById("name").value="";
 	$("#cover").fadeOut(1000, function() {
 		$("#background_cover").slideUp(800);
 		$("#background1").fadeIn(1200);
+		
 	});
 });
+				/* java click kanan */
+ var message="dilarang klik kanan";
 
+function clickIE4(){if (event.button==2){alert(message);return false;}}
+function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}}
+if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;}
+else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;}
+document.oncontextmenu=new Function("alert(message);return false")
 								/* Javascript Page 1 */
 $("#ok").click(function(){
 	inputan_nama = document.getElementById("name").value;
@@ -960,6 +969,8 @@ $("#study_button").click(function() {
 	$("#sleep_button").css({"visibility": ""});
 	$("#play_button").css({"visibility": ""});
 	$("#eat_button").css({"visibility": ""});
+	
+	
 });
 
 $("#sleep_button").fadeOut();
@@ -1077,6 +1088,37 @@ $("#reset_button").click(function() {
 });
 
 $("#quiz_button").click(function(){
+	
+var q1_1 = Math.floor(Math.random()*10+1);
+var q1_2 = Math.floor(Math.random()*10+1);
+var q1_3 = Math.floor(Math.random()*10+1);
+var q1_4 = Math.floor(Math.random()*10+1);
+var q1_5 = Math.floor(Math.random()*10+1);	
+h1 = q1_1 + q1_2;
+h2 = q1_3 + q1_4 + q1_5;
+h3 = q1_2 * q1_4;
+h4 = q1_1 *	q1_3;
+h5 = q1_5 + q1_2 - q1_4;
+h6 = q1_2 * q1_4 * q1_3;
+h7 = q1_1 * q1_5 + q1_5 * q1_3;
+h8 = q1_4 * q1_2 + q1_3 * q1_1;
+h9 = q1_2 + q1_3;
+sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
+sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
+sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
+sisip_4 = document.getElementById("l4").innerHTML = q1_1 + "*" + q1_3 + "=";
+sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1_4 + "=";
+sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
+sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
+sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
+r1=document.getElementById("a1").value="";
+r2=document.getElementById("a2").value="";
+r3=document.getElementById("a3").value="";
+r4=document.getElementById("a4").value="";
+r5=document.getElementById("a5").value="";
+r6=document.getElementById("a6").value="";
+r7=document.getElementById("a7").value="";
+r8=document.getElementById("a8").value="";
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 		b=0;
@@ -1113,7 +1155,7 @@ sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1
 sisip_9 = document.getElementById("l9").innerHTML = q1_2 + "+" + q1_3 + "=";
 
 $("#jawab1").click(function() {
-	jwbn1 = document.getElementById("a1").value;
+	jwbn1 = document.getElementById("a1").value;	
 		if(jwbn1 == h1) {
 			window.alert("Jawaban anda benar!");
 			$("#page3").fadeToggle(300, function(){
