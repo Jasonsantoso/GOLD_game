@@ -2,51 +2,99 @@
 <html>
 <head>
 	<style>
-		#lulus_1 {
-			width: 400px;
-			height: 300px;
+		#lulus {
+			width: 550px;
+			height: 350px;
 			margin-top: 150px;
 			box-shadow: 0px 0px 100px 5px gray;
 			border-radius: 40px;
+			background-image: url("gambar/background/pop_up_bg.jpg");
+			background-position: center;
+			background-size: 100%;
+			padding-top: 60px;
 			display: none;
 		}
 		
-		#lulus_1 label {
+		#lvl_up {
 			text-align: center;
 			font-size: 50px;
-			margin-top: 30px;
-			margin-bottom : 100px;
+			width: 250px;
+			height: 67px;
+			-ms-transform: rotate(-3deg); /* IE 9 */
+			-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+			transform: rotate(-3deg);
+			color: #fac778;
+			text-shadow: 1px 1px 1px #af6331;
+			display: none;
+		}
+		
+		#bungkus_star {
+			width: 220px;
+			height: 130px;
+			-ms-transform: rotate(-3deg); /* IE 9 */
+			-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+			transform: rotate(-3deg);
+		}
+		
+		#bungkus_star img {
+			margin-left: 10px;
+			margin-top: 10px;
+			width: 40px;
+			height: 40px;
+			-webkit-animation: star_animation 2s ease-out normal; /* Chrome, Safari, Opera */
+			animation: star_animation 2s ease-out normal;
+		}
+		
+		@-webkit-keyframes star_animation {
+			from {-ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+			to {-ms-transform: rotate(720deg); /* IE 9 */ -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */ transform: rotate(720deg);}
+		}
+		
+		@keyframes star_animation {
+			from {-ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+			to {-ms-transform: rotate(720deg); /* IE 9 */ -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */ transform: rotate(720deg);}
 		}
 		
 		#pop_up_button_1 {
-			width: 50px;
-			height: 50px;
-			font-size: 20px;
+			width: 70px;
+			height: 70px;
+			font-size: 40px;
+			font-weight: bold;
+			text-shadow: 2px 2px 3px #a2552b;
+			color: white;
 			border-radius: 40px;
 			position: absolute;
 			margin-left: -25px;
+			margin-top: -25px;
+			background-image: url("gambar/background/pop_up_bg.jpg");
+			background-size: 660%;
+			border: none;
+			box-shadow: 1px 1px 1px 3px #e4e3e1;
 			display: none;
-			margin-top: 50px;
 		}
 		
-		img {
-			width: 40px;
-			height: 40px;
+		#pop_up_button_1:hover {
+			margin-top: -35px;
+			box-shadow: 1px 1px 15px 10px #e4e3e1;
 		}
 	</style>
 	<script type="text/javascript" src="library jQuery\jquery-1.11.2.min.js"></script>
 	<script type="text/javascript">
+	level = 2;
+	
 	function play() {
-		$("#lulus_1").show(1000, function() {
-			$("#pop_up_star_1").fadeIn(1000, function() {
-				$("#pop_up_star_2").fadeIn(1000, function() {
-					$("#pop_up_star_3").fadeIn(1000, function() {
-						$("#pop_up_star_4").fadeIn(1000, function() {
-							$("#pop_up_star_5").fadeIn(1000, function() {
-								$("#pop_up_star_6").fadeIn(1000, function() {
-									$("#pop_up_star_7").fadeIn(1000, function() {
-										$("#pop_up_star_8").fadeIn(1000, function() {
-											$("#pop_up_button_1").slideDown(2000);
+		$("#lulus").show(500, function() {
+			$("#lvl_up").fadeIn(1000, function() {
+				$("#pop_up_star_1").show(500, function() {
+					$("#pop_up_star_2").show(500, function() {
+						$("#pop_up_star_3").show(500, function() {
+							$("#pop_up_star_4").show(500, function() {
+								$("#pop_up_star_5").show(500, function() {
+									$("#pop_up_star_6").show(500, function() {
+										$("#pop_up_star_7").show(500, function() {
+											$("#pop_up_star_8").show(500, function() {
+												$("#pop_up_button_1").slideDown(1000);
+											});
 										});
 									});
 								});
@@ -54,7 +102,7 @@
 						});
 					});
 				});
-			});
+			});	
 		});	
 	}
 	</script>
@@ -62,17 +110,19 @@
 <body>
 	
 <center>
-	<div id="lulus_1">
-		<label>Level UP &#8682;</label>
+	<div id="lulus">
+		<div id="lvl_up">Level UP &#8682;</div>
 		<br/>
-		<img id="pop_up_star_1" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_2" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_3" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_4" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_5" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_6" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_7" src="gambar/star.png" style="display: none;"/>
-		<img id="pop_up_star_8" src="gambar/star.png" style="display: none;"/>
+		<div id="bungkus_star">
+			<img id="pop_up_star_1" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_2" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_3" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_4" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_5" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_6" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_7" src="gambar/star.png" style="display: none;"/>
+			<img id="pop_up_star_8" src="gambar/star.png" style="display: none;"/>
+		</div>	
 		<br/>
 		<button id="pop_up_button_1">&#8680;</button>
 	</div>
