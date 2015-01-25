@@ -1111,7 +1111,15 @@ r5=document.getElementById("a5").value="";
 r6=document.getElementById("a6").value="";
 r7=document.getElementById("a7").value="";
 r8=document.getElementById("a8").value="";
-	
+$("#soal1").show(2000);
+$("#soal2").hide(2000);
+$("#soal3").hide(2000);
+$("#soal4").hide(2000);
+$("#soal5").hide(2000);
+$("#soal6").hide(2000);
+$("#soal7").hide(2000);
+$("#soal8").hide(2000);
+$("#soal9").hide(2000);	
 });
 
 $("#quiz_button").click(function(){
@@ -1146,15 +1154,7 @@ r5=document.getElementById("a5").value="";
 r6=document.getElementById("a6").value="";
 r7=document.getElementById("a7").value="";
 r8=document.getElementById("a8").value="";
-$("#soal1").show(2000);
-$("#soal2").hide(2000);
-$("#soal3").hide(2000);
-$("#soal4").hide(2000);
-$("#soal5").hide(2000);
-$("#soal6").hide(2000);
-$("#soal7").hide(2000);
-$("#soal8").hide(2000);
-$("#soal9").hide(2000);
+
 	$("#page2").fadeToggle(300, function(){
 		$("#page3").show(2000);
 		b=0;
