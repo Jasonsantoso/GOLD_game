@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		#lulus_1 {
+			width: 400px;
+			height: 300px;
+			margin-top: 150px;
+			box-shadow: 0px 0px 100px 5px gray;
+			border-radius: 40px;
+			display: none;
+		}
+		
+		#lulus_1 label {
+			text-align: center;
+			font-size: 50px;
+			margin-top: 30px;
+			margin-bottom : 100px;
+		}
+		
+		#pop_up_button_1 {
+			width: 50px;
+			height: 50px;
+			font-size: 20px;
+			border-radius: 40px;
+			position: absolute;
+			margin-left: -25px;
+			display: none;
+			margin-top: 50px;
+		}
+		
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	</style>
+	<script type="text/javascript" src="library jQuery\jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	function play() {
+		$("#lulus_1").show(1000, function() {
+			$("#pop_up_star_1").fadeIn(1000, function() {
+				$("#pop_up_star_2").fadeIn(1000, function() {
+					$("#pop_up_star_3").fadeIn(1000, function() {
+						$("#pop_up_star_4").fadeIn(1000, function() {
+							$("#pop_up_star_5").fadeIn(1000, function() {
+								$("#pop_up_star_6").fadeIn(1000, function() {
+									$("#pop_up_star_7").fadeIn(1000, function() {
+										$("#pop_up_star_8").fadeIn(1000, function() {
+											$("#pop_up_button_1").slideDown(2000);
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});	
+	}
+	</script>
+</head>
+<body>
+	
+<center>
+	<div id="lulus_1">
+		<label>Level UP &#8682;</label>
+		<br/>
+		<img id="pop_up_star_1" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_2" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_3" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_4" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_5" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_6" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_7" src="gambar/star.png" style="display: none;"/>
+		<img id="pop_up_star_8" src="gambar/star.png" style="display: none;"/>
+		<br/>
+		<button id="pop_up_button_1">&#8680;</button>
+	</div>
+	<button onclick="play()">Play</button>
+</center>
+</body>
+</html>
