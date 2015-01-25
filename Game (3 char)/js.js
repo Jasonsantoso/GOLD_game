@@ -1067,17 +1067,6 @@ $("#reset_button").click(function() {
 	$("#ip_level_6").css({"visibility": "hidden"});
 	$("#ip_level_7").css({"visibility": "hidden"});
 	$("#ip_level_8").css({"visibility": "hidden"});
-
-	$("#soal1").css({"display": "none"});
-	$("#soal2").css({"display": "none"});
-	$("#soal3").css({"display": "none"});
-	$("#soal4").css({"display": "none"});
-	$("#soal5").css({"display": "none"});
-	$("#soal6").css({"display": "none"});
-	$("#soal7").css({"display": "none"});
-	$("#soal8").css({"display": "none"});
-	$("#soal9").show();
-	
 	
 	$("#soal1").show(2000);
 	$("#soal2").hide(2000);
@@ -1087,7 +1076,6 @@ $("#reset_button").click(function() {
 	$("#soal6").hide(2000);
 	$("#soal7").hide(2000);
 	$("#soal8").hide(2000);
-	$("#soal9").hide(2000);	
 });
 
 $("#quiz_button").click(function(){
@@ -1383,8 +1371,7 @@ h4 = q1_1 *	q1_3;
 h5 = q1_5 + q1_2 - q1_4;
 h6 = q1_2 * q1_4 * q1_3;
 h7 = q1_1 * q1_5 + q1_5 * q1_3;
-h8 = q1_4 * q1_2 + q1_3 * q1_1;
-h9 = q1_2 + q1_3;			
+h8 = q1_4 * q1_2 + q1_3 * q1_1;		
 			
 sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
 sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
@@ -1394,7 +1381,6 @@ sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1
 sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
 sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
-sisip_9 = document.getElementById("l9").innerHTML = q1_2 + "+" + q1_3 + "=";
 
 
 $("#jawab1").click(function() {
