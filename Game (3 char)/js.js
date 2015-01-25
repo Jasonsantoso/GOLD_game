@@ -927,7 +927,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 100;
+	intelligent_stat += 5;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1383,7 +1383,23 @@ if (level == 7) {
 }
 
 }
-
+function pop_up_fail() { 
+		$("#failed").show(500, function() {
+			$("#fail1").fadeIn(1000, function() {			
+						$("#pop_up_button_2").slideDown(1000);
+						$("#pop_up_button_2").click(function() {
+							$("#failed").slideUp(function() {
+								$("#page3").fadeOut(300, function(){
+									$("#page2").show(2000);
+								});
+							});	
+							$("#fail1").hide();
+							$("#pop_up_button_2").hide();
+								});
+							});
+						});
+}
+						
 var q1_1 = Math.floor(Math.random()*10+1);
 var q1_2 = Math.floor(Math.random()*10+1);
 var q1_3 = Math.floor(Math.random()*10+1);
@@ -1418,10 +1434,8 @@ $("#jawab1").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1434,10 +1448,8 @@ $("#jawab2").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
+			
 			b=1;
 		}
 });	
@@ -1450,10 +1462,7 @@ $("#jawab3").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1466,10 +1475,7 @@ $("#jawab4").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1482,10 +1488,7 @@ $("#jawab5").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1498,10 +1501,7 @@ $("#jawab6").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1514,10 +1514,7 @@ $("#jawab7").click(function() {
 			level++;
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
@@ -1525,7 +1522,7 @@ $("#jawab7").click(function() {
 $("#jawab8").click(function() {
 	jwbn8 = document.getElementById("a8").value;
 		if(jwbn8 == h8) {
-			window.alert("Jawaban anda benar!" + " Udah mentok");
+			window.alert("Jawaban anda benar!" + "selamat");
 			$("#page3").fadeToggle(300, function(){
 				$("#page4").show(2000);
 				a=0;
@@ -1533,31 +1530,8 @@ $("#jawab8").click(function() {
 			
 		}
 		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
+			pop_up_fail();
 			b=1;
 		}
 });	
 
-$("#jawab9").click(function() {
-	jwbn9 = document.getElementById("a9").value;
-		if(jwbn9 == h9) {
-			window.alert("Jawaban anda benar!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
-			$("#soal9").hide(2000);
-			$("#soal2").show(2000);
-			b=1;
-			level++;
-		}
-		else {
-			window.alert("Jawaban anda salah!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
-			b=1;
-		}
-});	
