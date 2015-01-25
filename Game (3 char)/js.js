@@ -352,17 +352,14 @@ function stat_dec() {
 function cetak_stat() {
 	if (stamina_stat <= 0) {
 		stamina_stat = 0;
-		$("#page2").hide(400);
 		$("#GAMEOVER").show(800);
 	}
 	if (fun_stat <= 0) {
 		fun_stat = 0;
-		$("#page2").hide(400);
 		$("#GAMEOVER").show(800);
 	}
 	if (hunger_stat <= 0) {
 		hunger_stat = 0;
-		$("#page2").hide(400);
 		$("#GAMEOVER").show(800);
 	}
 	
@@ -930,7 +927,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 10;
+	intelligent_stat += 100;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1082,44 +1079,44 @@ $("#reset_button").click(function() {
 	$("#soal9").show();
 	
 	var q1_1 = Math.floor(Math.random()*10+1);
-var q1_2 = Math.floor(Math.random()*10+1);
-var q1_3 = Math.floor(Math.random()*10+1);
-var q1_4 = Math.floor(Math.random()*10+1);
-var q1_5 = Math.floor(Math.random()*10+1);	
-h1 = q1_1 + q1_2;
-h2 = q1_3 + q1_4 + q1_5;
-h3 = q1_2 * q1_4;
-h4 = q1_1 *	q1_3;
-h5 = q1_5 + q1_2 - q1_4;
-h6 = q1_2 * q1_4 * q1_3;
-h7 = q1_1 * q1_5 + q1_5 * q1_3;
-h8 = q1_4 * q1_2 + q1_3 * q1_1;
-h9 = q1_2 + q1_3;
-sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
-sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
-sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
-sisip_4 = document.getElementById("l4").innerHTML = q1_1 + "*" + q1_3 + "=";
-sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1_4 + "=";
-sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
-sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
-sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
-r1=document.getElementById("a1").value="";
-r2=document.getElementById("a2").value="";
-r3=document.getElementById("a3").value="";
-r4=document.getElementById("a4").value="";
-r5=document.getElementById("a5").value="";
-r6=document.getElementById("a6").value="";
-r7=document.getElementById("a7").value="";
-r8=document.getElementById("a8").value="";
-$("#soal1").show(2000);
-$("#soal2").hide(2000);
-$("#soal3").hide(2000);
-$("#soal4").hide(2000);
-$("#soal5").hide(2000);
-$("#soal6").hide(2000);
-$("#soal7").hide(2000);
-$("#soal8").hide(2000);
-$("#soal9").hide(2000);	
+	var q1_2 = Math.floor(Math.random()*10+1);
+	var q1_3 = Math.floor(Math.random()*10+1);
+	var q1_4 = Math.floor(Math.random()*10+1);
+	var q1_5 = Math.floor(Math.random()*10+1);	
+	h1 = q1_1 + q1_2;
+	h2 = q1_3 + q1_4 + q1_5;
+	h3 = q1_2 * q1_4;
+	h4 = q1_1 *	q1_3;
+	h5 = q1_5 + q1_2 - q1_4;
+	h6 = q1_2 * q1_4 * q1_3;
+	h7 = q1_1 * q1_5 + q1_5 * q1_3;
+	h8 = q1_4 * q1_2 + q1_3 * q1_1;
+	h9 = q1_2 + q1_3;
+	sisip_1 = document.getElementById("l1").innerHTML = q1_1 + "+" + q1_2 + "=";
+	sisip_2 = document.getElementById("l2").innerHTML = q1_3 + "+" + q1_4 + "+" + q1_5 + "=";
+	sisip_3 = document.getElementById("l3").innerHTML = q1_2 + "*" + q1_4 + "=";
+	sisip_4 = document.getElementById("l4").innerHTML = q1_1 + "*" + q1_3 + "=";
+	sisip_5 = document.getElementById("l5").innerHTML = q1_5 + "+" + q1_2 + "-" + q1_4 + "=";
+	sisip_6 = document.getElementById("l6").innerHTML = q1_2 + "*" + q1_4 + "*" + q1_3 + "=";
+	sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1_5 + "*" + q1_3 + "=";
+	sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
+	r1=document.getElementById("a1").value="";
+	r2=document.getElementById("a2").value="";
+	r3=document.getElementById("a3").value="";
+	r4=document.getElementById("a4").value="";
+	r5=document.getElementById("a5").value="";
+	r6=document.getElementById("a6").value="";
+	r7=document.getElementById("a7").value="";
+	r8=document.getElementById("a8").value="";
+	$("#soal1").show(2000);
+	$("#soal2").hide(2000);
+	$("#soal3").hide(2000);
+	$("#soal4").hide(2000);
+	$("#soal5").hide(2000);
+	$("#soal6").hide(2000);
+	$("#soal7").hide(2000);
+	$("#soal8").hide(2000);
+	$("#soal9").hide(2000);	
 });
 
 $("#quiz_button").click(function(){
@@ -1163,8 +1160,6 @@ r8=document.getElementById("a8").value="";
 });
 
 /* Javascript page 3 */
-level = 1;
-
 var q1_1 = Math.floor(Math.random()*10+1);
 var q1_2 = Math.floor(Math.random()*10+1);
 var q1_3 = Math.floor(Math.random()*10+1);
@@ -1190,17 +1185,63 @@ sisip_7 = document.getElementById("l7").innerHTML = q1_1 + "*" + q1_5 + "+" + q1
 sisip_8 = document.getElementById("l8").innerHTML = q1_4 + "*" + q1_2 + "+" + q1_3 + "*" + q1_1 + "=";
 sisip_9 = document.getElementById("l9").innerHTML = q1_2 + "+" + q1_3 + "=";
 
+function pop_up_lulus() {
+	if (level == 1) {
+		$("#lulus").show(500, function() {
+			$("#lvl_up").fadeIn(1000, function() {
+				$("#pop_up_star_1").show(500, function() {
+					$("#pop_up_button_1").slideDown(1000);
+					$("#pop_up_button_1").click(function() {
+						$("#lulus").slideUp(function() {
+							$("#page3").fadeOut(300, function(){
+								$("#page2").show(2000);
+							});
+						});	
+						$("#soal1").hide(2000);
+						$("#soal2").show(2000);
+						b=1;
+						level++;
+						$("#lvl_up").hide();
+						$("#pop_up_star_1").hide();
+						$("#pop_up_button_1").hide();
+					});
+				});
+			});
+		});
+	}
+	
+	if (level == 2) {
+		$("#lulus").show(500, function() {
+			$("#lvl_up").fadeIn(1000, function() {
+				$("#pop_up_star_1").show(500, function() {
+					$("#pop_up_star_2").show(500, function() {
+						$("#pop_up_button_1").slideDown(1000);
+						$("#pop_up_button_1").click(function() {
+							$("#lulus").slideUp(function() {
+								$("#page3").fadeOut(300, function(){
+									$("#page2").show(2000);
+								});
+							});	
+							$("#soal2").hide(2000);
+							$("#soal3").show(2000);
+							b=1;
+							level++; /* KENAPA KALO LINE INI DIILANGIN BARU BENER???? GW SALAH DIMANA???? */
+							$("#lvl_up").hide();
+							$("#pop_up_star_1").hide();
+							$("#pop_up_star_2").hide();
+							$("#pop_up_button_1").hide();
+						});
+					});	
+				});
+			});
+		});
+	}
+}
+
 $("#jawab1").click(function() {
 	jwbn1 = document.getElementById("a1").value;	
 		if(jwbn1 == h1) {
-			window.alert("Jawaban anda benar!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
-			$("#soal1").hide(2000);
-			$("#soal2").show(2000);
-			b=1;
-			level++;
+			pop_up_lulus();
 		}
 		else {
 			window.alert("Jawaban anda salah!");
@@ -1214,21 +1255,14 @@ $("#jawab1").click(function() {
 $("#jawab2").click(function() {
 	jwbn2 = document.getElementById("a2").value;
 		if(jwbn2 == h2) {
-			window.alert("Jawaban anda benar!");
-			$("#page3").fadeToggle(300, function(){
-				$("#page2").show(2000);
-			});
-			$("#soal2").hide(2000);
-			$("#soal3").show(2000);
-			b=1;
-			level++;
+			pop_up_lulus();
 		}
 		else {
 			window.alert("Jawaban anda salah!");
 			$("#page3").fadeToggle(300, function(){
 				$("#page2").show(2000);
 			});
-		b=1;
+			b=1;
 		}
 });	
 

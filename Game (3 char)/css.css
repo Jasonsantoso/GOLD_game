@@ -1909,8 +1909,9 @@ height: 669px;
 display:none ;
 position:absolute;
 background-color:grey;
-
 }
+
+/* CSS GAMEOVER */
 
 #GAMEOVER {
 	background-image: url("gambar/background/gameover.png");
@@ -1926,4 +1927,84 @@ background-color:grey;
 	margin-top: -500px;
 	margin-left: 280px;
 	display: none;
+}
+
+/* POP-UP WINDOW */
+#lulus {
+	width: 550px;
+	height: 350px;
+	margin-top: -550px;
+	margin-left: 410px;
+	box-shadow: 0px 0px 100px 5px gray;
+	border-radius: 40px;
+	background-image: url("gambar/background/pop_up_bg.jpg");
+	background-position: center;
+	background-size: 100%;
+	padding-top: 70px;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+		
+#lvl_up {
+	text-align: center;
+	font-size: 40px;
+	width: 250px;
+	height: 47px;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+	transform: rotate(-3deg);
+	color: #fac778;
+	text-shadow: 1px 1px 1px #af6331;
+	display: none;
+}
+		
+#bungkus_star {
+	width: 220px;
+	height: 130px;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+	transform: rotate(-3deg);
+}
+		
+#bungkus_star img {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
+	-webkit-animation: star_animation 2s ease-out normal; /* Chrome, Safari, Opera */
+	animation: star_animation 2s ease-out normal;
+	display: none;
+}
+		
+@-webkit-keyframes star_animation {
+	from {-ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+	to {-ms-transform: rotate(720deg); /* IE 9 */ -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */ transform: rotate(720deg);}
+}
+		
+@keyframes star_animation {
+	from {-ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */ transform: rotate(0deg);}
+	to {-ms-transform: rotate(720deg); /* IE 9 */ -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */ transform: rotate(720deg);}
+}
+		
+#pop_up_button_1 {
+	width: 70px;
+	height: 70px;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 2px 2px 3px #a2552b;
+	color: white;
+	border-radius: 40px;
+	margin-left: -25px;
+	margin-top: -25px;
+	background-image: url("gambar/background/pop_up_bg.jpg");
+	background-size: 660%;
+	border: none;
+	box-shadow: 1px 1px 1px 3px #e4e3e1;
+	display: none;
+}
+		
+#pop_up_button_1:hover {
+	margin-top: -35px;
+	box-shadow: 1px 1px 15px 10px #e4e3e1;
 }
