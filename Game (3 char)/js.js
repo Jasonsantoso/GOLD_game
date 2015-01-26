@@ -1605,3 +1605,15 @@ $("#jawab8").click(function() {
 		}
 });	
 
+				/* ENTER CODE */
+inputname_enter = document.getElementById("name");
+inputname_enter.addEventListener('keypress', ENTER_CODE, false);
+
+function ENTER_CODE(x){
+	if(x.charCode == 13 || x.charCode == 0 || x.keyCode == 13){
+		$("ok").click();
+		window.alert("pencet ENTER ya?");
+	}
+	else 
+		window.alert("bukan ENTER");
+}
