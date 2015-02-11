@@ -1007,7 +1007,7 @@ $("#eat_button").click(function() {
 });
 
 $("#study_button").click(function() {
-	intelligent_stat += 10;
+	intelligent_stat += 100;
 	document.getElementById("character").innerHTML = sisip_study;
 	jam += 3;
 	$("#study_button").fadeOut("fast", function() {
@@ -1604,16 +1604,3 @@ $("#jawab8").click(function() {
 			b=1;
 		}
 });	
-
-				/* ENTER CODE */
-inputname_enter = document.getElementById("name");
-inputname_enter.addEventListener('keypress', ENTER_CODE, false);
-
-function ENTER_CODE(x){
-	if(x.charCode == 13 || x.charCode == 0 || x.keyCode == 13){
-		$("ok").click();
-		window.alert("pencet ENTER ya?");
-	}
-	else 
-		window.alert("bukan ENTER");
-}
